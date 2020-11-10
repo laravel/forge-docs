@@ -48,26 +48,4 @@ sudo apt-get install --only-upgrade nodejs
 
 ## AWS provisioned servers are disappearing from the Forge UI
 
-To avoid this behaviour when provisioning servers in the Forge UI, select **Create New** in the VPC dropdown option. This will ensure that Forge will automatically create and configure the VPC and Security Group needed for continuous access from the Forge UI. 
-
-Alternatively, if you want to use any existing VPC, ensure that the VPC has IPv4 address range (IPv4 CIDR block) that covers your EC2 instance private IP addresses, as well as a Security Group associated with that VPC. 
-
-The Security Group needs to have these Inbound Rules:
-
-For TCP Connections:
-
-```
-Type: All TCP
-Protocol: TCP
-Port range: 0 - 65535
-Source: 0.0.0.0/0
-```
-
-For UDP Connections:
-
-```
-Type: All UDP
-Protocol: UDP
-Port range: 0 - 65535
-Source: 0.0.0.0/0
-```
+To ensure Forge works correctly with AWS, please take a look at [this requirements](/1.0/servers/providers.html#amazon-aws-api-access).
