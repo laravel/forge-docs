@@ -16,6 +16,10 @@ Forge supports a range of third-party server providers:
 If your preferred provider is not baked into Forge, you can always use the Custom VPS option.
 :::
 
+### Linking Additional Server Providers
+
+You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
+
 ### DigitalOcean Backups
 
 If you are using DigitalOcean as your server provider, you may also enable the [DigitalOcean Weekly Backups](https://www.digitalocean.com/community/tutorials/digitalocean-backups-and-snapshots-explained) feature.
@@ -24,16 +28,12 @@ If you are using DigitalOcean as your server provider, you may also enable the [
 Forge is not responsible for your backups. Enabling this feature only tells DigitalOcean to make weekly backups of your server.
 :::
 
-### Linking Additional Server Providers
-
-You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
-
 ### Amazon AWS API Access
 
-There are a few requirements to ensure Forge works correctly with AWS:
+There are a few requirements you should review to ensure Forge works correctly with AWS:
 
-- AWS user must have  **Programmatic API Access**.
-- AWS user needs to belong to a group with **AmazonEC2FullAccess** and **AmazonVPCFullAccess** managed policies.
+- AWS IAM user must have  **Programmatic API Access**.
+- AWS IAM user needs to belong to a group with **AmazonEC2FullAccess** and **AmazonVPCFullAccess** managed policies.
 - If you are using an existing VPC, the subnet must be configured to **auto-assign public IP addresses**.
 - If you are using an existing VPC, the default security group **must allow Forge to SSH into the server**. Here is an example:
 
