@@ -48,4 +48,4 @@ sudo apt-get install --only-upgrade nodejs
 
 ## AWS provisioned servers are disappearing from the Forge UI
 
-To ensure Forge works correctly with AWS, please take a look at [this requirements](/1.0/servers/providers.html#amazon-aws-api-access).
+To ensure Forge works correctly with AWS, please review [these requirements](/1.0/servers/providers.html#amazon-aws-api-access).
