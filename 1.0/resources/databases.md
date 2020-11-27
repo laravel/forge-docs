@@ -4,26 +4,23 @@
 
 ## Overview
 
-When provisioning a server Forge can optionally install a database. You can then use the Forge dashboard to manage the database such as; managing users / databases and resetting the database password.
-
-:::tip Managing Databases Not Installed By Forge
-Forge is unable to manage databases that were not installed as part of the provisoning process.
-:::
+When provisioning a new server you may choose to install a database server. You can then use the Forge dashboard to manage databases, users and permissions.
 
 ## Creating a Server With a Database
 
-When creating a new server, you can select to install one of these database servers:
+When creating a new server, you can select to install a database servers:
 
 - MySQL (8.0)
 - MariaDB (10.3)
-- Postgres (12)
+- PostgreSQL (12)
 
-As part of the provisioning process, Forge will automatically install the chosen database server and create a default `forge` database, `forge` user, and a secure, random password. The database password will be shown upon creating the server alongside the root password and will also be emailed to you.
+As part of the provisioning process, Forge will automatically install the selected database server and create a default `forge` database, `forge` user, and a secure, randomly-generated password. The database password will be shown upon creating the server alongside the root password and will also be emailed to you.
 
-If you decide not to install a database as part of the provisioning process but later decide you need one, you have two options:
+### Installing Databases Later
 
-1. Re-create the server, but this time selecting your required database server too.
-2. Maintaining a custom database server. In this case, Forge will not be able to manage users or databases for you.
+If you later decide to that you need to install a database on your server, you can do so through the **Databases** panel. Once installed, you will then be able to manage your database via Forge.
+
+When choosing to install a database, you will be able to select the type and provide a name for the initial database that Forge creates.
 
 ## Changing the Root / Forge Database Password
 
@@ -35,24 +32,42 @@ Do not change the `root` or `forge` database user passwords manually or outside 
 
 ## Connecting to a Database GUI Client
 
-All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI database client to connect to your Forge database, you will need to use SSH authentication.
+By default, database connections require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI database client to connect to your Forge database, you will need to use SSH authentication.
 
 When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the [TablePlus](https://tableplus.com) database client:
 
 <img src="./img/db-gui.png" alt="Connecting with TablePlus" style="width: 75%;">
 
-## Database Management Within Forge
+### Using the Database Connection URL
+
+Some clients, such as TablePlus allow you to connect to a database via a connection URL. Forge automatically generates this connection URL for you and you can use it to connect to your database. Note that the password is not included in this URL so you will need to provide this manually within the GUI.
+
+## Managing Your Databases Within Forge
 
 For servers running MySQL, MariaDB & PostgreSQL, Forge offers some advanced features which allows it to manage your databases and database users easily.
 
-### Creating a Database
+### Creating Databases
 
-You can create a new database through the Forge dashboard by clicking on to the server detail page and clicking **Database** in the sidebar. By default, you only need to enter the name of your new database. The `forge` user will be able to access the database automatically.
+You can create a new database through the server's dashboard in Forge. As a minimum you must supply the name of your new database. The `forge` user will be able to access the database automatically.
 
-### Create a Database User
+### Syncing Databases
 
-You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access.
+For consistency, you should use Forge to manage your databases and database users. However, if you created databases from outside of the Forge dashboard, you can manually sync them using the **Sync Databases** button.
 
-## Upgrading A Database Server
+When syncing databases, Forge will list the databases on your server and create records for any that are missing. Some database names are reserved by their database engine and will not be synced, including:
+
+- `mysql`
+- `information_schema`
+- `peformance_schema`
+- `sys`
+- `postgres`
+- `template0`
+- `template1`
+
+### Create Database Users
+
+You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and select the databases that the new user can access.
+
+## Upgrading Databases
 
 Forge does not provide the ability to upgrade your database server software automatically. If you wish to upgrade your database server, you will need to complete this manually.
