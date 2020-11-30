@@ -23,7 +23,7 @@ When editing the PHP files, be sure to edit the correct file under the PHP versi
 When configuring your server, Forge configures FPM so that it can be restarted without using your server's "sudo" password. To do so, you should issue the following command. Of course, you should adjust the PHP version to match the version of PHP installed on your machine:
 
 ```bash
-echo "" | sudo -S service php7.3-fpm reload
+echo "" | sudo -S service php8.0-fpm reload
 ```
 
 ## Resetting The Sudo Password

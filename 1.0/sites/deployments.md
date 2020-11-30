@@ -40,7 +40,7 @@ Deployments may temporarily make your site unavailable. If you need zero downtim
 
 If you have installed [multiple versions of PHP](/1.0/servers/php.html) your deploy script may need to be updated to use the correct version of PHP.
 
-By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `php7.x` where `7.x` reflects on the version used. For PHP 5.6, you should use `php56`.
+By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `phpx.x` where `x.x` reflects on the version used (e.g. `php8.0`).
 
 The deploy script for newly created sites use the `$FORGE_PHP` [environment variable](#environment-variables) so no extra steps are needed when switching your site's PHP version.
 

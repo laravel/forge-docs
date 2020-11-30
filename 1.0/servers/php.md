@@ -35,7 +35,7 @@ To uninstall a version, click the pencil dropdown button and then click **Uninst
 
 ### CLI
 
-When a version of PHP has been installed you may reference it on the CLI via `php5.6` or `php7.x` (replacing the `x` with the version number). The `php` binary will always point to the active CLI version (if changed from the default).
+When a version of PHP has been installed you may reference it on the CLI via `phpx.x`, replacing the `x.x` with the version number (e.g. `php8.0`). The `php` binary will always point to the active CLI version (if changed from the default).
 
 ### Set As Default
 

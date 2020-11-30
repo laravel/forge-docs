@@ -31,7 +31,7 @@ Forge provides several variables that can be used within your templates to dynam
 | `PATH` | The site's full directory including web directory, e.g. `/home/forge/laravel.com/public` |
 | `PORT` | The IPv4 port to listen to `:80`. If the site name is `default` this will also add `default_server` |
 | `PORT_V6` | The IPV6 port to listen to `[::]:80`. If the site name is `default` this will also add `default_server` |
-| `PROXY_PASS` | The PHP socket to listen on, e.g. `unix:/var/run/php/php7.4-fpm.sock`. This will also account for isolated user sockets. |
+| `PROXY_PASS` | The PHP socket to listen on, e.g. `unix:/var/run/php/php8.0-fpm.sock`. This will also account for isolated user sockets. |
 | `ROOT_PATH` | The root of the configured site, e.g. `/home/forge/laravel.com` |
 | `SITE` | The site's name, e.g. `laravel.com`. This differs from `DOMAINS` as it does not include aliases. |
 | `USER` | The site's user, e.g. `forge`. This will be the name of the isolated user. |
