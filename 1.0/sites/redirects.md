@@ -8,7 +8,7 @@ Redirects can be configured to automatically take visitors from one page to anot
 
 ## Creating Redirects
 
-Redirects are wrappers around Nginx's `rewrite` rules and can use the full syntax, including regular expressions. For example, you could use `= /` to only match the root of the domain.
+Redirects are wrappers around Nginx's [`rewrite`](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite) rules and can use the full syntax, including regular expressions. For example, you could use `= /` to only match the root of the domain.
 
 ## Temporary vs Permanent
 
