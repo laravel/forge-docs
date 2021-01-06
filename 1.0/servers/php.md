@@ -29,7 +29,7 @@ You can choose to uninstall a version of PHP so long as:
 - There are other versions installed.
 - The version you wish to remove is not the server's default for new sites.
 - The version you wish to remove is not the server's default on the CLI.
-- The version you wish to not used by any sites.
+- The version you wish to remove is not used by any sites.
 
 To uninstall a version, click the pencil dropdown button and then click **Uninstall PHP x.x**.
 
