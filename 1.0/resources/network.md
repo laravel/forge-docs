@@ -21,11 +21,11 @@ Server networks make it painless to use a connected server as a separate databas
 - Be owned by the same user.
 - Be within the same region.
 
-Once you have granted access from one server to another, you may access the other sever via its private IP address.
+Once you have granted access from one server to another, you may access the other server via its private IP address.
 
 ## Firewalls
 
-You can configure and manage your firewall from within the Forge dashboard via the **Network** tab on the server's management dashboard. Firewalls are used to open ports on your server to the Internet. For example, when using FTP, you may need to open port `21`.
+You can configure and manage your firewall from within the Forge dashboard via the **Network** tab on the server's management dashboard. Firewalls are used to open ports on your server to the Internet. For example, when using FTP you may need to open port `21`.
 
 For added security, you can restrict opened ports to specific IP addresses.
 
