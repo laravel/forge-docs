@@ -39,7 +39,7 @@ Each server balanced by the load balancer can be configured with different weigh
 
 ### Backup Servers
 
-Individual servers can be marked as a **backup**. Backup servers will recieve no traffic unless all other servers managed by the load balancer are not responding.
+Individual servers can be marked as a **backup**. Backup servers will receive no traffic unless all other servers managed by the load balancer are not responding.
 
 ### Pausing Traffic
 
