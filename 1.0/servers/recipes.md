@@ -31,4 +31,4 @@ When using these variables, you should ensure that they exactly match the syntax
 
 ## Running Recipes
 
-When running a recipe, you will be presented with options that allow you to have the output of the recipe emailed to you and allow you configure which servers the recipe will run on.
+When running a recipe, you will be presented with options that allow you to have the output of the recipe emailed to you and allow you to configure which servers the recipe will run on.
