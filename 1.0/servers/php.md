@@ -63,4 +63,4 @@ You may configure the maximum execution time through the **PHP** tab of the serv
 
 ### OPcache
 
-Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script reloads the PHP-FPM service at the end of each deployment.
+Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script [reloads the PHP-FPM service](/1.0/servers/cookbook.html#restarting-php-fpm) at the end of each deployment.
