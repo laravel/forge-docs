@@ -18,7 +18,7 @@ When creating a new site on your Forge server, a variety of configuration option
 
 **Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
 
-**Website Isolation:** This configuration settings indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
+**Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
 
 **Create Database:** This setting indicates if you would like a new database to be created for your site.
 
@@ -49,7 +49,7 @@ When adding a new site to the server, you may choose to generate a Deploy Key fo
 
 Forge can also install [WordPress](https://wordpress.org) for you, so you can get right into writing your next blog post.
 
-If you haven't done so already, you should create a new database and database user. This is used by WordPress to store all of your blog posts.
+If you haven't done so already, you should [create a new database](/1.0/resources/databases.html#creating-databases) and database user. This is used by WordPress to store all of your blog posts.
 
 Once WordPress has been installed, you can visit your site's domain name and continue the WordPress installation from your browser.
 
@@ -64,7 +64,7 @@ You should continue installing WordPress as soon as Forge has installed it for y
 
 Forge also supports installing [phpMyAdmin](https://phpmyadmin.net), so you can manage your databases from anywhere.
 
-If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
+If you haven't done so already, you should [create a new database](/1.0/resources/databases.html#creating-databases) and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
 
 Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
 
@@ -81,7 +81,7 @@ When you are ready to transition your application to an official domain name, yo
 
 ### Default Nginx Template
 
-Below is an example of the default Nginx site configuration that is used by Laravel Forge. Additional Nginx templates may be created in Forge using the "Nginx Templates" panel within your server's management dashboard:
+Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard:
 
 ```nginx
 # FORGE CONFIG (DO NOT REMOVE!)
