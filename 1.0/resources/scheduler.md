@@ -6,7 +6,7 @@
 
 Scheduled jobs may be configured to run commands at a specified interval. Forge provides several common defaults, or you may enter a custom Cron schedule for a command.
 
-You can create scheduled jobs through the Forge dashboard via the **Schedule** tab fo the server's management dashboard. When creating a new scheduled job, you'll need to provide:
+You can create scheduled jobs through the Forge dashboard via the **Schedule** tab for the server's management dashboard. When creating a new scheduled job, you'll need to provide:
 
 - The command to run, for example `php /home/forge/default/artisan schedule:run`.
 - The user to run the command as, for example `forge`.
