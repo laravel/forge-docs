@@ -34,6 +34,8 @@ If you are restricting SSH access to your server using IP allow lists, you shoul
 - `159.203.161.246`
 - `159.203.163.240`
 
+You can also access the IP addresses at [https://forge.laravel.com/ips-v4.txt](https://forge.laravel.com/ips-v4.txt). This is particulary useful if you intend on automating your network or firewall infrastructure.
+
 :::warning IP Address Changes
 
 The Forge IP addresses may change from time to time; however, we will always email you several weeks prior to an IP address change.
