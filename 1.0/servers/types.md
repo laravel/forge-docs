@@ -17,6 +17,70 @@ Below, we will discuss each of these server types in more detail.
 
 ## Server Types
 
+As a quick reference, here is a breakdown of what is offered by each server type.
+
+<table>
+    <thead>
+        <tr>
+            <th width="200">Application</th>
+            <th width="200">App Server</th>
+            <th width="200">Web Server</th>
+            <th width="200">Database Server</th>
+            <th width="200">Cache Server</th>
+            <th width="200">Worker Server</th>
+            <th width="200">Load Balancer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="col">Nginx</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle">✅</td>
+        </tr>
+        <tr>
+            <td scope="col">PHP</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+        </tr>
+        <tr>
+            <td scope="col">MySQL / PostgreSQL / MariaDB</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+        </tr>
+        <tr>
+            <td scope="col">Redis, Memcached</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+        </tr>
+        <tr>
+            <td scope="col">Node.js</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+        </tr>
+    </tbody>
+</table>
+
+
 ### App Servers
 
 Application servers are designed include everything you need to deploy a typical Laravel / PHP application within a single server. Therefore, they are provisioned with the following software:
