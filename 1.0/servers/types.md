@@ -17,7 +17,7 @@ Below, we will discuss each of these server types in more detail.
 
 ## Server Types
 
-As a quick reference, here is a breakdown of what is offered by each server type.
+For reference, here is a breakdown of what is offered by each server type:
 
 <table>
     <thead>
