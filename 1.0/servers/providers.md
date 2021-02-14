@@ -14,7 +14,7 @@ Forge can create and manage servers on the following cloud server providers:
 
 :::tip Bring Your Own Provider
 
-If your preferred server provider provider is not supported by Forge, you may use Forge's "Custom VPS" option to create your server. Custom VPS servers receive all of the same functionality as first-party supported server providers.
+If your preferred server provider is not supported by Forge, you may use Forge's "Custom VPS" option to create your server. Custom VPS servers receive all of the same functionality as first-party supported server providers.
 :::
 
 ### Linking Additional Server Providers
