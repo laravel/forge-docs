@@ -34,4 +34,4 @@ If you unlink a source control provider, you will be unable to deploy sites that
 
 ### Refreshing Tokens
 
-If you would like to refresh Forge's connection to your source control provdier, you may do so by clicking the **Refresh Token** button next to the source control provider's name on the Source Control dashboard within your Forge account profile.
+If you would like to refresh Forge's connection to your source control provider, you may do so by clicking the **Refresh Token** button next to the source control provider's name on the Source Control dashboard within your Forge account profile.
