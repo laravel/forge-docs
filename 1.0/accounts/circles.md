@@ -14,7 +14,7 @@ Circles are only available on the Business plan.
 
 You may create a circle via the [Forge circle dashboard](https://forge.laravel.com/circles). Once the circle has been created, you may manage it by clicking the edit button next to the circle's name. This will open a modal window that provides several features.
 
-First, you are able to invite collaborators to the circle. The provided email address must be an email address that already has an account on Laravel Forge. **If they do not have an account, a free account may be created by clicking "Just joining a circle?" during the Forge registration process.**
+First, you are able to invite collaborators to the circle. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
 
 Next, you may add servers to the circle. Anyone within the circle will be able to manage the selected servers.
 
