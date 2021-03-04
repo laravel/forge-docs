@@ -3,6 +3,12 @@ module.exports = {
     description: "Laravel Hosting & Instant PHP Servers",
     base: '/docs/',
 
+    plugins: [
+        ['sitemap', {
+            hostname: 'https://forge.laravel.com',
+        }]
+    ],
+
     head: [
         [
             'link',
