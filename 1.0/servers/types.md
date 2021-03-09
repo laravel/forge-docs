@@ -22,27 +22,18 @@ For reference, here is a breakdown of what is offered by each server type:
 <table>
     <thead>
         <tr>
-            <th width="200">Application</th>
-            <th width="200">App Server</th>
-            <th width="200">Web Server</th>
-            <th width="200">Database Server</th>
-            <th width="200">Cache Server</th>
-            <th width="200">Worker Server</th>
-            <th width="200">Load Balancer</th>
+            <th>Type</th>
+            <th>Nginx</th>
+            <th>PHP</th>
+            <th>MySQL / Postgres / MariaDB</th>
+            <th>Redis, Memcached</th>
+            <th>Node.js</th>
+            <th>MeiliSearch</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td scope="col">Nginx</td>
-            <td align="middle">✅</td>
-            <td align="middle">✅</td>
-            <td align="middle"></td>
-            <td align="middle"></td>
-            <td align="middle"></td>
-            <td align="middle">✅</td>
-        </tr>
-        <tr>
-            <td scope="col">PHP</td>
+            <td scope="col">App Server</td>
             <td align="middle">✅</td>
             <td align="middle">✅</td>
             <td align="middle"></td>
@@ -51,8 +42,17 @@ For reference, here is a breakdown of what is offered by each server type:
             <td align="middle"></td>
         </tr>
         <tr>
-            <td scope="col">MySQL / PostgreSQL / MariaDB</td>
+            <td scope="col">Web Server</td>
             <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
+        </tr>
+        <tr>
+            <td scope="col">Database Server</td>
+            <td align="middle"></td>
             <td align="middle"></td>
             <td align="middle">✅</td>
             <td align="middle"></td>
@@ -60,8 +60,8 @@ For reference, here is a breakdown of what is offered by each server type:
             <td align="middle"></td>
         </tr>
         <tr>
-            <td scope="col">Redis, Memcached</td>
-            <td align="middle">✅</td>
+            <td scope="col">Cache Server</td>
+            <td align="middle"></td>
             <td align="middle"></td>
             <td align="middle"></td>
             <td align="middle">✅</td>
@@ -69,9 +69,27 @@ For reference, here is a breakdown of what is offered by each server type:
             <td align="middle"></td>
         </tr>
         <tr>
-            <td scope="col">Node.js</td>
+            <td scope="col">Worker Server</td>
+            <td align="middle"></td>
             <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+        </tr>
+        <tr>
+            <td scope="col">MeiliSearch Server</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
+            <td align="middle"></td>
             <td align="middle">✅</td>
+        </tr>
+        <tr>
+            <td scope="col">Load Balancer</td>
+            <td align="middle">✅</td>
+            <td align="middle"></td>
             <td align="middle"></td>
             <td align="middle"></td>
             <td align="middle"></td>
