@@ -142,6 +142,12 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 - PHP
 - Supervisor
 
+### MeiliSearch Servers
+
+MeiliSearch servers only [MeiliSearch](https://meilisearch.com). They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
+
+A MeiliSearch server will only display and manage one Site resource. You cannot create or delete other sites on this server.
+
 ### Load Balancers
 
 Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balances use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
