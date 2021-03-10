@@ -146,7 +146,7 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 
 MeiliSearch servers only [MeiliSearch](https://meilisearch.com). They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
 
-A MeiliSearch server will only display and manage one Site resource. You cannot create or delete other sites on this server.
+A MeiliSearch server will only display and manage one Site resource. You cannot create or delete other sites on this server. When connecting to the MeiliSearch server from a web or application server, you should connect to it via its private IP address.
 
 ### Load Balancers
 
