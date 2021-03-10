@@ -126,4 +126,4 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 
 ### Load Balancers
 
-Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balances use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
+Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balancers use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
