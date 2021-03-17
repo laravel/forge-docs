@@ -19,7 +19,7 @@ As part of the provisioning process, Forge will automatically install the select
 
 ### Installing Databases Later
 
-If you later decide to that you need to install a database on your server, you can do so through the server's **Databases** management tab. Once installed, you will then be able to manage your database via Forge.
+If you later decide to that you need to install a database on your server, you can do so through the server's **Databases** management tab. Once installed, you will then be able to manage your database via Forge. This does not apply to Web Servers as they're designed with the minimum requirements needed to serve websites.
 
 ## Changing the Root / Forge Database Password
 
