@@ -36,8 +36,8 @@ For reference, here is a breakdown of what is offered by each server type:
             <td scope="col">App Server</td>
             <td align="middle">✅</td>
             <td align="middle">✅</td>
-            <td align="middle"></td>
-            <td align="middle"></td>
+            <td align="middle">✅</td>
+            <td align="middle">✅</td>
             <td align="middle">✅</td>
             <td align="middle"></td>
         </tr>
@@ -45,8 +45,8 @@ For reference, here is a breakdown of what is offered by each server type:
             <td scope="col">Web Server</td>
             <td align="middle">✅</td>
             <td align="middle">✅</td>
-            <td align="middle">✅</td>
-            <td align="middle">✅</td>
+            <td align="middle"></td>
+            <td align="middle"></td>
             <td align="middle">✅</td>
             <td align="middle"></td>
         </tr>
