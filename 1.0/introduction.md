@@ -37,7 +37,7 @@ If you are restricting SSH access to your server using IP allow lists, you shoul
 
 You can also access the IP addresses via the following URL: [https://forge.laravel.com/ips-v4.txt](https://forge.laravel.com/ips-v4.txt). This is particulary useful if you intend on automating your network or firewall infrastructure.
 
-Note that if your you are also restricting HTTPS traffic over port 443, you should also whitelist the domain `forge.laravel.com` for both inbound and outbound traffic on port 443. This is needed to download the initial deployment script from Forge. Whitelisting the IP addresses above will not work, because Forge uses Cloudflare dynamic proxied DNS.
+Your server should also allow incoming and outgoing traffic from `forge.laravel.com`.
 
 :::warning IP Address Changes
 
