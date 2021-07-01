@@ -33,7 +33,6 @@ When using Amazon S3 to store your database backups, your AWS IAM user must have
 
 - `s3:PutObject`
 - `s3:GetObject`
-- `s3:RestoreObject`
 - `s3:ListBucket`
 - `s3:DeleteObject`
 :::
