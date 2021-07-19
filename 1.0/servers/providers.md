@@ -35,6 +35,7 @@ There are a few requirements you should review to ensure Forge works correctly w
 | HTTP  | TCP      | 80         | Custom | 0.0.0.0/0          |                  |
 | HTTP  | TCP      | 80         | Custom | ::/0               |                  |
 | SSH   | TCP      | 22         | Custom | YOUR_IP_ADDRESS/32 | SSH from your IP |
+| SSH   | TCP      | 22         | Custom | 68.183.145.91/32   | SSH from Forge   |
 | SSH   | TCP      | 22         | Custom | 159.203.161.246/32 | SSH from Forge   |
 | SSH   | TCP      | 22         | Custom | 159.203.163.240/32 | SSH from Forge   |
 | HTTPS | TCP      | 443        | Custom | 0.0.0.0/0          |                  |
