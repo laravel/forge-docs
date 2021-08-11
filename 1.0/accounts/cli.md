@@ -107,7 +107,7 @@ forge env:pull pestphp.com
 forge env:pull pestphp.com .env
 ```
 
-Once this command has been executed, an environment file will be placed in your current directory. To update the site's environment variables, simply open and edit this file. When you are done editing the variables, use the `env:push` command to push the variables back to your site:
+Once this command has been executed, the site's environment file will be placed in your current directory. To update the site's environment variables, simply open and edit this file. When you are done editing the variables, use the `env:push` command to push the variables back to your site:
 
 ```bash
 forge env:push
@@ -115,7 +115,7 @@ forge env:push pestphp.com
 forge env:push pestphp.com .env
 ```
 
-Of course, after updating a site's environment variables, the new variables may not be utilized until the site is deployed again.
+If your site is utilizing Laravel's "configuration caching" feature or has queue workers, the new variables will not be utilized until the site is deployed again.
 
 ### Viewing Application Logs
 
