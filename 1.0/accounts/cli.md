@@ -99,7 +99,7 @@ forge deploy example.com
 
 ### Updating Environment Variables
 
-You may update an site's environment variables using the `env:pull` and `env:push` commands. The `env:pull` command may be used to pull down an environment file for a given site:
+You may update a site's environment variables using the `env:pull` and `env:push` commands. The `env:pull` command may be used to pull down an environment file for a given site:
 
 ```bash
 forge env:pull
