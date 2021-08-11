@@ -115,7 +115,7 @@ forge env:push pestphp.com
 forge env:push pestphp.com .env
 ```
 
-Of course, after updating an site's environment variables, the new variables may not be utilized until the site is deployed again.
+Of course, after updating a site's environment variables, the new variables may not be utilized until the site is deployed again.
 
 ### Viewing Application Logs
 
