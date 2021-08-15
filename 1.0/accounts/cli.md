@@ -89,7 +89,7 @@ forge site:list
 
 ### Initiating Deployments
 
-Of course, one of the primary features of Laravel Forge is deployments. Deployments may be initiated via the Forge CLI using the `deploy` command:
+One of the primary features of Laravel Forge is deployments. Deployments may be initiated via the Forge CLI using the `deploy` command:
 
 ```bash
 forge deploy
@@ -107,7 +107,7 @@ forge env:pull pestphp.com
 forge env:pull pestphp.com .env
 ```
 
-Once this command has been executed, the site's environment file will be placed in your current directory. To update the site's environment variables, simply open and edit this file. When you are done editing the variables, use the `env:push` command to push the variables back to your site:
+Once this command has been executed the site's environment file will be placed in your current directory. To update the site's environment variables, simply open and edit this file. When you are done editing the variables, use the `env:push` command to push the variables back to your site:
 
 ```bash
 forge env:push
@@ -131,7 +131,7 @@ forge site:logs example.com --follow  # View logs in realtime
 
 ### Reviewing Deployment Output / Logs
 
-When a deployment fails, you may review the output / logs via the Forge UI's deployment history screen. Of course, you may also review the output at any time on the command-line using the `deploy:logs` command. If the `deploy:logs` command is called with no additional arguments, the logs for the latest deployment will be displayed. Or, you may pass the deployment ID to the `deploy:logs` command to display the logs for a particular deployment:
+When a deployment fails, you may review the output / logs via the Forge UI's deployment history screen. You may also review the output at any time on the command-line using the `deploy:logs` command. If the `deploy:logs` command is called with no additional arguments, the logs for the latest deployment will be displayed. Or, you may pass the deployment ID to the `deploy:logs` command to display the logs for a particular deployment:
 
 ```
 forge deploy:logs
@@ -141,7 +141,7 @@ forge deploy:logs 12345
 
 ### Running Commands
 
-Sometimes, you may wish to run an arbitrary shell command against a site. The `command` command will prompt you for the command you would like to run. The command will be run relative to the site's root directory.
+Sometimes you may wish to run an arbitrary shell command against a site. The `command` command will prompt you for the command you would like to run. The command will be run relative to the site's root directory.
 
 ```
 forge command
