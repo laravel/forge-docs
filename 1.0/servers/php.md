@@ -46,6 +46,10 @@ When selecting a new version of PHP as your server's "default" version, the PHP 
 
 You can upgrade your PHP installations between patch releases of PHP at any time using the **Patch Version** button. Typically, these updates should not cause any breaking changes to your server, although a few seconds of downtime is possible.
 
+### Using Non-Stable PHP Versions
+
+Often new major versions of PHP become available on Forge weeks before the stable release. This allows you to experiment in advance with upcoming major PHP versions on sites that are not in production. Yet, keep in mind that some Forge features, PHP features, and PHP extensions, may not work as expected during that period. In addition, once that PHP version becomes stable, **you will need to fully Uninstall and **Install** the PHP version, so the PHP version gets properly installed in your server.**
+
 ## Common PHP Configuration Settings
 
 :::danger Configuration Settings
