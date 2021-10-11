@@ -46,7 +46,7 @@ When selecting a new version of PHP as your server's "default" version, the PHP 
 
 You can upgrade your PHP installations between patch releases of PHP at any time using the **Patch Version** button. Typically, these updates should not cause any breaking changes to your server, although a few seconds of downtime is possible.
 
-### Using Beta / Release Candidate PHP Versions
+### PHP Betas / Release Candidates
 
 PHP "beta" and "release candidate" releases are often available on Forge weeks before their final release. This allows you to experiment with upcoming major PHP versions on sites that are not in production. However, some Forge features, PHP features, and PHP extensions may not work as expected during that period. In addition, once that PHP version becomes stable, **you will need to fully uninstall and **re-install** the PHP version.**
 
