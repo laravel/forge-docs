@@ -32,7 +32,10 @@ After you have generated an API token, you should authenticate with your Forge a
 
 ```bash
 forge login
+forge login --token=your-api-token
 ```
+
+Alternatively, if you plan to authenticate with Forge from your CI platform, you may set a `FORGE_API_TOKEN` environment variable in your CI build environment.
 
 ## Current Server & Switching Servers
 
