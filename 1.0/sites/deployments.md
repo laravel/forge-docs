@@ -91,23 +91,21 @@ Forge will prefix any injected variables with `FORGE_`. Please do not use this "
 
 So far, we have discussed deploying Forge sites from the Forge UI or by using Forge's "Quick Deploy" feature. However, you may also deploy them from a CI platform of your choice.
 
-To issue a Forge deployment from a CI platform, you may use Deployment Triggers or Forge CLI.
+To execute a Forge deployment from a CI platform, you may use Deployment Triggers or Forge CLI.
 
 ### Using Deployment Triggers
 
-You may issue a deployment at any time by instructing the CI platform to make a `GET` or `POST` request to the URL displayed in your site's details.
+You may execute a deployment at any time by instructing your CI platform to make a `GET` or `POST` request to the URL displayed in your site's details.
 
-Although you can refresh the site token at any time, you will need to update any services which are using this URL.
+Although you can refresh the site token at any time, you will need to update any services which are using this URL after refreshing the token.
 
 ### Using Forge CLI
 
-If you would like to have access the deployment output, or execute additional actions such restarting services, you may use [Forge CLI](https://forge.laravel.com/docs/1.0/accounts/cli.html).
+If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](https://forge.laravel.com/docs/1.0/accounts/cli.html).
 
-Once you have installed Forge CLI, you may simply execute the `forge deploy` command in your CI platform's deployment pipeline.
+Once you have installed Forge CLI, you may execute the `forge deploy` command in your CI platform's deployment pipeline.
 
-In order to authenticate with Forge from your CI platform, you will need to add a `FORGE_API_TOKEN` environment variable to your CI build environment. You may generate an API token in your [Forge API settings dashboard](https://forge.laravel.com/user/profile#/api).
-
-In addition, your CI platform will need SSH Access to your server.
+In order to authenticate with Forge from your CI platform, you will need to add a `FORGE_API_TOKEN` environment variable to your CI build environment. You may generate an API token in your [Forge API settings dashboard](https://forge.laravel.com/user/profile#/api). In addition, your CI platform will need SSH Access to your server.
 
 #### Example With GitHub Actions
 
