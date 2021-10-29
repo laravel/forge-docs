@@ -87,11 +87,72 @@ fi
 Forge will prefix any injected variables with `FORGE_`. Please do not use this "namespace" when defining your own environment variables.
 :::
 
-## Deployment Triggers
+## Deploying From CI
 
-If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Forge dashboard. Making a request to the provided URL will trigger your Forge deployment.
+So far, we have discussed deploying Forge sites from the Forge UI or by using Forge's "Quick Deploy" feature. However, you may also deploy them from a CI platform of your choice.
+
+To issue a Forge deployment from a CI platform, you may use Deployment Triggers or Forge CLI.
+
+### Using Deployment Triggers
+
+You may issue a deployment at any time by instructing the CI platform to make a `GET` or `POST` request to the URL displayed in your site's details.
 
 Although you can refresh the site token at any time, you will need to update any services which are using this URL.
+
+### Using Forge CLI
+
+If you would like to have access the deployment output, or execute additional actions such restarting services, you may use [Forge CLI](https://forge.laravel.com/docs/1.0/accounts/cli.html).
+
+Once you have installed Forge CLI, you may simply execute the `forge deploy` command in your CI platform's deployment pipeline.
+
+In order to authenticate with Forge from your CI platform, you will need to add a `FORGE_API_TOKEN` environment variable to your CI build environment. You may generate an API token in your [Forge API settings dashboard](https://forge.laravel.com/user/profile#/api).
+
+In addition, your CI platform will need SSH Access to your server.
+
+#### Example With GitHub Actions
+
+If your site uses [GitHub Actions](https://github.com/features/actions) as its CI platform, the following guidelines will assist you in configuring Forge deployments so that your application is automatically deployed when someone pushes a commit to the `master` branch:
+
+1. First, add the `FORGE_API_TOKEN` environment variable to your "GitHub > Project Settings > Secrets" settings so that GitHub can authenticate with Forge while running actions.
+
+2. Next, add the `SSH_PRIVATE_KEY` environment variable to your "GitHub > Project Settings > Secrets" settings so that GitHub can have SSH Access to your site's server.
+
+3. Then, create a `deploy.yml` file within the `your-project/.github/workflows` directory. The file should have the following contents:
+
+```yml
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          tools: composer:v2
+          coverage: none
+      - name: Require Forge CLI
+        run: composer global require laravel/forge-cli
+      - name: Deploy Site
+        run: |
+          forge server:switch your-server-name
+          forge deploy your-site-name.com
+        env:
+          FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
+```
+
+4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to `master` so GitHub Actions can run the first deployment job.
 
 ## Deployment Branch
 
