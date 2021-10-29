@@ -150,7 +150,7 @@ jobs:
           FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
 ```
 
-4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to `master` so GitHub Actions can run the first deployment job.
+4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to the `master` branch so GitHub Actions can run the first deployment job.
 
 ## Deployment Branch
 
