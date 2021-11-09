@@ -99,6 +99,8 @@ You may execute a deployment at any time by instructing your CI platform to make
 
 Although you can refresh the site token at any time, you will need to update any services which are using this URL after refreshing the token.
 
+Additional data may be passed to your deployment script via query parameters passed to the deployment trigger URL. For example, when passing the following query parameters `?token=abc1234&env=staging`, Forge will automatically inject a custom `FORGE_VAR_ENV` variable that will evaluate to `"staging"`.
+
 ### Using Forge CLI
 
 If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](https://forge.laravel.com/docs/1.0/accounts/cli.html).
