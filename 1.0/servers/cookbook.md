@@ -28,6 +28,7 @@ The latest version of Node.js is installed by Forge when it is provisioning a ne
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 ```
 
@@ -35,13 +36,11 @@ sudo apt-get install -y nodejs
 
 ## Upgrading npm
 
-The latest version of npm is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of npm:
+The latest version of npm is installed by Forge when provisioning new servers. However, you may upgrade the installed version of npm using the following commands:
 
 ```bash
 sudo npm install npm@latest -g
 ```
-
-[More information about upgrading npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## DigitalOcean Droplet Limit Exceeded
 
