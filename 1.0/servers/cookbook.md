@@ -22,22 +22,27 @@ sudo -i
 passwd
 ```
 
+## Upgrading Nginx
+
+The latest version of Nginx is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the version of Nginx. You may do so using the following commands:
+
+```bash
+sudo apt-get install -y --only-upgrade nginx
+sudo nginx -v
+sudo service nginx restart
+```
+
+:::danger Nginx Upgrades
+
+You should upgrade the Nginx version on your server at your own risk. Upgrading the version of Nginx installed on your server may cause downtime or conflict with other installed software.
+:::
+
 ## Upgrading Node.js
 
 The latest version of Node.js is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of Node.js:
 
 ```bash
 sudo apt-get install --only-upgrade nodejs
-```
-
-## Upgrading Nginx
-
-The latest version of Nginx is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of Nginx:
-
-```bash
-sudo apt-get install -y --only-upgrade nginx
-sudo nginx -v
-sudo service nginx restart
 ```
 
 ## DigitalOcean Droplet Limit Exceeded
