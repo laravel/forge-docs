@@ -32,6 +32,17 @@ sudo apt-get install -y nodejs
 ```
 
 [Node.js version information](https://nodejs.org/en/about/releases/)
+
+## Upgrading npm
+
+The latest version of npm is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of npm:
+
+```bash
+sudo npm install npm@latest -g
+```
+
+[More information about upgarding npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
 ## DigitalOcean Droplet Limit Exceeded
 
 This error is returned by [DigitalOcean](https://digitalocean.com) when you have reached a limit on how many droplets you can create. You can ask DigitalOcean to increase your droplet limit by contacting their support. Once they have increased your limit, you may create servers in Forge.
