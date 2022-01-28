@@ -24,7 +24,7 @@ passwd
 
 ## Upgrading Nginx
 
-The latest version of Nginx is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the version of Nginx. You may do so using the following commands:
+The latest version of Nginx is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the installed version of Nginx. You may do so using the following commands:
 
 ```bash
 sudo apt-get install -y --only-upgrade nginx
