@@ -30,6 +30,16 @@ The latest version of Node.js is installed by Forge when it is provisioning a ne
 sudo apt-get install --only-upgrade nodejs
 ```
 
+## Upgrading Nginx
+
+The latest version of Nginx is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of Nginx:
+
+```bash
+sudo apt-get install -y --only-upgrade nginx
+sudo nginx -v
+sudo service nginx restart
+```
+
 ## DigitalOcean Droplet Limit Exceeded
 
 This error is returned by [DigitalOcean](https://digitalocean.com) when you have reached a limit on how many droplets you can create. You can ask DigitalOcean to increase your droplet limit by contacting their support. Once they have increased your limit, you may create servers in Forge.
