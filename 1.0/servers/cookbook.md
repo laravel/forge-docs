@@ -27,9 +27,11 @@ passwd
 The latest version of Node.js is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of Node.js:
 
 ```bash
-sudo apt-get install --only-upgrade nodejs
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
+[Node.js version information](https://nodejs.org/en/about/releases/)
 ## DigitalOcean Droplet Limit Exceeded
 
 This error is returned by [DigitalOcean](https://digitalocean.com) when you have reached a limit on how many droplets you can create. You can ask DigitalOcean to increase your droplet limit by contacting their support. Once they have increased your limit, you may create servers in Forge.
