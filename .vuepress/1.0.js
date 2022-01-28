@@ -34,6 +34,7 @@ module.exports = [
             'nginx-templates',
             'provisioning-process',
             'cookbook',
+            'upgrading',
         ]),
     },
     {
