@@ -41,7 +41,7 @@ The latest version of npm is installed by Forge when it is provisioning a new se
 sudo npm install npm@latest -g
 ```
 
-[More information about upgarding npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+[More information about upgrading npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## DigitalOcean Droplet Limit Exceeded
 
