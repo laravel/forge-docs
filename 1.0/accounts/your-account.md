@@ -4,11 +4,11 @@
 
 ## Updating Your Profile Information
 
-You may update your name, email, and password from the Forge's [Authentication dashboard](https://forge.laravel.com/user/profile#/authentication) within your user profile.
+You may update your name, email, and password from the Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication) within your user profile.
 
 ## Securing Your Account With Two Factor Authentication
 
-You can add Two Factor Authentication (2FA) to your account from Forge's [Authentication dashboard](https://forge.laravel.com/user/profile#/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your phone's authentication application.
+You can add Two Factor Authentication (2FA) to your account from Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your phone's authentication application.
 
 After enabling 2FA, Forge will display:
 
@@ -37,7 +37,7 @@ If you wish to downgrade to the Hobby plan, please contact support at [forge@lar
 
 ### Deleting Your Account
 
-You can delete your account at any time from the [Subscription page](https://forge.laravel.com/user/profile#/subscription).
+You can delete your account at any time from the [Authentication dashboard](https://forge.laravel.com/user-profile/authentication).
 
 :::danger Account Data
 

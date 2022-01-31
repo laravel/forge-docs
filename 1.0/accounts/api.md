@@ -12,7 +12,7 @@ You will need to generate an API token to interact with the Forge API. Tokens ar
 
 ## Deleting Tokens
 
-If you no longer need an API token, you may delete it by clicking the **X** button next to the token name within your [API token dashboard](https://forge.laravel.com/user/profile#/api).
+If you no longer need an API token, you may delete it by clicking the **X** button next to the token name within your [API token dashboard](https://forge.laravel.com/user-profile/api).
 
 ## Rate Limits
 

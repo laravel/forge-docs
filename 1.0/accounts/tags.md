@@ -6,7 +6,7 @@
 
 "Tagging" your servers and sites can make them easier to manage, especially if you have many servers / sites. Servers can be tagged via the server dashboard's **Meta** tab's **Server Metadata** section, while sites can be tagged via the site dashboard's **Meta** tab.
 
-You may delete tags and their associations from Forge's [tags dashboard](https://forge.laravel.com/user/profile#/tags).
+You may delete tags and their associations from Forge's [tags dashboard](https://forge.laravel.com/user-profile/tags).
 
 ## Searching For Tagged Servers / Sites
 

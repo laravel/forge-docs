@@ -107,7 +107,7 @@ If you would like to have access to the deployment output or execute additional 
 
 Once you have installed Forge CLI, you may execute the `forge deploy` command in your CI platform's deployment pipeline.
 
-In order to authenticate with Forge from your CI platform, you will need to add a `FORGE_API_TOKEN` environment variable to your CI build environment. You may generate an API token in your [Forge API settings dashboard](https://forge.laravel.com/user/profile#/api). In addition, your CI platform will need SSH Access to your server.
+In order to authenticate with Forge from your CI platform, you will need to add a `FORGE_API_TOKEN` environment variable to your CI build environment. You may generate an API token in your [Forge API settings dashboard](https://forge.laravel.com/user-profile/api). In addition, your CI platform will need SSH Access to your server.
 
 #### Example With GitHub Actions
 

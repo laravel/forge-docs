@@ -26,7 +26,7 @@ forge
 
 ## Authenticating
 
-You will need to generate an API token to interact with the Forge CLI. Tokens are used to authenticate your account without providing personal details. API tokens can be created from [Forge's API dashboard](https://forge.laravel.com/user/profile#/api).
+You will need to generate an API token to interact with the Forge CLI. Tokens are used to authenticate your account without providing personal details. API tokens can be created from [Forge's API dashboard](https://forge.laravel.com/user-profile/api).
 
 After you have generated an API token, you should authenticate with your Forge account using the login command:
 
