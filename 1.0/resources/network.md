@@ -39,7 +39,7 @@ You may select whether to allow or deny the traffic that matches a given rule. B
 
 :::tip Deny Rules Run First
 
-To make `deny` rules work correctly, they are added at a higher priority than `allow` rules. Each new `deny` rule will be added above any existing `deny` rules.
+To make `deny` rules work correctly, they are added at a higher priority than `allow` rules. Each new `deny` rule for IPv4 addresses will be added above any existing `deny` rules. UFW does not currently support IPv6 rules at first priority.
 :::
 
 ## Default Firewall Rules
