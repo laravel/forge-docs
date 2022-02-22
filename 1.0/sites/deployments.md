@@ -30,6 +30,12 @@ The commands that are executed on your server when your project is deployed are 
 - Installs your application's Composer dependencies
 - Execute the `php artisan migrate` command (if your application contains an `artisan` file)
 
+Your `.env` variables may also be made available to your deploy script by checking the "Make .env variables to deploy script" checkbox underneath the Deploy Script panel. When enabled, Forge will automatically inject the variables in your site's `.env` file into the deployment runtime, which can be accessed like any normal Bash variable:
+
+```sh
+echo "${APP_NAME} is deploying..."
+```
+
 :::warning Zero Downtime Deployments
 
 Deployments may make your site unavailable for a brief moment. If you need absolutely zero downtime during deployments, check out [Envoyer](https://envoyer.io).
