@@ -22,6 +22,20 @@ sudo -i
 passwd
 ```
 
+## Upgrading Composer
+
+The latest version of Composer is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the installed version of Composer. You may do so using the following command:
+
+```bash
+composer self-update --2
+```
+
+This will instruct Composer to update itself and specifically select version 2. If your application is not compatible with Composer 2, you can roll back to Composer 1 at any time:
+
+```bash
+composer self-update --1
+```
+
 ## Upgrading Nginx
 
 The latest version of Nginx is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the installed version of Nginx. You may do so using the following commands:
