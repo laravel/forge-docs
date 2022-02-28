@@ -16,9 +16,9 @@ h2
 
 /* Page
 -----------------------------------------------------------------------------*/
-@media (min-width 720px)
-  .page
-    padding-left 13.75rem
+@media (min-width 768px)
+  // .page
+  //   padding-left 13.75rem
 
   .page-edit
     // display none
@@ -30,6 +30,15 @@ h2
     padding 0
     border-top none
 
+@media (min-width 1024px)
+  .page
+    font-size: 1rem
+    padding-left 20rem
+
+@media (min-width 1536px)
+  .page
+    padding-left: 0
+
 /* Navbar
 -----------------------------------------------------------------------------*/
 .navbar
@@ -38,11 +47,7 @@ h2
   box-shadow 0 2px 4px 0 rgba(0, 0, 0, .05)
 
 .navbar .logo
-  max-width 100%
-
-@media (max-width 719px)
-    .navbar .logo
-        max-width: 90%;
+  max-width 60%
 
 .navbar .site-name
   display: none
