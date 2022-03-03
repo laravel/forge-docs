@@ -10,17 +10,21 @@ When configuring your server, Forge configures FPM so that it can be restarted w
 echo "" | sudo -S service php8.1-fpm reload
 ```
 
-## Resetting The Sudo Password
+## Resetting The `forge` User Sudo Password
 
-Forge does not store your server's sudo password and is therefore unable to reset it for you. To reset the password, you'll need to contact your server provider or use the sudo password reset facilities on the server provider's dashboard.
+Forge does not store your server's `forge` user sudo password and is therefore unable to reset it for you. To reset the `forge` user sudo password, you'll need to contact your server provider and re-again access to your server terminal as `root` user.
 
-Once the password has been reset, Forge will be unable to SSH into your machine as `root`. This prevents you from editing PHP / Nginx configuration files from the Forge UI, and will also prevent various Forge functionality from working correctly. Before Forge can access your server, you will need to SSH into your Forge server as `forge` and reset the `root` users password:
+Once you are connected to your server as `root` user, you need to run `passwd forge` to redefine the `forge` user sudo password.
 
-```bash
-ssh "forge@your-ip-address"
-sudo -i
-passwd
-```
+### Digital Ocean
+
+If your servers use Digital Ocean as its server provider, the following guidelines will assist you in resetting the `forge` user sudo password using Digital Ocean's dashboard.
+
+1. First, on Digital Ocean's dashboard, click on the server name, and under the "Access" tab click on "Reset Root Password". Usually, the operation restarts the server and sends the new `root` user sudo password to your Digital Ocean account email.
+
+2. Next, still on the "Access" tab, click on "Launch Droplet Console" to gain access to your server terminal as `root` user. Note that, in this step, you will be asked to redefine the `root` user sudo password.
+
+3. Finally, using the `root` user type `passwd forge` to redefine `forge` user sudo password.
 
 ## Upgrading Composer
 
