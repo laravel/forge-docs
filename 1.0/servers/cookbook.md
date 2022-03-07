@@ -126,43 +126,43 @@ If Forge is not able to connect to your server, you will not be able to manage i
 
 The "Too many open files" error message means that your server's operating system has reached the maximum number of "open files", and it will not allow any other running process to open any more files.
 
-While the server's default settings are good enough for most websites, you may need to tweak those settings at scale so you don't face the "Too many open files" error. Below, we share a list of steps that help you address this issue, yet proceed at your own risk, as if you are not careful with these limits, it can affect your server's performance.
+While the server's default settings are good enough for most websites, you may need to tweak these settings at scale so you don't face the "Too many open files" error. Below, we share a list of steps that help you address this issue, yet proceed at your own risk, as if you are not careful with these settings, it can affect your server's performance.
 
 1. First, ensure the maximum number of "open files" is correctly configured. Usually, the value should be about 100 for every 1MB of RAM. For example, in the case of 4G memory, the maximum number of open files can be set to `409600`.
 
-You can see the existing server’s max files running the command `sysctl fs.file-max`, and configure the existing setting adding/modifying the following line in  `/etc/sysctl.conf`:
+You can see the existing server’s maximum number of "open files" running the command `sysctl fs.file-max`, and configure the existing setting adding/modifying the following line in  `/etc/sysctl.conf`:
 
 ```
-fs.file-max = VALUE_HERE 
+fs.file-max = LIMIT_HERE 
 ```
 
 2. While the first step, sets the maximum number of "open files"  system-wide, you also need to specify the limits for each user in your server editing the `/etc/security/limits.conf` file, and adding the following lines:
 
 ```
-root soft nofile VALUE_HERE
-root hard nofile VALUE_HERE
-forge soft nofile VALUE_HERE
-forge hard nofile VALUE_HERE
+root soft nofile LIMIT_HERE
+root hard nofile LIMIT_HERE
+forge soft nofile LIMIT_HERE
+forge hard nofile LIMIT_HERE
 ```
 
 If your server contains sites in isolation, those users also need to be added to this file:
 
 ```
-isolated-user soft nofile VALUE_HERE
-isolated-user hard nofile VALUE_HERE
+isolated-user soft nofile LIMIT_HERE
+isolated-user hard nofile LIMIT_HERE
 ```
 
 3. Next, if this issue was raised from an Nginx process (very common on load balancers at scale), you will need to also add the `nginx` user to `/etc/security/limits.conf`:
 
 ```
-nginx soft nofile VALUE_HERE
-nginx hard nofile VALUE_HERE
+nginx soft nofile LIMIT_HERE
+nginx hard nofile LIMIT_HERE
 ```
 
 And, add the following directive to your  `/etc/nginx/nginx.conf` file:
 
 ```
-worker_rlimit_nofile VALUE_HERE;
+worker_rlimit_nofile LIMIT_HERE;
 ```
 
 The directive above should be at top level, and once added, you should restart the Nginx service:
@@ -170,4 +170,4 @@ The directive above should be at top level, and once added, you should restart t
 service nginx restart
 ```
 
-4. Finally, if this section doesn't address your issue, consider reaching your server provider support, as they can better advise you with performance and OS-level optimizations.
+4. Finally, if you still face the issue even after following the steps above, consider reaching your server provider support, as they can better advise you with performance and OS-level optimizations.
