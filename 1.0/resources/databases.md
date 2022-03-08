@@ -32,7 +32,7 @@ To reset the `root` and `forge` database user passwords, you may use the passwor
 
 :::danger Manually Changing The Root Password
 
-You should not change the `root` or `forge` database user passwords manually or outside of the Forge dashboard. Doing so will prevent Forge from being able to connect to or manage your database.
+You should not change the `root` or `forge` database user passwords manually or outside the Forge dashboard. Doing so will prevent Forge from being able to connect to or manage your database.
 :::
 
 ## Connecting To Databases Via A GUI Client
