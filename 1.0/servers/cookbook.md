@@ -122,21 +122,19 @@ grep 'sshd' /var/log/auth.log | tail -n 10
 If Forge is not able to connect to your server, you will not be able to manage it through the Forge dashboard until connectivity is restored.
 :::
 
-## "Too many open files" error
+## "Too Many Open Files" Error
 
-The "Too many open files" error message means that your server's operating system has reached the maximum number of "open files", and it will not allow any other running process to open any more files.
+If you are receiving an error stating that your server has "too many open files", you likely need to increase the maximum amount of file descriptors that your operating system is configured to allow at a given time. This may be particularly true if your server will be handling a very large number of incoming web requests.
 
-While the server's default settings are good enough for most websites, you may need to tweak these settings at scale so you don't face the "Too many open files" error. Below, we share a list of steps that help you address this issue, yet proceed at your own risk, as if you are not careful with these settings, it can affect your server's performance.
+First, ensure the maximum number of "open files" is correctly configured based on the size of your server. Usually, the maximum number of open files allowed by the operating system should be about 100 files for every 1MB of RAM. For example, if your server has 4GB memory, the maximum number of open files can safely be set to `409600`.
 
-1. First, ensure the maximum number of "open files" is correctly configured. Usually, the value should be about 100 for every 1MB of RAM. For example, in the case of 4G memory, the maximum number of open files can be set to `409600`.
-
-You can see the existing server’s maximum number of "open files" running the command `sysctl fs.file-max`, and configure the existing setting adding/modifying the following line in  `/etc/sysctl.conf`:
+You can determine how many files your operating system currently allows to be opened at once by running the `sysctl fs.file-max` command. You can configure the existing setting by adding or modifying the following line in `/etc/sysctl.conf`:
 
 ```
 fs.file-max = LIMIT_HERE 
 ```
 
-2. While the first step, sets the maximum number of "open files"  system-wide, you also need to specify the limits for each user in your server editing the `/etc/security/limits.conf` file, and adding the following lines:
+While the instructions above set the maximum number of "open files" system-wide, you also need to specify these limits for each server user by editing the `/etc/security/limits.conf` file and adding the following lines:
 
 ```
 root soft nofile LIMIT_HERE
@@ -145,29 +143,28 @@ forge soft nofile LIMIT_HERE
 forge hard nofile LIMIT_HERE
 ```
 
-If your server contains sites in isolation, those users also need to be added to this file:
+Of course, if your server contains additional users due to the use of "site isolation", those users also need to be added to the `/etc/security/limits.conf` file:
 
 ```
 isolated-user soft nofile LIMIT_HERE
 isolated-user hard nofile LIMIT_HERE
 ```
 
-3. Next, if this issue was raised from an Nginx process (very common on load balancers at scale), you will need to also add the `nginx` user to `/etc/security/limits.conf`:
+Additionally, if the "too many open files" error was triggered by an Nginx process (very common on load balancers at scale), you will need to also add the `nginx` user to `/etc/security/limits.conf`:
 
 ```
 nginx soft nofile LIMIT_HERE
 nginx hard nofile LIMIT_HERE
 ```
 
-And, add the following directive to your  `/etc/nginx/nginx.conf` file:
+And, add the following directive to your server's `/etc/nginx/nginx.conf` file:
 
 ```
 worker_rlimit_nofile LIMIT_HERE;
 ```
 
-The directive above should be at top level, and once added, you should restart the Nginx service:
+You should restart the Nginx service once this directive has been added to your Nginx configuration file:
+
 ```
 service nginx restart
 ```
-
-4. Finally, if you still face the issue even after following the steps above, consider reaching your server provider support, as they can better advise you with performance and OS-level optimizations.
