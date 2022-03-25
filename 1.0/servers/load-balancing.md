@@ -14,7 +14,7 @@ The key differences between a Forge application server and a load balancer are:
 
 ## Creating Load Balancers
 
-When provisioning a new server, select the **Provision As Load Balancer** option. Once provisioning has completed, you can now create a load balanced site. The site name / domain should match the name of the corresponding site on the servers that will be receiving the traffic.
+When provisioning a new server, select the **Load Balancer** type. Once provisioning has completed, you can now create a load balanced site. The site name / domain should match the name of the corresponding site on the servers that will be receiving the traffic.
 
 Once you have added the site to your server, Forge will ask you to select the servers you wish to balance traffic across. The list of servers will include all of the servers in the same private network as the load balancer.
 
