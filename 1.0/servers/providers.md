@@ -66,3 +66,5 @@ In addition, you should review the following server requirements:
 - The server requirements **must meet** the following criteria or more: 1 CPU Core with 1GHz, 1GB RAM, and 25GB Disk space.
 
 Please refer to the [Forge IP address documentation](/1.0/introduction.html#forge-ip-addresses) if you restrict SSH access to your server by IP addresses.
+
+If you are protecting your internal network through Network Address Translation and you are mapping public SSH ports to different internal SSH ports, you may let Forge know about this by checking the **This server is behind a NAT** checkbox. This will show an extra input field, **NAT SSH Port**, that you can use to tell Forge about the SSH port to which SSH traffic is mapped. Forge will use this port to allow traffic into the server via `ufw`. If the internal SSH port is the same as the public SSH port, you **may** leave the **NAT SSH Port** field empty.
