@@ -8,7 +8,7 @@ Laravel Forge is a server management and application deployment service. Forge t
 
 We live and breath PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as NodeJS.
 
-After connecting to your preferred [server provider](http://localhost:8080/docs/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](https://forge.laravel.com/docs/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having the following services configured for you to hit the ground running:
+After connecting to your preferred [server provider](http://localhost:8080/docs/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](https://forge.laravel.com/docs/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running:
 
 - Nginx
 - PHP
