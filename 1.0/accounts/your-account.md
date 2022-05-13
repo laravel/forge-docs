@@ -40,6 +40,10 @@ You can delete your account at any time from the [Authentication dashboard](http
 Deleting your account will cancel your subscription and delete all of your account's data. **Your data, including billing information, will not be recoverable**; however, your servers will not be deleted from your connected server providers.
 :::
 
+### Sharing You Account's Servers With Other Users
+
+If you need to allow other users to help manage the servers in your Forge account, you can create a <a href="http://localhost:8080/docs/1.0/accounts/circles.html">Circle</a>.
+
 ## Billing
 
 ### Receiving Invoices via Email
