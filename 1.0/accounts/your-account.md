@@ -42,7 +42,7 @@ Deleting your account will cancel your subscription and delete all of your accou
 
 ### Sharing You Account's Servers With Other Users
 
-If you need to allow other users to help manage the servers in your Forge account, you can create a <a href="http://localhost:8080/docs/1.0/accounts/circles.html">Circle</a>.
+If you need to allow other users to help manage the servers in your Forge account, you can create a <a href="https://forge.laravel.com/docs/1.0/accounts/circles.html">Circle</a>.
 
 ## Billing
 
