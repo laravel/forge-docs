@@ -1,15 +1,14 @@
 body
-  background-color #eef1f4
   font-family "Nunito"
 
 /* Headings
 -----------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6
-  font-weight 300
+  color $headerTextColor
+  font-weight 700
 
 h1
-  padding-bottom 16px
-  border-bottom 2px solid rgba(0, 0, 0, 0.05)
+  font-weight 900
 
 h2
   border-bottom 0
@@ -17,12 +16,6 @@ h2
 /* Page
 -----------------------------------------------------------------------------*/
 @media (min-width 768px)
-  // .page
-  //   padding-left 13.75rem
-
-  .page-edit
-    // display none
-
   .page-nav
     padding 0
 
@@ -43,8 +36,6 @@ h2
 -----------------------------------------------------------------------------*/
 .navbar
   z-index 500
-  border-bottom none
-  box-shadow 0 2px 4px 0 rgba(0, 0, 0, .05)
 
 .navbar .logo
   max-width 60%
@@ -57,64 +48,13 @@ h2
 
 /* Sidebar
 -----------------------------------------------------------------------------*/
-/*
-#app
-  .sidebar
-    width 14rem
-    border-right none
-    background-color transparent
-    background-image linear-gradient(0deg, #7e8ea1 0%, #3c4655 100%)
-
-  .sidebar-heading
-    padding 0 1.4rem
-    margin-bottom: 0.5rem
-
-  .sidebar-group:not(.first)
-    margin-top: 0rem
-
-  .sidebar-group:not(.collapsable) .sidebar-heading,
-  .sidebar-heading
-    text-transform uppercase
-    letter-spacing 0.13rem
-    font-size 12px
-    font-weight 800
-    color #C1CDDB
-
-  a.sidebar-link
-    color #fff
-    border-left 0.125rem solid transparent
-
-  a.sidebar-link:hover
-    color #fff
-    opacity 0.5
-    border-left-color rgba(255, 255, 255, 0.7)
-
-  a.sidebar-link:active
-    color #fff
-    opacity 0.7
-    border-left-color rgba(255, 255, 255, 0.5)
-
-  a.sidebar-link.active
-    color #fff
-    border-left-color rgba(255, 255, 255, 0.5)
-
-  .sidebar-group a.sidebar-link
-    padding-left 1.5rem
-
-  @media (max-width 959px)
-    .sidebar .nav-links
-      border-bottom 2px solid rgba(255, 255, 255, 0.1)
-
-  @media (max-width 719px)
-    .nav-links a.nav-link, .nav-links a.repo-link
-      color #fff
-*/
-/* Sidebar ul, li, a, div spacing
------------------------------------------------------------------------------*/
 .sidebar-links
   > li:last-child
     margin 0
     margin-bottom: 2rem
+
+.sidebar .sidebar-group:not(.collapsable) .sidebar-heading:not(.clickable)
+    color $headerTextColor
 
 /* Icons
 -----------------------------------------------------------------------------*/
@@ -183,10 +123,6 @@ h6 .header-anchor:hover
 
 /* Prev/Next Links
 -----------------------------------------------------------------------------*/
-// @require './override'
-
-$tipColor = #A48CD3
-
 .prev, .next
   color $accentColor
 
@@ -236,7 +172,7 @@ div[class*="language-"]
   background-color white
   -webkit-font-smoothing subpixel-antialiased
   -moz-osx-font-smoothing subpixel-antialiased
-  box-shadow 0 2px 4px 0 rgba(0, 0, 0, .05)
+  box-shadow rgba(0, 0, 0, 0.15) 0px 10px 40px 0px
 
 .theme-default-content pre, .theme-default-content pre[class*="language-"]
   line-height 1.7
