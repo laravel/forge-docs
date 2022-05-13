@@ -2,38 +2,34 @@
 
 [[toc]]
 
-## Updating Your Profile Information
+## User Account
 
-You may update your name, email, and password from the Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication) within your user profile.
+### Updating Your Profile Information
 
-## Securing Your Account With Two Factor Authentication
+You may update your name, email, and password from Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication) within your user profile.
 
-You can add Two Factor Authentication (2FA) to your account from Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your phone's authentication application.
+### Securing Your Account With Two Factor Authentication
 
-After enabling 2FA, Forge will display:
+You may add additional security to your user account by setting up Two Factor Authentication (2FA) via Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your authentication app, such as <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>.
 
-- A QR code (which you should scan)
+When enabling 2FA, Forge will display:
+
+- A QR code to can with your authentication app
 - A security code (if you can't scan the QR code)
 - Several recovery codes
 
-The recovery codes should be stored securely and can be used if you no longer have access to your 2FA device. Recovery codes can only be used once. You may re-generate the recovery codes at any time from your account's dashboard.
+The recovery codes should be stored securely and can be used if you no longer have access to your 2FA device, thus it is recommended to not store your recovery codes exclusively on the device that you use for 2FA. Each recovery code can only be used once. You may re-generate the recovery codes at any time from your account's dashboard.
 
-If you have configured 2FA on your account and lose access to your secure token, you will need to email [forge@laravel.com](mailto:forge@laravel.com) to reset it by confirming your identity.
+If you have configured 2FA on your account and lose access to your it and your recovery codes, you will need to email [forge@laravel.com](mailto:forge@laravel.com) to reset it by confirming your identity.
 
 :::tip Using 2FA
 
 We recommend using the [Google Authenticator](https://support.google.com/accounts/answer/1066447) application on your smartphone to manage your Forge 2FA configuration.
 :::
 
-## Billing
+### Managing Authenticated Sessions
 
-### Business Receipts
-
-If you need to add specific contact or tax information to your receipts such as your full business name, VAT identification number, or address of record you can add extra Billing Information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
-
-### Downgrading To The Hobby Plan
-
-If you wish to downgrade to the Hobby plan, please contact support at [forge@laravel.com](mailto:forge@laravel.com). You must have only one server (including archived servers) before submitting a request to downgrade to the Hobby plan.
+To improve your account security, we allow you via the [Authentication dashboard](https://forge.laravel.com/user-profile/authentication) to view and logout any active sessions for your user account. This is handy if you forgot to logout on a device you no longer have access to.
 
 ### Deleting Your Account
 
@@ -43,3 +39,21 @@ You can delete your account at any time from the [Authentication dashboard](http
 
 Deleting your account will cancel your subscription and delete all of your account's data. **Your data, including billing information, will not be recoverable**; however, your servers will not be deleted from your connected server providers.
 :::
+
+## Billing
+
+### Receiving Invoices via Email
+
+Specifying the email addresses you would like to receive new invoices can be done in the [Billing Management](https://forge.laravel.com/billing) page. You may specify several addresses in a comma separated list.
+
+### Accessing Previous Invoices
+
+The [Billing Management](https://forge.laravel.com/billing) page list all previous invoices for you account. At any point you are can download a PDF version of your invoices.
+
+### Business Receipts
+
+If you need to add specific contact or tax information to your receipts such as your full business name, VAT / tax identification number, or address of record you can add extra Billing Information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
+
+### Downgrading To The Hobby Plan
+
+If you wish to downgrade to the Hobby plan, please contact support at [forge@laravel.com](mailto:forge@laravel.com). You must have only one server (including archived servers) before submitting a request to downgrade to the Hobby plan.
