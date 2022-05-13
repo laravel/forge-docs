@@ -4,7 +4,7 @@
 
 ## What is Forge?
 
-Laravel Forge is a server management and application deployment service. Forge takes the pain and hassle out of deploying servers and can be used to launch your next website. Whether your app is built with a framework such as <a href="https://github.com/laravel/laravel">Laravel</a>, <a href="https://github.com/symfony/symfony">Symfony</a>, <a href="https://statamic.com/">Statamic</a>, <a href="https://github.com/WordPress/WordPress">WordPress</a> or is just a vanilla PHP application - Forge has you covered.
+Laravel Forge is a server management and application deployment service. Forge takes the pain and hassle out of deploying servers and can be used to launch your next website. Whether your app is built with a framework such as <a href="https://github.com/laravel/laravel">Laravel</a>, <a href="https://github.com/symfony/symfony">Symfony</a>, <a href="https://statamic.com/">Statamic</a>, <a href="https://github.com/WordPress/WordPress">WordPress</a> or is just a vanilla PHP application - Forge is the solution for you.
 
 We live and breath PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as NodeJS.
 
