@@ -1,6 +1,5 @@
 module.exports = {
     title: "Laravel Forge",
-    description: "Laravel Hosting & Instant PHP Servers",
     base: '/docs/',
 
     plugins: [
