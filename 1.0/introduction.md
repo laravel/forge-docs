@@ -34,7 +34,7 @@ Forge's documentation is completely [open source](https://github.com/laravel/for
 
 ## Forge IP Addresses
 
-If you are restricting SSH access to your server using IP allow lists, you should allow the following IP addresses:
+In order to provision and communicate with your servers, Forge requires SSH access to them. If you have set up your servers to restrict SSH access using IP allow lists, you must allow the following Forge IP addresses:
 
 - `159.203.161.246`
 - `159.203.163.240`
@@ -42,7 +42,7 @@ If you are restricting SSH access to your server using IP allow lists, you shoul
 
 You can also access the IP addresses via the following URL: [https://forge.laravel.com/ips-v4.txt](https://forge.laravel.com/ips-v4.txt). This is particulary useful if you intend on automating your network or firewall infrastructure.
 
-Your server should also allow incoming and outgoing traffic from `forge.laravel.com`.
+If you are restricting HTTP traffic, your server must also allow incoming and outgoing traffic from `forge.laravel.com`.
 
 :::warning IP Address Changes
 
