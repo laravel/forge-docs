@@ -29,7 +29,7 @@ We recommend using the [Google Authenticator](https://support.google.com/account
 
 ### Managing Authenticated Sessions
 
-To improve your account security, we allow you via the [Authentication dashboard](https://forge.laravel.com/user-profile/authentication) to view and logout any active sessions for your user account. This is handy if you forgot to logout on a device you no longer have access to.
+To improve your account security, we allow you to view and logout any active sessions for your user account via the [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). This is particularly useful if you forgot to logout on a device you no longer have access to.
 
 ### Deleting Your Account
 
@@ -40,7 +40,7 @@ You can delete your account at any time from the [Authentication dashboard](http
 Deleting your account will cancel your subscription and delete all of your account's data. **Your data, including billing information, will not be recoverable**; however, your servers will not be deleted from your connected server providers.
 :::
 
-### Sharing You Account's Servers With Other Users
+### Sharing Your Account's Servers With Other Users
 
 If you need to allow other users to help manage the servers in your Forge account, you can create a <a href="https://forge.laravel.com/docs/1.0/accounts/circles.html">Circle</a>.
 
@@ -48,15 +48,15 @@ If you need to allow other users to help manage the servers in your Forge accoun
 
 ### Receiving Invoices via Email
 
-Specifying the email addresses you would like to receive new invoices can be done in the [Billing Management](https://forge.laravel.com/billing) page. You may specify several addresses in a comma separated list.
+Specifying the email addresses you would like to receive new invoices can be done in Forge's [Billing Management](https://forge.laravel.com/billing) page. You may specify several email addresses by providing a comma separated list.
 
 ### Accessing Previous Invoices
 
-The [Billing Management](https://forge.laravel.com/billing) page list all previous invoices for you account. At any point you are can download a PDF version of your invoices.
+The [Billing Management](https://forge.laravel.com/billing) page list all previous invoices for you account.
 
 ### Business Receipts
 
-If you need to add specific contact or tax information to your receipts such as your full business name, VAT / tax identification number, or address of record you can add extra Billing Information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
+If you need to add specific contact or tax information to your receipts such as your full business name, VAT / tax identification number, or address of record, you can add this extra billing information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
 
 ### Downgrading To The Hobby Plan
 
