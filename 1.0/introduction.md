@@ -10,19 +10,19 @@ We live and breath PHP here at Forge, but Forge is also ready to handle other te
 
 After connecting to your preferred [server provider](http://localhost:8080/docs/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](https://forge.laravel.com/docs/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
 
-- Nginx
-- PHP
-- MySQL / Postgres / MariaDB (if selected)
+- Nginx web server
+- <a href="https://forge.laravel.com/docs/1.0/servers/php.html">PHP</a> (multiple version support)
+- <a href="https://forge.laravel.com/docs/1.0/resources/databases.html">Database</a> (MySQL, Postgres, or MariaDB)
 - Logrotate
-- UFW Firewall
-- OPcache
-- Memcached
-- Redis
+- <a href="https://forge.laravel.com/docs/1.0/resources/network.html#firewalls">UFW Firewall</a>
+- <a href="https://forge.laravel.com/docs/1.0/servers/php.html#opcache">OPcache</a>
+- <a href="https://forge.laravel.com/docs/1.0/resources/caches.html">Memcached</a>
+- <a href="https://forge.laravel.com/docs/1.0/resources/caches.html">Redis</a>
 - MeiliSearch
 - Automatic Security Updates
-- And more!
+- And much more!
 
-In addition, Forge can assist you in managing scheduled jobs, queue workers, SSL certificates, and more. After a server has provisioned, you can then deploy your PHP / Laravel applications or WordPress applications using the Forge UI dashboard.
+In addition, Forge can assist you in managing <a href="https://forge.laravel.com/docs/1.0/resources/scheduler.html">scheduled jobs</a>, <a href="https://forge.laravel.com/docs/1.0/sites/queues.html">queue workers</a>, <a href="https://forge.laravel.com/docs/1.0/sites/ssl.html">TLS/SSL certificates</a>, and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
 
 ## Learning More
 
