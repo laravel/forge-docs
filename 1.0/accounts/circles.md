@@ -47,9 +47,9 @@ When deleting a circle, members will no longer be able to access shared servers 
 
 ## Accepting a Circle invite
 
-When you are invited to a Circle you will receive an email with a link. You must use this link to accept the invite.
+After being invited to a Circle, you will receive an email with a link that you may use to accept an invite.
 
-If you would like to see any pending Circle invitations you have, you may visit the [Circle dashboard](https://forge.laravel.com/circles) and see them listed under "Pending invites". Remember to check your email inbox in order to accept the invite.
+If you would like to see any pending Circle invitations you have, you may visit the [Circle dashboard](https://forge.laravel.com/circles) and see the invitations listed under "Pending invites".
 
 ## Leaving a Circle
 
