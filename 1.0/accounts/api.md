@@ -8,7 +8,7 @@ Forge provides a comprehensive API that allows you to programmatically manage yo
 
 ## Create API Token
 
-You will need to generate an API token to interact with the Forge API. Tokens are used to authenticate your account without providing personal details. You can create as many tokens as you need for your individual integrations. API tokens can be created from Forge's [API dashboard](https://forge.laravel.com/user/profile#/api).
+You will need to generate an API token to interact with the Forge API. Tokens are used to authenticate your account without providing personal details. You can create as many tokens as you need for your individual integrations. API tokens can be created from Forge's [API dashboard](https://forge.laravel.com/user-profile/api).
 
 ## Deleting Tokens
 
