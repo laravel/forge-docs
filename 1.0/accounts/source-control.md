@@ -2,18 +2,23 @@
 
 [[toc]]
 
+## Introduction
+
+Source providers allow Forge to access your project's codebase to help you easily deploy your applications. Forge supports most popular Git providers as well as custom / self-hosted options.
+
+
 ## Supported Providers
 
 Forge currently supports the following source control providers:
 
-- GitHub
-- GitLab
-- Bitbucket
+- [GitHub](https://github.com/)
+- [GitLab](https://about.gitlab.com/) (hosted and self-hosted)
+- [Bitbucket](https://bitbucket.org/)
 - Custom Git Repositories
 
 ### Using A Custom Git Provider
 
-If your Git Provider is not a first-party provider, then you may use the **Custom** option when installing your repository.
+If your Git Provider is not a first-party provider, then you may use the **Custom** option when creating a new site on your server.
 
 First, choose the `Custom` option when creating your Git based site. Next, add the generated SSH key to your source control provider and provide the full repository path (`git@provider.com:user/repository.git`).
 
@@ -21,7 +26,7 @@ First, choose the `Custom` option when creating your Git based site. Next, add t
 
 ### Connecting Providers
 
-You can connect to any of the supported source control providers at any time through Forge's Source Control dashboard within your Forge account profile.
+You can connect to any of the supported source control providers at any time through Forge's [Source Control dashboard](https://forge.laravel.com/user-profile/source-control) within your Forge account profile.
 
 ### Unlinking Providers
 
