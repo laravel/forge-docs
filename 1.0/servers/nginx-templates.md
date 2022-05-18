@@ -4,7 +4,7 @@
 
 ## Overview
 
-Nginx templates allow you to customize the Nginx site configuration that Forge uses when creating your new site. It is not possible to change the Nginx template after a site has been created.
+Nginx templates allow you to customize the Nginx site configuration that Forge uses when creating your new site.
 
 :::warning Broken Nginx Templates May Cause Downtime
 
