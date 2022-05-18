@@ -31,4 +31,4 @@ We take security very seriously and ensure that we do everything we can to prote
 
 Security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built in to the operating system.
 
-Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
+Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade. However it is possible to [install new versions](https://forge.laravel.com/docs/1.0/servers/php.html#multiple-php-versions) and [patch existing versions of PHP](https://forge.laravel.com/docs/1.0/servers/php.html#updating-php-between-patch-releases) manually via the Forge UI.
