@@ -23,7 +23,7 @@ You can choose to backup your databases to:
 4. [OVH Cloud](https://www.ovhcloud.com/en/public-cloud/object-storage/)
 5. Custom (S3 Compatible)
 
-For Amazon S3,DigitalOcean Spaces, Scaleway, and OVH Cloud storage providers you need to provide Forge with:
+For Amazon S3, DigitalOcean Spaces, Scaleway, and OVH Cloud storage providers you need to provide Forge with:
 
 - The region your backup should be stored in (`eu-west-2`, `nyc3` etc..)
 - The name of the storage "bucket"
