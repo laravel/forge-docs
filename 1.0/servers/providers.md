@@ -21,7 +21,7 @@ If your preferred server provider is not supported by Forge, you may use Forge's
 
 ### Linking Server Providers
 
-You can link server providers from your [Server Providers dashboard](https://forge.laravel.com/user-profile/server-providers). It is possible to link any number of supported provider accounts, including multiple accounts from the one provider.
+You can link server providers from your [Server Providers dashboard](https://forge.laravel.com/user-profile/server-providers). It is possible to link any number of supported provider accounts, including multiple accounts for one provider.
 
 ### Amazon AWS API Access
 
