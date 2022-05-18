@@ -105,13 +105,13 @@ Application servers are designed include everything you need to deploy a typical
 
 - PHP
 - Nginx
-- MySQL / Postgres (if selected)
+- MySQL / Postgres / MariaDB (if selected)
 - Redis
 - Memcached
 - Node.js
 - Supervisor
 
-Application servers are the most typical type of server provisioned on Laravel Forge. If your unsure which server type you need, most likely you should provision an application server.
+Application servers are the most typical type of server provisioned on Laravel Forge. If your unsure which server type you need, most likely you should provision an application server. As you need to scale your application, you may look at provisioning dedicated servers for services such as your database or caching, but starting with an App server is recommended.
 
 ### Web Servers
 
@@ -124,7 +124,7 @@ Web servers contain the web server software you need to deploy a typical Laravel
 
 ### Database Servers
 
-Database servers are intended to function as dedicated MySQL / Postgres servers for your application. These servers are meant to be accessed by a dedicated application or web server via Forge's [network management features](./../resources/network.md). Database servers are provisioned with the following software, based on your selections during the server's creation:
+Database servers are intended to function as dedicated MySQL / Postgres / MariaDB servers for your application. These servers are meant to be accessed by a dedicated application or web server via Forge's [network management features](./../resources/network.md). Database servers are provisioned with the following software, based on your selections during the server's creation:
 
 - MySQL, MariaDB, or PostgreSQL
 
@@ -144,10 +144,12 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 
 ### MeiliSearch Servers
 
-MeiliSearch servers only [MeiliSearch](https://meilisearch.com). They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
+MeiliSearch servers install [MeiliSearch](https://meilisearch.com) to provide a blazingly fast search service to your application. They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
 
-A MeiliSearch server will only display and manage one Site resource. You cannot create or delete other sites on this server. When connecting to the MeiliSearch server from a web or application server, you should connect to it via its private IP address.
+A MeiliSearch server will only display and manage one [Site](https://forge.laravel.com/docs/1.0/sites/the-basics.html). You cannot create or delete other sites on this server. When connecting to the MeiliSearch server from a web or application server, you should connect to it via its private IP address.
 
 ### Load Balancers
 
 Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balancers use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
+
+Once provisioned you may [configure your load balancer](https://forge.laravel.com/docs/1.0/servers/load-balancing.html) to meet your needs.
