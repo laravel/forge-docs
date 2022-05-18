@@ -21,9 +21,19 @@ Forge provides a few variables that can be used to make your recipe more dynamic
 <div v-pre>
 
 - `{{server_id}}` - The ID of the server that the recipe is running on
+- `{{server_name}}` - The name of the server that the recipe is running on
 - `{{ip_address}}` - The public IP address of the server
 - `{{private_ip_address}}` - The private IP address of the server
 - `{{username}}` - The server user who is running the script
+- `{{db_password}}` - The database password for the server the script is running on
+- `{{server_type}}` - The type of the server that the recipe is running on, i.e. one of the following...
+  - `"app"`
+  - `"cache"`
+  - `"database"`
+  - `"loadbalancer"`
+  - `"meilisearch"`
+  - `"web"`
+  - `"worker"`
 
 </div>
 
