@@ -16,6 +16,8 @@ When creating a new site on your Forge server, a variety of configuration option
 
 **PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
 
+**Nginx Template**: If you have configured any [Nginx Templates](/1.0/servers/nginx-templates.html) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
+
 **Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
 
 **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
@@ -24,7 +26,7 @@ When creating a new site on your Forge server, a variety of configuration option
 
 ## Apps / Projects
 
-Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a Git repository, WordPress, or phpMyAdmin.
+Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a [Git repository](/1.0/sites/the-basics.html#git-repository), [WordPress](/1.0/sites/the-basics.html#wordpress), or [phpMyAdmin](/1.0/sites/the-basics.html#phpmyadmin). 
 
 ### Git Repository
 
@@ -100,7 +102,7 @@ server {
 
     ssl_protocols TLSv1.2 TLSv1.3;
     # ssl_ciphers XXXXXXX
-    ssl_prefer_server_ciphers on;
+    ssl_prefer_server_ciphers off;
     ssl_dhparam /etc/nginx/dhparams.pem;
 
     add_header X-Frame-Options "SAMEORIGIN";
