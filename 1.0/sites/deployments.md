@@ -4,7 +4,7 @@
 
 ## Overview
 
-A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, and how long it took to be deployed.
+A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, how long it took to be deployed, and also view the output of your [deploy script](/1.0/sites/deployments.html#deploy-script).
 
 ### Environments
 
