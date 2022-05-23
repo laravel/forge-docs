@@ -42,7 +42,7 @@ By default, database connections require SSH key authentication and are not able
 
 When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the [TablePlus](https://tableplus.com) database client:
 
-<img src="./img/db-gui.png" alt="Connecting with database with TablePlus" width="612" height="752">
+<img src="./img/db-gui.png" alt="Connecting to a database with TablePlus" width="612" height="752">
 
 ### Using the Database Connection URL
 
