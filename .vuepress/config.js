@@ -25,6 +25,10 @@ module.exports = {
     ],
 
     themeConfig: {
+        repo: 'laravel/forge-docs',
+        editLinks: true,
+        editLinkText: 'Edit this page on GitHub',
+
         logo: '/assets/img/logo.svg',
         displayAllHeaders: false,
         activeHeaderLinks: false,
