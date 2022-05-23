@@ -18,6 +18,12 @@ When creating a new daemon you need to provide Forge with the following informat
 
 **Processes:** This option determines how many instances of the process should be kept running.
 
+**Start Seconds**: The total number of seconds the program must stay running in order to consider the start successful.
+
+**Stop Seconds**: The number of seconds Supervisor will allow for the daemon to gracefully stop before forced termination.
+
+**Stop Signal**: The signal used to kill the program when a stop is requested.
+
 ## Log Files
 
 Forge automatically configures your daemon to write to its own log file. Logs can be found within the `/home/forge/.forge/` directory. Log files are named `daemon-*.log`.
