@@ -4,16 +4,17 @@
 
 ## Overview
 
-When provisioning a new Forge server you may choose to install a database server. You can then use the Forge dashboard to manage databases, users, and permissions.
+When provisioning a new Forge server you may choose to install an [App Server](/1.0/servers/types.html#app-servers) or a [Database Server](/1.0/servers/types.html#database-servers). You can then use the Forge dashboard to manage databases, users, and permissions.
 
 ## Creating Servers With Databases
 
 When creating a new server, you can select to install a supported database server:
 
 - MySQL (8.0)
-- MariaDB (10.3)
+- MariaDB (10.6)
 - PostgreSQL (12)
 - PostgreSQL (13)
+- PostgreSQL (14)
 
 As part of the provisioning process, Forge will automatically install the selected database server and create a default `forge` database, `forge` user, and a secure, randomly-generated password. The database password will be shown upon creating the server alongside the root password. These passwords will also be emailed to you.
 
