@@ -4,7 +4,7 @@
 
 ## Overview
 
-When provisioning a server, Forge will automatically install Memcache and Redis. By default, neither of these services are exposed to the public and may only be accessed from within your server.
+When provisioning an [App Server](/1.0/servers/types.html#app-servers) or a [Cache Server](/1.0/servers/types.html#cache-servers), Forge will automatically install [Memcache](https://www.memcached.org/) and [Redis](https://redis.io/). By default, neither of these services are exposed to the public and may only be accessed from within your server.
 
 ## Connecting To Redis
 
@@ -21,4 +21,6 @@ REDIS_PORT=6379
 
 ## External Connections
 
-All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI client or other external client to connect to your cache instance, you will need to use SSH authentication. When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**.
+All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when selecting the SSH key to use during authentication, ensure that you select your private SSH key. For example, when connecting to Redis using the [TablePlus](https://tableplus.com/) database client:
+
+<img src="./img/redis-gui.png" alt="Connecting to Redis with TablePlus" height="727" width="612">
