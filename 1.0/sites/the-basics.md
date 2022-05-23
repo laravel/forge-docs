@@ -81,9 +81,9 @@ When you initially provision a Forge server, Forge creates a single site on the 
 
 When you are ready to transition your application to an official domain name, you may rename the site in the **Meta** tab of the site's management panel. After renaming the site, you will no longer be able to access it using the server's IP address. After renaming the site, you should add a DNS `A` record for the domain that points to your server's IP address.
 
-### Default Nginx Template
+### Nginx Configuration
 
-Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard:
+Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard.
 
 ```nginx
 # FORGE CONFIG (DO NOT REMOVE!)
@@ -143,6 +143,8 @@ server {
 # FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/your-domain.com/after/*;
 ```
+
+Once your site has been created, you may edit the Nginx configuration on a site-by-site basis. This is done by accessing the **Edit Files** drop down at the top right of the site management panel and using the **Edit Nginx Configuration** action.
 
 ## PHP Version
 
