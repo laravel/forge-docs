@@ -1,7 +1,6 @@
 ---
 canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/cli.html'
 ---
-# Circles
 # CLI
 
 [[toc]]
