@@ -1,10 +1,13 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/nginx-templates.html'
+---
 # Nginx Templates
 
 [[toc]]
 
 ## Overview
 
-Nginx templates allow you to customize the Nginx site configuration that Forge uses when creating your new site. It is not possible to change the Nginx template after a site has been created.
+Nginx templates allow you to customize the Nginx site configuration that Forge uses when creating your new site.
 
 :::warning Broken Nginx Templates May Cause Downtime
 
@@ -26,29 +29,20 @@ Forge provides several variables that can be used within your templates to dynam
 
 | Variable | Description |
 | -------- | ----------- |
-| `DIRECTORY` | The site's configured web directory, e.g. `/public` |
-| `DOMAINS` | The site's configured domains to respond to, e.g. `laravel.com alias.laravel.com` |
-| `PATH` | The site's web accessible directory, e.g. `/home/forge/laravel.com/public` |
-| `PORT` | The IPv4 port the site should listen to (`:80`). If the site name is `default`, this variable will also contain `default_server` |
-| `PORT_V6` | The IPV6 port to listen to (`[::]:80`). If the site name is `default`, this variable will also contain `default_server` |
-| `PROXY_PASS` | The PHP socket to listen on, e.g. `unix:/var/run/php/php8.0-fpm.sock` |
-| `ROOT_PATH` | The root of the configured site, e.g. `/home/forge/laravel.com` |
-| `SERVER_PUBLIC_IP` | The public IP address of the server |
-| `SERVER_PRIVATE_IP` | The private IP address of the server, if available |
-| `SITE` | The site's name, e.g. `laravel.com`. This differs from `DOMAINS` in that it does not include site aliases. |
-| `SITE_ID` | The site's ID, e.g. `12345` |
-| `USER` | The site's user, e.g. `forge` |
+| `{{DIRECTORY}}` | The site's configured web directory, e.g. `/public` |
+| `{{DOMAINS}}` | The site's configured domains to respond to, e.g. `laravel.com alias.laravel.com` |
+| `{{PATH}}` | The site's web accessible directory, e.g. `/home/forge/laravel.com/public` |
+| `{{PORT}}` | The IPv4 port the site should listen to (`:80`). If the site name is `default`, this variable will also contain `default_server` |
+| `{{PORT_V6}}` | The IPV6 port to listen to (`[::]:80`). If the site name is `default`, this variable will also contain `default_server` |
+| `{{PROXY_PASS}}` | The PHP socket to listen on, e.g. `unix:/var/run/php/php8.0-fpm.sock` |
+| `{{ROOT_PATH}}` | The root of the configured site, e.g. `/home/forge/laravel.com` |
+| `{{SERVER_PUBLIC_IP}}` | The public IP address of the server |
+| `{{SERVER_PRIVATE_IP}}` | The private IP address of the server, if available |
+| `{{SITE}}` | The site's name, e.g. `laravel.com`. This differs from `{{DOMAINS}}` in that it does not include site aliases. |
+| `{{SITE_ID}}` | The site's ID, e.g. `12345` |
+| `{{USER}}` | The site's user, e.g. `forge` |
 
-The variables above may be used by wrapping them in double "curly braces". All of the following examples are examples of valid variable usage:
-
-<div v-pre>
-
-- `{{ PORT }}`
-- `{{PORT}}`
-- `{{ port }}`
-- `{{port}}`
-
-</div>
+When using these variables, you should ensure that they exactly match the syntax shown above.
 
 ## Managing Templates
 

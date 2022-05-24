@@ -1,10 +1,13 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/deployments.html'
+---
 # Deployments
 
 [[toc]]
 
 ## Overview
 
-A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, and how long it took to be deployed.
+A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, how long it took to be deployed, and also view the output of your [deploy script](/1.0/sites/deployments.html#deploy-script).
 
 ### Environments
 
@@ -109,7 +112,7 @@ Additional data may be passed to your deployment script via query parameters pas
 
 ### Using Forge CLI
 
-If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](https://forge.laravel.com/docs/1.0/accounts/cli.html).
+If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](/1.0/accounts/cli.html).
 
 Once you have installed Forge CLI, you may execute the `forge deploy` command in your CI platform's deployment pipeline.
 

@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/resources/daemons.html'
+---
 # Daemons
 
 [[toc]]
@@ -17,6 +20,12 @@ When creating a new daemon you need to provide Forge with the following informat
 **Directory:** The directory in which to run your command from. This can be left empty.
 
 **Processes:** This option determines how many instances of the process should be kept running.
+
+**Start Seconds**: The total number of seconds the program must stay running in order to consider the start successful.
+
+**Stop Seconds**: The number of seconds Supervisor will allow for the daemon to gracefully stop before forced termination.
+
+**Stop Signal**: The signal used to kill the program when a stop is requested.
 
 ## Log Files
 

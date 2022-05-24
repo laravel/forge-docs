@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/circles.html'
+---
 # Circles
 
 [[toc]]
@@ -7,7 +10,7 @@
 Forge circles allow you to collaborate with team members that may manage servers and sites on your behalf. You can create as many circles as you would like and add as many team members as needed to each circle.
 
 :::warning Business Plan Only
-Circles are only available on our "business" plan.
+Creating and managing Circles is only available on our "business" plan.
 :::
 
 ## Creating Circles
@@ -36,7 +39,7 @@ You can manage access to circles by clicking the "user" button next to the circl
 
 To invite a new member to the circle, you only need their email address. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
 
-## Deleting Circles
+### Deleting Circles
 
 You can delete circles via the [Forge circle dashboard](https://forge.laravel.com/circles) by clicking the "delete" button next to the circle's name. You will be asked to confirm the deletion before it is actually deleted.
 
@@ -45,3 +48,12 @@ You can delete circles via the [Forge circle dashboard](https://forge.laravel.co
 When deleting a circle, members will no longer be able to access shared servers or credentials.
 :::
 
+## Accepting a Circle invite
+
+After being invited to a Circle, you will receive an email with a link that you may use to accept an invite.
+
+If you would like to see any pending Circle invitations you have, you may visit the [Circle dashboard](https://forge.laravel.com/circles) and see the invitations listed under "Pending invites".
+
+## Leaving a Circle
+
+You can leave a Circle that you are a member of by visiting the [Circle dashboard](https://forge.laravel.com/circles) and clicking the "leave" button next to the Circle's name.

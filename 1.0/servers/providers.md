@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/providers.html'
+---
 # Server Providers
 
 [[toc]]
@@ -6,20 +9,22 @@
 
 Forge can create and manage servers on the following cloud server providers:
 
-- DigitalOcean
-- Linode Cloud
-- Amazon AWS
-- Vultr
-- Hetzner Cloud
+- [DigitalOcean](https://www.digitalocean.com/)
+- [Linode Cloud](https://www.linode.com/)
+- [Amazon AWS](https://aws.amazon.com/)
+- [Vultr](https://www.vultr.com/)
+- [Hetzner Cloud](https://www.hetzner.com/cloud)
 
 :::tip Bring Your Own Provider
 
 If your preferred server provider is not supported by Forge, you may use Forge's "Custom VPS" option to create your server. Custom VPS servers receive all of the same functionality as first-party supported server providers.
+
+[Learn more](/1.0/servers/providers.html#bring-your-own-server)
 :::
 
-### Linking Additional Server Providers
+### Linking Server Providers
 
-You can link additional server providers from your Forge account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
+You can link server providers from your [Server Providers dashboard](https://forge.laravel.com/user-profile/server-providers). It is possible to link any number of supported provider accounts, including multiple accounts for one provider.
 
 ### Amazon AWS API Access
 
@@ -60,7 +65,7 @@ Alongside supporting several first-party server providers, Forge also supports t
 
 In addition, you should review the following server requirements:
 
-- The server **must be** running a fresh installation of Ubuntu 20.04 x64.
+- The server **must be** running a fresh installation of Ubuntu 20.04 / 22.04 x64.
 - The server **must be** accessible externally over the Internet.
 - The server **must have** `root` SSH access enabled.
 - The server requirements **must meet** the following criteria or more: 1 CPU Core with 1GHz, 1GB RAM, and 25GB Disk space.

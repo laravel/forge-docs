@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/backups.html'
+---
 # Database Backups
 
 [[toc]]
@@ -17,11 +20,13 @@ Database backups are only available on our "business" plan.
 
 You can choose to backup your databases to:
 
-1. Amazon S3
-2. DigitalOcean Spaces
-3. Custom (S3 Compatible)
+1. [Amazon S3](https://aws.amazon.com/s3/)
+2. [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces)
+3. [Scaleway](https://www.scaleway.com/en/object-storage/)
+4. [OVH Cloud](https://www.ovhcloud.com/en/public-cloud/object-storage/)
+5. Custom (S3 Compatible)
 
-For Amazon S3 and DigitalOcean Spaces storage providers you need to provide Forge with:
+For Amazon S3, DigitalOcean Spaces, Scaleway, and OVH Cloud storage providers you need to provide Forge with:
 
 - The region your backup should be stored in (`eu-west-2`, `nyc3` etc..)
 - The name of the storage "bucket"

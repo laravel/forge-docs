@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/the-basics.html'
+---
 # The Basics
 
 [[toc]]
@@ -16,6 +19,8 @@ When creating a new site on your Forge server, a variety of configuration option
 
 **PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
 
+**Nginx Template**: If you have configured any [Nginx Templates](/1.0/servers/nginx-templates.html) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
+
 **Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
 
 **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
@@ -24,7 +29,7 @@ When creating a new site on your Forge server, a variety of configuration option
 
 ## Apps / Projects
 
-Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a Git repository, WordPress, or phpMyAdmin.
+Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a [Git repository](/1.0/sites/the-basics.html#git-repository), [WordPress](/1.0/sites/the-basics.html#wordpress), or [phpMyAdmin](/1.0/sites/the-basics.html#phpmyadmin). 
 
 ### Git Repository
 
@@ -79,9 +84,9 @@ When you initially provision a Forge server, Forge creates a single site on the 
 
 When you are ready to transition your application to an official domain name, you may rename the site in the **Meta** tab of the site's management panel. After renaming the site, you will no longer be able to access it using the server's IP address. After renaming the site, you should add a DNS `A` record for the domain that points to your server's IP address.
 
-### Default Nginx Template
+### Nginx Configuration
 
-Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard:
+Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard.
 
 ```nginx
 # FORGE CONFIG (DO NOT REMOVE!)
@@ -100,7 +105,7 @@ server {
 
     ssl_protocols TLSv1.2 TLSv1.3;
     # ssl_ciphers XXXXXXX
-    ssl_prefer_server_ciphers on;
+    ssl_prefer_server_ciphers off;
     ssl_dhparam /etc/nginx/dhparams.pem;
 
     add_header X-Frame-Options "SAMEORIGIN";
@@ -141,6 +146,8 @@ server {
 # FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/your-domain.com/after/*;
 ```
+
+Once your site has been created, you may edit the Nginx configuration on a site-by-site basis. This is done by accessing the **Edit Files** drop down at the top right of the site management panel and using the **Edit Nginx Configuration** action.
 
 ## PHP Version
 
