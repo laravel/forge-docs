@@ -19,4 +19,4 @@ If you no longer need an API token, you may delete it by clicking the **X** butt
 
 ## Rate Limits
 
-The Forge API currently imposes a rate limit of 30 requests per minute.
+The Forge API currently imposes a rate limit of 60 requests per minute.
