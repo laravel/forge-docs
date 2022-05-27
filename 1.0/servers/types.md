@@ -114,7 +114,7 @@ Application servers are designed include everything you need to deploy a typical
 - Node.js
 - Supervisor
 
-Application servers are the most typical type of server provisioned on Laravel Forge. If your unsure which server type you need, most likely you should provision an application server. As you need to scale your application, you may look at provisioning dedicated servers for services such as your database or caching, but starting with an App server is recommended.
+Application servers are the most typical type of server provisioned on Laravel Forge. If you're unsure which server type you need, most likely you should provision an application server. As you need to scale your application, you may look at provisioning dedicated servers for services such as your database or caching, but starting with an App server is recommended.
 
 ### Web Servers
 
