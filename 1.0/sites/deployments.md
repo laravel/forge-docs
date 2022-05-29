@@ -24,6 +24,11 @@ Forge's "Quick Deploy" feature allows you to easily deploy your projects when yo
 
 You can enable Forge's quick deploy feature by clicking the "Enable Quick Deploy" button within the *Apps* tab of your site's management dashboard.
 
+:::warning Custom Git Providers
+
+Forge's quick deploy feature is not available to sites set up with a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider). Instead, you may set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider.
+:::
+
 ## Deploy Script
 
 The commands that are executed on your server when your project is deployed are determined by your site's deployment script. Of course, this deployment script can be edited directly within the Forge UI. By default, your site's deployment script will:
@@ -104,7 +109,7 @@ To execute a Forge deployment from a CI platform, you may use Deployment Trigger
 
 ### Using Deployment Triggers
 
-You may execute a deployment at any time by instructing your CI platform to make a `GET` or `POST` request to the URL displayed in your site's details.
+You may execute a deployment at any time by instructing your CI platform to make a `GET` or `POST` request to the **"Deployment Trigger URL"** displayed in your site's details.
 
 Although you can refresh the site token at any time, you will need to update any services which are using this URL after refreshing the token.
 
