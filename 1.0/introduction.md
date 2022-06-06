@@ -29,7 +29,7 @@ In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/sc
 
 ## Video Tutorials
 
-Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge. Feel free to review this course if you are new to Laravel Forge and want a video overview of its features.
+Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge-2022-edition/) on Forge. Feel free to review this course if you are new to Laravel Forge and want a video overview of its features.
 
 ## Forge IP Addresses
 
