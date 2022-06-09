@@ -117,7 +117,7 @@ Additional data may be passed to your deployment script via query parameters pas
 
 ### Using Forge CLI
 
-If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](/1.0/accounts/cli.html).
+If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](/1.0/cli.html).
 
 Once you have installed Forge CLI, you may execute the `forge deploy` command in your CI platform's deployment pipeline.
 
