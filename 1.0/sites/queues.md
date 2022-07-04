@@ -15,6 +15,10 @@ You can create a new queue worker within the site's management dashboard. The "N
 
 When creating a new queue worker, you may [select a version of PHP](/1.0/servers/php.html) that is already installed on the server. The selected version of PHP will be used to execute the queue worker.
 
+Please note that Queue Workers created and monitored using this panel will use the `listen` sub-command. This is done so you do not need
+to worry about restarting the Queue Worker when deploying a new version of your application. If you do not want to avail of this option,
+please feel free to create a [Server Daemon](/1.0/resources/daemons.md) that execute the `queue:work` command.
+
 ## Laravel Horizon
 
 If your Laravel application is using [Laravel Horizon](https://laravel.com/docs/horizon), you should not setup queue workers as described above. Instead, you may enable Horizon on Forge using Forge's "daemon" feature.
