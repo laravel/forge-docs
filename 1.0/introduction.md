@@ -9,7 +9,7 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/introduction.html'
 
 Laravel Forge is a server management and application deployment service. Forge takes the pain and hassle out of deploying servers and can be used to launch your next website. Whether your app is built with a framework such as [Laravel](https://github.com/laravel/laravel), [Symfony](https://github.com/symfony/symfony), [Statamic](https://github.com/statamic/cms), [WordPress](https://github.com/WordPress/WordPress), or is just a vanilla PHP application - Forge is the solution for you.
 
-We live and breath PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as NodeJS.
+We live and breathe PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as NodeJS.
 
 After connecting to your preferred [server provider](/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
 
