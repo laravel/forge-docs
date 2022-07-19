@@ -32,9 +32,8 @@ For Amazon S3, DigitalOcean Spaces, Scaleway, and OVH Cloud storage providers yo
 - The name of the storage "bucket"
 - The access / secret keys that should be used to connect to the storage service
 
-For Amazon S3 in combination with an EC2 server, you can alternatively choose to the identity of the EC2 server to
-stream the backup to S3. In this case, you do not need to provide the credentials, but instead you simply check
-the "Use EC2 Assumed Role" checkbox.
+When using Amazon S3 in combination with an EC2 server, you can alternatively choose to use the identity of the EC2 server to
+stream the backup to S3 without providing credentials. In this case, you only need to check the "Use EC2 Assumed Role" checkbox.
 
 :::warning AWS IAM Permissions
 
