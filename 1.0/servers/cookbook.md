@@ -23,11 +23,9 @@ Once you are connected to your server as the `root` user, you should run the `pa
 
 If your servers are managed by DigitalOcean, the following steps should assist you in resetting the `forge` user's sudo password using Digital Ocean's dashboard.
 
-1. First, on DigitalOcean's dashboard, click on the server name. Then, within the "Access" tab, click on "Reset Root Password". Usually, this operation restarts the server and sends the new `root` user's sudo password to your DigitalOcean account's associated email address.
+1. First, on DigitalOcean's dashboard, click on the server name. Then, within the "Access" tab, click on "Launch Droplet Console". Make sure the Log in as is selected to root. 
 
-2. Next, still on the "Access" tab, click on "Launch Droplet Console" to gain access to your server terminal as the `root` user. During this step, you will be asked to redefine the `root` user's sudo password.
-
-3. Finally, execute the `passwd forge` terminal command as the `root` userto redefine the `forge` user's sudo password.
+2. Finally, execute the `passwd forge` terminal command as the `root` user to redefine the `forge` user's sudo password. Make sure to save this new password somewhere in your password managers as forge will not send any email about this. 
 
 ## Upgrading Composer
 
