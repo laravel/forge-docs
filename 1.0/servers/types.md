@@ -151,6 +151,9 @@ MeiliSearch servers install [MeiliSearch](https://meilisearch.com) to provide a 
 
 A MeiliSearch server will only display and manage one [Site](/1.0/sites/the-basics.html). You cannot create or delete other sites on this server. When connecting to the MeiliSearch server from a web or application server, you should connect to it via its private IP address.
 
+When you install MeiliSearch on a Custom VPS, please make sure that Forge knows about the server's private IP address; otherwise Forge will
+configure MeiliSearch to listen on all IP addresses on the server.
+
 ### Load Balancers
 
 Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balancers use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
