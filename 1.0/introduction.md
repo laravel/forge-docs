@@ -35,9 +35,6 @@ Laracasts has a comprehensive and **free** [video course](https://laracasts.com/
 
 In order to provision and communicate with your servers, Forge requires SSH access to them. If you have set up your servers to restrict SSH access using IP allow lists, you must allow the following Forge IP addresses:
 
-- `159.203.161.246`
-- `159.203.163.240`
-- `68.183.145.91`
 - `159.203.150.232`
 - `159.203.150.216`
 - `45.55.124.124`
