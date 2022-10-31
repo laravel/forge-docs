@@ -125,7 +125,7 @@ In order to authenticate with Forge from your CI platform, you will need to add 
 
 #### Example With GitHub Actions
 
-If your site uses [GitHub Actions](https://github.com/features/actions) as its CI platform, the following guidelines will assist you in configuring Forge deployments so that your application is automatically deployed when someone pushes a commit to the `master` branch:
+If your site uses [GitHub Actions](https://github.com/features/actions) as its CI platform, the following guidelines will assist you in configuring Forge deployments so that your application is automatically deployed when someone pushes a commit to the `main` branch:
 
 1. First, add the `FORGE_API_TOKEN` environment variable to your "GitHub > Project Settings > Secrets" settings so that GitHub can authenticate with Forge while running actions.
 
@@ -138,7 +138,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -166,7 +166,7 @@ jobs:
           FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
 ```
 
-4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to the `master` branch so GitHub Actions can run the first deployment job.
+4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to the `main` branch so GitHub Actions can run the first deployment job.
 
 ## Deployment Branch
 
