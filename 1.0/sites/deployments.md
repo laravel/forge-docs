@@ -168,6 +168,45 @@ jobs:
 
 4. Finally, you can edit the `deploy.yml` file to fit your site's deployment needs, as it may require a different PHP version or a library like `npm`. Once you are done, commit and push the `deploy.yml` file to the `main` branch so GitHub Actions can run the first deployment job.
 
+#### Example With Chipper CI
+
+If your site uses [Chipper CI](https://chipperci.com) as its CI platform, the following configuring can be used to deploy your Forge sites when pushing to the `main` branch:
+
+1. First, add the `FORGE_API_TOKEN` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper can authenticate with Forge while running a build.
+
+2. Next, add the `SSH_PRIVATE_KEY` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper can have SSH Access to your site's server.
+
+3. Then, edit your `.chipperci.yml` file. The file will look something like this:
+
+```yml
+version: 1
+
+environment:
+  php: 8.1
+  node: 14
+
+on:
+  push:
+    branches:
+      - main
+
+# Add the following 2 pipeline steps
+# to your Chipper CI pipeline:
+pipeline:  
+  - name: Configure Forge
+    cmd: |
+      echo $SSH_PRIVATE_KEY > ~/.ssh/id_forge
+      chmod 0600 ~/.ssh/id_forge
+      composer global require laravel/forge-cli
+    
+  - name: Deploy
+    cmd: |
+      forge server:switch your-server-name
+      forge deploy your-site-name.com
+```
+
+4. You can adjust the `.chipperci.yml` file further to fit your needs, perhaps by running tests. Once you are done, commit and push to the `main` branch so Chipper CI can deploy your site.
+
 ## Deployment Branch
 
 You may change the branch that is deployed to your site by updating the deployment branch setting. Once you have updated the branch, you will then need to click **Deploy Now** to manually trigger a fresh deployment of the new branch.
