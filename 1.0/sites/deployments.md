@@ -172,9 +172,9 @@ jobs:
 
 If your site uses [Chipper CI](https://chipperci.com) as its CI platform, the following configuring can be used to deploy your Forge sites when pushing to the `main` branch:
 
-1. First, add the `FORGE_API_TOKEN` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper can authenticate with Forge while running a build.
+1. First, add the `FORGE_API_TOKEN` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper can authenticate with Forge.
 
-2. Next, add the `SSH_PRIVATE_KEY` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper can have SSH Access to your site's server.
+2. Next, add the `SSH_PRIVATE_KEY` environment variable to your "Project > Project Settings > Secrets" settings so that Chipper has SSH access to your site's server.
 
 3. Then, edit your `.chipperci.yml` file. The file will look something like this:
 
@@ -190,8 +190,7 @@ on:
     branches:
       - main
 
-# Add the following 2 pipeline steps
-# to your Chipper CI pipeline:
+# Add the following 2 pipeline steps to your Chipper CI pipeline:
 pipeline:  
   - name: Configure Forge
     cmd: |
@@ -205,7 +204,7 @@ pipeline:
       forge deploy your-site-name.com
 ```
 
-4. You can adjust the `.chipperci.yml` file further to fit your needs, perhaps by running tests. Once you are done, commit and push to the `main` branch so Chipper CI can deploy your site.
+4. Of course, you can adjust the `.chipperci.yml` file further to fit your needs. Once you are done, commit and push to the `main` branch so Chipper CI can deploy your site.
 
 ## Deployment Branch
 
