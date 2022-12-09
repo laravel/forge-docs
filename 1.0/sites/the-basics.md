@@ -9,23 +9,19 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/the-basics.html'
 
 When creating a new site on your Forge server, a variety of configuration options are available to you:
 
-**Root Domain:** The domain name that the server should respond to.
+- **Root Domain:** The domain name that the server should respond to.
+- **Aliases:** Additional domains that the site should respond to.
+- **Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, Laravel Octane, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
+- **Web Directory:** The directory that should be publicly accessible via the Internet. For Laravel applications, this is typically the `/public` directory.
+- **PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
+- **Nginx Template**: If you have configured any [Nginx Templates](/1.0/servers/nginx-templates.html) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
+- **Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
+- **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
+- **Create Database:** This setting indicates if you would like a new database to be created for your site.
 
-**Aliases:** Additional domains that the site should respond to.
+### Circle Permissions
 
-**Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, Laravel Octane, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
-
-**Web Directory:** The directory that should be publicly accessible via the Internet. For Laravel applications, this is typically the `/public` directory.
-
-**PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
-
-**Nginx Template**: If you have configured any [Nginx Templates](/1.0/servers/nginx-templates.html) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
-
-**Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
-
-**Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
-
-**Create Database:** This setting indicates if you would like a new database to be created for your site.
+You may grant a circle member authority to create and delete sites by granting the `site:create` and `site:delete` permissions.
 
 ## Apps / Projects
 

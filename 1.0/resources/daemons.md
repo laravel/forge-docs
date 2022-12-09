@@ -35,3 +35,7 @@ Forge automatically configures your daemon to write to its own log file. Logs ca
 
 If you are using Forge's user isolation features, you should navigate to the `.forge` directory within the `/home/{username}` directory based on the user that the process belongs to in order to locate the daemon's log files.
 :::
+
+## Circle Permissions
+
+You may grant a circle member authority to create and manage daemons by granting the `server:create-daemons` and `server:delete-daemons` permissions.

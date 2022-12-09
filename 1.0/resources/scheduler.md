@@ -30,3 +30,7 @@ As part of the provisioning process, Forge will automatically configure two sche
 
 - `composer self-update` (Nightly)
 - Ubuntu package cleanup (Weekly)
+
+## Circle Permissions
+
+You may grant a circle member authority to create and manage scheduled jobs by granting the `server:create-schedulers` and `server:delete-schedulers` permissions.

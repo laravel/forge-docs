@@ -66,3 +66,7 @@ Forge uses `ufw` for the firewall, so once you've connected to the server you ne
 ```bash
 ufw allow 22
 ```
+
+## Circle Permissions
+
+You may grant a circle member authority to manage the server's network by granting the `server:manage-network` permission.

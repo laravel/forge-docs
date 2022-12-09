@@ -28,6 +28,10 @@ You may archive a server from the Forge UI by clicking the **Archive** button at
 
 Archiving a server **will not** delete your server from the server provider and **will not** cause any data loss on your server.
 
+### Archive Circle Permission
+
+You may grant a circle member authority to archive a server from your account by granting the `server:archive` permission.
+
 ## Transferring Servers To Other Users
 
 Servers may be transferred to other Forge accounts from the server's **Meta** tab by providing the email address of the Forge account you wish to transfer the server to.
@@ -35,3 +39,7 @@ Servers may be transferred to other Forge accounts from the server's **Meta** ta
 The Forge account that is receiving the server will be receive an email address asking them to confirm the request. They must also have set up the [server provider](/1.0/servers/providers.html) that the server exists in before the transfer request can be sent. For example, if the server is a DigitalOcean server, the recipient must have DigitalOcean set up as a server provider within their own account.
 
 You may only transfer servers to a Forge accounts with an active subscription that have not reached their server quota.
+
+### Transfer Circle Permission
+
+You may grant a circle member authority to transfer a server from your account by granting the `server:transfer` permission.

@@ -53,3 +53,7 @@ When using these variables, you should ensure that they exactly match the syntax
 You may edit the name and content of your Nginx template at any time. Changes to a template will not affect existing sites that use the template.
 
 Deleting a template will not remove any sites which were configured to use it.
+
+## Circle Permissions
+
+The ability to manage Nginx Templates is behind the `site:manage-nginx` permission. This permission is also used to restrict the ability to edit an existing site's Nginx configuration file.

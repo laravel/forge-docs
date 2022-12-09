@@ -71,3 +71,7 @@ You may configure the maximum execution time through the **PHP** tab of the serv
 ### OPcache
 
 Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script [reloads the PHP-FPM service](/1.0/servers/cookbook.html#restarting-php-fpm) at the end of each deployment.
+
+## Circle Permissions
+
+Circle members will require the `server:manage-php` permission to manage PHP installations and configurations. This permission is also required to manage integrations with Blackfire.io and Papertrail.

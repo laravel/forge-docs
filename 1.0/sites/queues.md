@@ -25,3 +25,6 @@ Next, add the `php artisan horizon:terminate` Artisan command to your site's dep
 
 Finally, if you wish to use Horizon's [metrics graphs](https://laravel.com/docs/master/horizon#metrics), you should configure the scheduled job for `horizon:snapshot` in your application code. In addition, you should define a [Scheduler task](/1.0/resources/scheduler.html#scheduled-jobs) within Forge for the `php artisan schedule:run` Artisan command if you have not already done so.
 
+## Circle Permissions
+
+You may grant a circle member authority to create and manage queue workers by granting the `site:manage-queues` permission.

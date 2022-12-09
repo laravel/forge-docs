@@ -18,3 +18,7 @@ Forge provides a few third-party integrations that you can install on your serve
 ### Papertrail
 
 [Papertrail](https://papertrailapp.com/) provides hosted log monitoring and searching for your PHP application. If you are using Laravel, just configure your application to use the `syslog` driver.
+
+## Circle Permissions
+
+You may grant a circle member authority to configure and manage integrations by granting the `server:manage-php` permission.

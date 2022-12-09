@@ -38,3 +38,7 @@ After removing credentials, please do not forget to click "Save" in order to sto
 Any credentials that are shown on the screen can be updated with any new adequate value.
 
 After updating the value, please do not forget to click the "Save" button in order your new credentials configuration on the server.
+
+## Circle Permissions
+
+The ability to manage a site's Composer packages is behind the `server:manage-packages` permission. This permission will also allow the circle member to manage a server's Composer packages too.

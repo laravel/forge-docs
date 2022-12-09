@@ -80,3 +80,7 @@ You can create extra database users through the Forge dashboard's database panel
 ## Upgrading Databases
 
 Forge does not provide the ability to upgrade your database server software automatically. If you wish to upgrade your database server, you will need to complete this manually.
+
+## Circle Permissions
+
+You may grant a circle member authority to create and manage databases **and** database users by granting the `server:create-databases` and `server:delete-databases` permissions.

@@ -116,3 +116,10 @@ When deleting a backup, your backup archives **will be removed** from your cloud
 ### Backup Output
 
 Each backup process will create its own log so that you can inspect the database backup process's output in the event of a failure. You can view the output of a backup by clicking the "Eye" icon next to your backup.
+
+## Circle Permissions
+
+The ability to manage database backups is split into two permissions.
+
+- `server:create-backups`
+- `server:delete-backups`

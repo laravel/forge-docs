@@ -9,7 +9,7 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/deployments.html'
 
 A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, how long it took to be deployed, and also view the output of your [deploy script](/1.0/sites/deployments.html#deploy-script).
 
-### Environments
+## Environments
 
 Some applications, such as those created with the Laravel framework, may require a `.env` file to configure settings such as databases and caches. You can create and edit your Environment file within the Forge site's management dashboard.
 
@@ -17,6 +17,12 @@ Some applications, such as those created with the Laravel framework, may require
 
 If your project contains a `.env.example` file, Forge will automatically copy this and replace some of the settings to match your server's database settings. An empty `.env.example` could result in an empty environment file on the first deploy.
 :::
+
+### Environment Circle Permission
+
+You may grant a circle member authority to view and edit a site's environment file (or WordPress configuration) `site:manage-environment` permission.
+
+Note that without this permission, Forge will **not** display the contents of the environment file to circle members.
 
 ## Quick Deploy
 
@@ -278,3 +284,7 @@ Forge can also send an HTTP POST request to arbitrary URLs after each deployment
   "commit_message": "deploying!"
 }
 ```
+
+## Circle Permissions
+
+You may grant a circle member authority to manage deploy scripts, manage maintenance mode and deploy a site by granting the `site:manage-deploys` permission.

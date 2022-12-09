@@ -51,3 +51,6 @@ Cloudflare provides [free SSL certificates](https://developers.cloudflare.com/ss
 
 If you are using [Route53](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html) to manage your DNS, your IAM user must have the `route53:ChangeResourceRecordSets` permission on your domain's hosted zone. In addition, the user must have the `route53:GetChange` and `route53:ListHostedZones` permissions. 
 
+## Circle Permissions
+
+You may grant a circle member authority to create and manage SSL certificates by granting the `site:manage-ssl` permission.

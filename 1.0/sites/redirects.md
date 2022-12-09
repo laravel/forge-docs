@@ -31,3 +31,7 @@ When the browser encounters a temporary redirect, it will take you to the destin
 With a permanent redirect, the browser will remember that it was redirected away from the original page. To save making another network request, the next time the browser visits the original page, it will see that it was redirected and immediately visit that page instead.
 
 Although you can change the destination of a permanent redirect, you will need to clear the browser cache before you visit the original page again. It's considered bad practice to change a permanent redirect, so be careful when doing so.
+
+## Circle Permissions
+
+You may grant a circle member authority to create and manage redirects by granting the `site:manage-redirects` permission.
