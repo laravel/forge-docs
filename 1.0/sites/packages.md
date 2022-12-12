@@ -41,4 +41,4 @@ After updating the value, please do not forget to click the "Save" button in ord
 
 ## Circle Permissions
 
-The ability to manage a site's Composer packages is behind the `server:manage-packages` permission. This permission will also allow the circle member to manage a server's Composer packages too.
+The ability to manage a site's Composer packages is determined by the `server:manage-packages` permission. This permission will also allow the circle member to manage a server's Composer packages too.
