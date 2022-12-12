@@ -56,4 +56,4 @@ Deleting a template will not remove any sites which were configured to use it.
 
 ## Circle Permissions
 
-The ability to manage Nginx Templates is behind the `site:manage-nginx` permission. This permission is also used to restrict the ability to edit an existing site's Nginx configuration file.
+The ability to manage Nginx Templates is determined by the `site:manage-nginx` permission. This permission is also used to restrict the ability to edit an existing site's Nginx configuration file.
