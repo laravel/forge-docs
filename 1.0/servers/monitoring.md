@@ -56,7 +56,7 @@ The CPU Load and Used Memory metric data will be collected every minute. The Dis
 
 ## Circle Permissions
 
-The ability to manage server monitors is split into two permissions.
+The ability to manage server monitors is split into two permissions:
 
 - `server:create-monitors`
 - `server:delete-monitors`
