@@ -20,9 +20,7 @@ If your project contains a `.env.example` file, Forge will automatically copy th
 
 ### Environment Circle Permission
 
-You may grant a circle member authority to view and edit a site's environment file (or WordPress configuration) `site:manage-environment` permission.
-
-Note that without this permission, Forge will **not** display the contents of the environment file to circle members.
+You may grant a circle member authority to view and edit a site's environment file (or WordPress configuration) using the `site:manage-environment` permission. Without this permission, Forge will **not** display the contents of the environment file to circle members.
 
 ## Quick Deploy
 
