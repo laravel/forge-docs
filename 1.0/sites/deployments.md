@@ -285,4 +285,4 @@ Forge can also send an HTTP POST request to arbitrary URLs after each deployment
 
 ## Circle Permissions
 
-You may grant a circle member authority to manage deploy scripts, manage maintenance mode and deploy a site by granting the `site:manage-deploys` permission.
+You may grant a circle member authority to manage deploy scripts, manage maintenance mode, and deploy a site by granting the `site:manage-deploys` permission.
