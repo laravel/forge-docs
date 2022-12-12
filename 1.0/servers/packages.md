@@ -41,4 +41,4 @@ After updating the credential, you must click "Save" in order to update the cred
 
 ## Circle Permissions
 
-The ability to manage a server's Composer packages is behind the `server:manage-packages` permission. This permission will also allow the circle member to manage a site's Composer packages too.
+The ability to manage a server's Composer packages is determined by the `server:manage-packages` permission. This permission will also allow the circle member to manage a site's Composer packages too.
