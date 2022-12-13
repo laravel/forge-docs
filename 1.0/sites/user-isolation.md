@@ -24,7 +24,7 @@ Like the `forge` user, newly created isolated users also have limited sudo acces
 sudo -S service php8.1-fpm reload
 ```
 
-If you need further sudo access, you should switch to the `root` user using the `sudo su` command.
+If you need further sudo access, you should login as the `forge` user and switch to the `root` user using the `sudo su` or the `sudo -ì` command.
 
 ## Connecting Via SFTP
 
