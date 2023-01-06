@@ -22,6 +22,16 @@ If your project contains a `.env.example` file, Forge will automatically copy th
 
 You may grant a circle member authority to view and edit a site's environment file (or WordPress configuration) using the `site:manage-environment` permission. Without this permission, Forge will **not** display the contents of the environment file to circle members.
 
+### Encrypted Environment Files
+
+Forge provides support for Laravel's [encrypted environment files](https://laravel.com/docs/configuration#encrypting-environment-files) without requiring you to add your encryption key directly to your deployment script.
+
+To leverage this feature, simply add your encryption key to the "Environment Encryption Key" section of your site's management dashboard. Forge will inject the value into the `LARAVEL_ENV_ENCRYPTION_KEY` environment variable during deployment. Now you may add the `env:decrypt` Artisan command to your deployment script without explicitly setting the `--key` option.
+
+```
+php artisan env:decrypt --force
+```
+
 ## Quick Deploy
 
 Forge's "Quick Deploy" feature allows you to easily deploy your projects when you push to your source control provider. When you push to your configured quick deploy branch, Forge will pull your latest code from source control and run your application's configured deployment script.
