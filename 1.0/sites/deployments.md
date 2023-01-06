@@ -24,9 +24,9 @@ You may grant a circle member authority to view and edit a site's environment fi
 
 ### Encrypted Environment Files
 
-Forge provides support for Laravel's [encrypted environment files](https://laravel.com/docs/configuration#encrypting-environment-files) without requiring you to add your encryption key directly to your deployment script.
+Forge provides support for Laravel's [encrypted environment files](https://laravel.com/docs/configuration#encrypting-environment-files) without requiring you to include your encryption key within your deployment script.
 
-To leverage this feature, simply add your encryption key to the "Environment Encryption Key" section of your site's management dashboard. Forge will inject the value into the `LARAVEL_ENV_ENCRYPTION_KEY` environment variable during deployment. Now you may add the `env:decrypt` Artisan command to your deployment script without explicitly setting the `--key` option.
+To leverage this feature, add your encryption key to the "Environment Encryption Key" section of your site's management dashboard. Once added, Forge will inject the value into the `LARAVEL_ENV_ENCRYPTION_KEY` environment variable during deployment, allowing you to add the `env:decrypt` Artisan command to your deployment script without explicitly setting the `--key` option:
 
 ```
 php artisan env:decrypt --force
