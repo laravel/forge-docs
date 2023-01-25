@@ -7,22 +7,22 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/ssl.html'
 
 ## Overview
 
-Forge supports installing custom SSL certificates and using LetsEncrypt to generate free certificates for your websites.
+Forge supports installing custom SSL certificates and using Let's Encrypt to generate free certificates for your websites.
 
-## LetsEncrypt
+## Let's Encrypt
 
-[LetsEncrypt](https://letsencrypt.org) provides free SSL certificates that are recognized across all major browsers.
+[Let's Encrypt](https://letsencrypt.org) provides free SSL certificates that are recognized across all major browsers.
 
-If you need to install LetsEncrypt for multiple domains, you may separate multiple domains using commas.
+If you need to install Let's Encrypt for multiple domains, you may separate multiple domains using commas.
 
-:::warning Cloning a LetsEncrypt Certificate
+:::warning Cloning a Let's Encrypt Certificate
 
-Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncrypt certificates to other sites. You should simply issue a new LetsEncrypt certificate for that site.
+Because of the Let's Encrypt renewal process, it is not possible to clone Let's Encrypt certificates to other sites. You should simply issue a new Let's Encrypt certificate for that site.
 :::
 
-### Renewing LetsEncrypt Certificates
+### Renewing Let's Encrypt Certificates
 
-Forge will **automatically** renew your LetsEncrypt certificates within 21 days or less before expiration. Renewal will take place at a random day and time to avoid overwhelming the LetsEncrypt servers.
+Forge will **automatically** renew your Let's Encrypt certificates within 21 days or less before expiration. Renewal will take place at a random day and time to avoid overwhelming the Let's Encrypt servers.
 
 If something goes wrong while renewing a certificate, Forge will notify the server owner via email.
 
@@ -31,11 +31,11 @@ If something goes wrong while renewing a certificate, Forge will notify the serv
 You need to have an active Laravel Forge subscription to keep your Let's Encrypt certificates renewing automatically.
 :::
 
-### Wildcard Subdomain LetsEncrypt Certificates
+### Wildcard Subdomain Let's Encrypt Certificates
 
-To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. LetsEncrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
+To install a Let's Encrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. Let's Encrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
 
-Forge currently supports the following LetsEncrypt wildcard DNS providers:
+Forge currently supports the following Let's Encrypt wildcard DNS providers:
 
 - Cloudflare
 - DNSimple
