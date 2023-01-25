@@ -22,7 +22,7 @@ After connecting to your preferred [server provider](/1.0/servers/providers.html
 - [Memcached](/1.0/resources/caches.html)
 - [Redis](/1.0/resources/caches.html)
 - MeiliSearch
-- Automatic Security Updates
+- [Automatic Security Updates](/1.0/servers/provisioning-process.html#automated-security-updates)
 - And much more!
 
 In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/scheduler.html), [queue workers](/1.0/sites/queues.html), [TLS/SSL certificates](/1.0/sites/ssl.html), and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
