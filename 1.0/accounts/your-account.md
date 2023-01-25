@@ -60,7 +60,3 @@ The [Billing Management](https://forge.laravel.com/billing) page list all previo
 ### Business Receipts
 
 If you need to add specific contact or tax information to your receipts such as your full business name, VAT / tax identification number, or address of record, you can add this extra billing information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
-
-### Downgrading To The Hobby Plan
-
-If you wish to downgrade to the Hobby plan, please contact support at [forge@laravel.com](mailto:forge@laravel.com). You must have only one server (including archived servers) before submitting a request to downgrade to the Hobby plan.
