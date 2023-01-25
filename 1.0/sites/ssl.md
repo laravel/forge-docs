@@ -28,7 +28,7 @@ If something goes wrong while renewing a certificate, Forge will notify the serv
 
 :::warning Active Subscription Required
 
-You need to have an active Laravel Forge subscription to keep your Let's Encrypt certificates renewing automatically.
+You must have an active Laravel Forge subscription in order for your Let's Encrypt certificates to automatically renew.
 :::
 
 ### Wildcard Subdomain Let's Encrypt Certificates
