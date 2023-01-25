@@ -26,6 +26,11 @@ Forge will **automatically** renew your LetsEncrypt certificates within 21 days 
 
 If something goes wrong while renewing a certificate, Forge will notify the server owner via email.
 
+:::warning Active Subscription Required
+
+You need to have an active Laravel Forge subscription to keep your Let's Encrypt certificates renewing automatically.
+:::
+
 ### Wildcard Subdomain LetsEncrypt Certificates
 
 To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. LetsEncrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
