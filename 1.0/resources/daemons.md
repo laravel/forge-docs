@@ -27,6 +27,10 @@ When creating a new daemon you need to provide Forge with the following informat
 
 **Stop Signal**: The signal used to kill the program when a stop is requested.
 
+### Manually Restarting Daemons
+
+You may manually restart a daemon using `sudo -S supervisorctl restart daemon-ID:*`. This may also be done within the deployment script to reload the daemon after a new release is deployed.
+
 ## Log Files
 
 Forge automatically configures your daemon to write to its own log file. Logs can be found within the `/home/forge/.forge/` directory. Log files are named `daemon-*.log`.
