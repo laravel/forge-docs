@@ -82,6 +82,7 @@ Forge will automatically inject the following environment variables into your de
 | `FORGE_DEPLOY_AUTHOR`  | The author of the commit.                                                      |
 | `FORGE_DEPLOY_COMMIT`  | The Git hash of the commit being deployed.                                     |
 | `FORGE_DEPLOY_MESSAGE` | The Git commit message.                                                        |
+| `FORGE_DEPLOYMENT_ID`  | The Forge assigned ID of this deployment.                                      |
 | `FORGE_MANUAL_DEPLOY`  | Whether the deploy was triggered by clicking "Deploy Now".                     |
 | `FORGE_PHP_FPM`        | The PHP-FPM process name that is being used by Forge.                          |
 | `FORGE_PHP`            | The `php` binary that is being used by the Forge site or server.               |
