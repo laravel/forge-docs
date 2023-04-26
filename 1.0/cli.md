@@ -181,8 +181,8 @@ forge database:status
 
 forge nginx:status
 
-forge php:status      # View PHP logs (default PHP version)
-forge php:status 8.1  # View PHP 8.1 logs
+forge php:status      # View PHP status (default PHP version)
+forge php:status 8.1  # View PHP 8.1 status
 ```
 
 ### Viewing Resources Logs
