@@ -132,7 +132,7 @@ There are 4 reserved parameters you may use to pass Forge information when trigg
 - `forge_deploy_branch`: The branch that contains the commit. Forge will only trigger a deployment if the branch matches the site's currently deployed branch.
 - `forge_deploy_commit`: The hash of the commit. This will be visible in the "Deployments" table and be available as the `FORGE_DEPLOY_COMMIT` environment variable in your deploy script.
 - `forge_deploy_author`: The author of the commit. This will be visible in the "Deployments" table and be available as the `FORGE_DEPLOY_AUTHOR` environment variable in your deploy script.
-- `forge_deploy_message`: The message of the commit. This will be available as the `FORGE_DEPLOY_MESSAGE` environment variable in your deploy script.
+- `forge_deploy_message`: The commit message. This will be available as the `FORGE_DEPLOY_MESSAGE` environment variable in your deploy script.
 
 ### Using Forge CLI
 
