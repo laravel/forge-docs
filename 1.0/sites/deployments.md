@@ -40,7 +40,7 @@ You can enable Forge's quick deploy feature by clicking the "Enable Quick Deploy
 
 :::warning Custom Git Providers
 
-For sites set up with a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider), you will need to set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider.
+For sites using a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider), you will need to set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider.
 :::
 
 ## Deploy Script
