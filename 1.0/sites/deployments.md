@@ -38,10 +38,7 @@ Forge's "Quick Deploy" feature allows you to easily deploy your projects when yo
 
 You can enable Forge's quick deploy feature by clicking the "Enable Quick Deploy" button within the *Apps* tab of your site's management dashboard.
 
-:::warning Custom Git Providers
-
-For sites using a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider) you will need to set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider.
-:::
+For sites using a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider) you will need to manually set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider. Click the "Manage Quick Deploy" button within the *Apps* tab of your site's management dashboard for instructions.
 
 ## Deploy Script
 
