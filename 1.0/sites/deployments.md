@@ -38,10 +38,7 @@ Forge's "Quick Deploy" feature allows you to easily deploy your projects when yo
 
 You can enable Forge's quick deploy feature by clicking the "Enable Quick Deploy" button within the *Apps* tab of your site's management dashboard.
 
-:::warning Custom Git Providers
-
-Forge's quick deploy feature is not available to sites set up with a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider). Instead, you may set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider.
-:::
+For sites using a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider) you will need to manually set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider. Click the "Manage Quick Deploy" button within the *Apps* tab of your site's management dashboard for instructions.
 
 ## Deploy Script
 
@@ -129,6 +126,13 @@ You may execute a deployment at any time by instructing your CI platform to make
 Although you can refresh the site token at any time, you will need to update any services which are using this URL after refreshing the token.
 
 Additional data may be passed to your deployment script via query parameters passed to the deployment trigger URL. For example, when passing the following query parameters `?token=abc1234&env=staging`, Forge will automatically inject a custom `FORGE_VAR_ENV` variable that will evaluate to `"staging"`.
+
+There are 4 reserved parameters you may use to pass Forge information when triggering a deployment:
+
+- `forge_deploy_branch`: The branch that contains the commit. Forge will only trigger a deployment if the branch matches the site's currently deployed branch.
+- `forge_deploy_commit`: The hash of the commit. This will be visible in the "Deployments" table and be available as the `FORGE_DEPLOY_COMMIT` environment variable in your deploy script.
+- `forge_deploy_author`: The author of the commit. This will be visible in the "Deployments" table and be available as the `FORGE_DEPLOY_AUTHOR` environment variable in your deploy script.
+- `forge_deploy_message`: The commit message. This will be available as the `FORGE_DEPLOY_MESSAGE` environment variable in your deploy script.
 
 ### Using Forge CLI
 
