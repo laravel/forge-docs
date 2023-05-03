@@ -31,7 +31,7 @@ For reference, here is a breakdown of what is offered by each server type:
             <th>MySQL / Postgres / MariaDB</th>
             <th>Redis, Memcached</th>
             <th>Node.js</th>
-            <th>MeiliSearch</th>
+            <th>Meilisearch</th>
         </tr>
     </thead>
     <tbody>
@@ -145,11 +145,11 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 - PHP
 - Supervisor
 
-### MeiliSearch Servers
+### Meilisearch Servers
 
-MeiliSearch servers install [MeiliSearch](https://meilisearch.com) to provide a blazingly fast search service to your application. They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
+Meilisearch servers install [Meilisearch](https://meilisearch.com) to provide a blazingly fast search service to your application. They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
 
-A MeiliSearch server will only display and manage one [Site](/1.0/sites/the-basics.html). You cannot create or delete other sites on this server. When connecting to the MeiliSearch server from a web or application server, you should connect to it via its private IP address.
+A Meilisearch server will only display and manage one [Site](/1.0/sites/the-basics.html). You cannot create or delete other sites on this server. When connecting to the Meilisearch server from a web or application server, you should connect to it via its private IP address.
 
 ### Load Balancers
 
