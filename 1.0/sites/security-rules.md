@@ -28,7 +28,7 @@ Forge does not store your security Rule passwords on our servers.
 
 ## Customization
 
-Nginx allows you to add further access restrictions such as allowing and denying access to users by IP address. Forge does not provide the ability to configure this, but you are free to customize your own protected site configuration. Forge creates a `/etc/nginx/forge-config/.../server/protected_site-{ruleId}.conf` configuration file for protected sites. You can read more about Nginx and basic access authentication [in the Nginx documentation](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/#).
+Nginx allows you to add further access restrictions such as allowing and denying access to users by IP address. Forge does not provide the ability to configure this, but you are free to customize your own protected site configuration. Forge creates a `/etc/nginx/forge-conf/.../server/protected_site-{ruleId}.conf` configuration file for protected sites. You can read more about Nginx and basic access authentication [in the Nginx documentation](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/#).
 
 ## Circle Permissions
 
