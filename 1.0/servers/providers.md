@@ -61,7 +61,7 @@ The Vultr server provider requires you to add the [Forge IP addresses](/1.0/intr
 
 ### Hetzner Cloud API Access
 
-Be aware that Hetzner API tokens are specific to a Project. If you use Projects, make sure that Forge has an API token for each Hetzner Project.
+Hetzner API tokens are specific to a Hetzner Project. If you utilize Hetzner Projects, you should ensure that Forge has an API token for each Hetzner Project.
 
 ## Bring Your Own Server
 
