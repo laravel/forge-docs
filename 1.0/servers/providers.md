@@ -59,6 +59,10 @@ In addition, you may wish to set the token to never expire.
 
 The Vultr server provider requires you to add the [Forge IP addresses](/1.0/introduction.html#forge-ip-addresses) to an IP address allow list so that Forge can communicate with your servers. You should ensure that you do this before provisioning a Vultr server via Forge.
 
+### Hetzner Cloud API Access
+
+Hetzner API tokens are specific to a Hetzner Project. If you utilize Hetzner Projects, you should ensure that Forge has an API token for each Hetzner Project.
+
 ## Bring Your Own Server
 
 Alongside supporting several first-party server providers, Forge also supports the ability to use your own custom server. To do so, select the **Custom VPS** option when creating a new server.
