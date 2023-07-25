@@ -18,7 +18,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         nav: [
             { text: 'Home', link: 'https://forge.laravel.com' },
         ],
-        showVersionPicker: false,
         sidebar: [
             {
                 text: "Getting Started",
@@ -85,12 +84,12 @@ export default defineConfigWithTheme<ThemeConfig>({
                 ],
             },
         ],
-        algolia: {
-            indexName: 'laravel_nova',
-            appId: 'FGRCZANQVY',
-            apiKey: '7c0aaf326992f08ed7bfc461a1b61ef3',
-            placeholder: 'Search Nova Docs...',
-        },
+        search: {
+            provider: 'local',
+            options: {
+                placeholder: 'Search Forge Docs...',
+            },
+        }
     },
     vite: {
         server: {
