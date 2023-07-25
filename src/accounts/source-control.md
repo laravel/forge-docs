@@ -1,5 +1,7 @@
 # Source Control
 
+[[toc]]
+
 ## Introduction
 
 Source providers allow Forge to access your project's codebase to help you easily deploy your applications. Forge supports most popular Git providers as well as custom / self-hosted options.

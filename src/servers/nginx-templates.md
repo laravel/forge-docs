@@ -1,5 +1,7 @@
 # Nginx Templates
 
+[[toc]]
+
 ## Overview
 
 Nginx templates allow you to customize the Nginx site configuration that Forge uses when creating your new site.

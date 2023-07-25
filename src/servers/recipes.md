@@ -1,5 +1,7 @@
 # Recipes
 
+[[toc]]
+
 ## Overview
 
 Recipes allow you to save common Bash scripts and run them across any of your servers. For example, you could save a recipe to install MongoDB so you can conveniently run it on future servers. The output of the recipe will be emailed to you.

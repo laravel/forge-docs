@@ -1,5 +1,7 @@
 # Load Balancing
 
+[[toc]]
+
 ## Overview
 
 Load balancers are used to distribute web traffic amongst two or more servers and are often used for websites which receive high volumes of traffic.

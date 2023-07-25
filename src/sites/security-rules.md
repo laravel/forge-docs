@@ -1,5 +1,7 @@
 # Security Rules
 
+[[toc]]
+
 ## Overview
 
 Forge can configure password protection on your sites using [basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). You can choose whether to protect your entire site or a specific path.

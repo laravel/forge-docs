@@ -1,5 +1,7 @@
 # PHP
 
+[[toc]]
+
 ## Overview
 
 Forge makes it easy to install and configure multiple versions of PHP on your server. Each installed PHP version runs its own FPM process. In addition, you may [update the PHP version used by specific sites at any time](/sites/the-basics#php-version).

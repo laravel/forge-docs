@@ -1,5 +1,7 @@
 # Daemons
 
+[[toc]]
+
 ## Overview
 
 Powered by [Supervisor](http://supervisord.org), daemons are used to keep long-running scripts alive. For instance, you could start a daemon to keep a [ReactPHP](http://reactphp.org/) application running. If the process stops executing, Supervisor will automatically restart the process.

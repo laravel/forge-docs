@@ -1,5 +1,7 @@
 # Redirects
 
+[[toc]]
+
 ## Overview
 
 Forge allows you to configure redirects that can be configured to automatically redirect visitors from one page to another. These redirect rules can be created via the "Redirects" tab of the site's management dashboard.

@@ -1,5 +1,7 @@
 # Queues
 
+[[toc]]
+
 ## Overview
 
 Forge's site management dashboard allows you to easily create as many Laravel queue workers as you like. Queue workers will automatically be monitored by Supervisor, and will be restarted if they crash. All workers will start automatically if the server is restarted.

@@ -1,5 +1,7 @@
 # Commands
 
+[[toc]]
+
 ## Overview
 
 You may execute arbitrary Bash commands from the Commands panel. Commands are executed from within the site's root directory, e.g. `/home/forge/site.com`. If you need to run commands within another directory you may prefix the command with a `cd` operation:

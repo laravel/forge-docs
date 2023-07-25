@@ -1,5 +1,7 @@
 # Cookbook
 
+[[toc]]
+
 ## Restarting PHP FPM
 
 When configuring your server, Forge configures FPM so that it can be restarted without using your server's "sudo" password. To do so, you should issue the following command. Of course, you should adjust the PHP version to match the version of PHP installed on your machine:

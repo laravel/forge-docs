@@ -1,5 +1,7 @@
 # API
 
+[[toc]]
+
 ## Overview
 
 Forge provides a comprehensive API that allows you to programmatically manage your Forge servers and sites. To learn more, please review the [Forge API documentation](https://forge.laravel.com/api-documentation).

@@ -1,5 +1,7 @@
 # The Basics
 
+[[toc]]
+
 ## Creating Sites
 
 When creating a new site on your Forge server, a variety of configuration options are available to you:

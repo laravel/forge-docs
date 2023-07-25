@@ -1,5 +1,7 @@
 # SSH Keys
 
+[[toc]]
+
 ## Introduction
 
 SSH is a protocol that allows you to access your server via a command line terminal. SSH keys are used to authenticate with your server over the SSH protocol. If you are new to SSH keys, we recommend checking out the [GitHub documentation of generating SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to get started.
