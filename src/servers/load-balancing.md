@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/load-balancing.html'
----
 # Load Balancing
 
 ## Overview
@@ -48,6 +45,6 @@ You may pause traffic to a specific server being managed by the balancer. While 
 
 ## SSL
 
-Typically, SSL certificates are installed on the individual application servers. However, when using load balancing, the certificate should be configured on the load balancer itself. You should consult the [SSL documentation](/1.0/sites/ssl.html#ssl) for more information on managing SSL certificates for your servers, including load balancers.
+Typically, SSL certificates are installed on the individual application servers. However, when using load balancing, the certificate should be configured on the load balancer itself. You should consult the [SSL documentation](/sites/ssl#ssl) for more information on managing SSL certificates for your servers, including load balancers.
 
 When using SSL on a load balancer, you will likely need to configure the "trusted proxies" for your application. For Laravel applications, consult the [trusted proxies documentation](https://laravel.com/docs/requests#configuring-trusted-proxies).

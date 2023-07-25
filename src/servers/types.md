@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/types.html'
----
 # Server Types
 
 ## Introduction
@@ -147,10 +144,10 @@ Worker servers are intended to function as dedicated PHP queue workers for your 
 
 Meilisearch servers install [Meilisearch](https://meilisearch.com) to provide a blazingly fast search service to your application. They are intended to be connected to another server, and communicate via a [private network](./../resources/network.md#server-network).
 
-A Meilisearch server will only display and manage one [Site](/1.0/sites/the-basics.html). You cannot create or delete other sites on this server. When connecting to the Meilisearch server from a web or application server, you should connect to it via its private IP address.
+A Meilisearch server will only display and manage one [Site](/sites/the-basics). You cannot create or delete other sites on this server. When connecting to the Meilisearch server from a web or application server, you should connect to it via its private IP address.
 
 ### Load Balancers
 
 Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balancers use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
 
-Once provisioned you may [configure your load balancer](/1.0/servers/load-balancing.html) to meet your needs.
+Once provisioned you may [configure your load balancer](/servers/load-balancing) to meet your needs.

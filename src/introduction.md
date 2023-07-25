@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/introduction'
----
 # Introduction
 
 ## What is Forge?
@@ -9,21 +6,21 @@ Laravel Forge is a server management and application deployment service. Forge t
 
 We live and breathe PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as Node.js.
 
-After connecting to your preferred [server provider](/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
+After connecting to your preferred [server provider](/servers/providers), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](/servers/types) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
 
 - Nginx web server
-- [PHP](/1.0/servers/php.html) (multiple version support)
-- [Database](/1.0/resources/databases.html) (MySQL, Postgres, or MariaDB)
+- [PHP](/servers/php) (multiple version support)
+- [Database](/resources/databases) (MySQL, Postgres, or MariaDB)
 - Logrotate
-- [UFW Firewall](/1.0/resources/network.html#firewalls)
-- [OPcache](/1.0/servers/php.html#opcache)
-- [Memcached](/1.0/resources/caches.html)
-- [Redis](/1.0/resources/caches.html)
+- [UFW Firewall](/resources/network#firewalls)
+- [OPcache](/servers/php#opcache)
+- [Memcached](/resources/caches)
+- [Redis](/resources/caches)
 - MeiliSearch
-- [Automatic Security Updates](/1.0/servers/provisioning-process.html#automated-security-updates)
+- [Automatic Security Updates](/servers/provisioning-process#automated-security-updates)
 - And much more!
 
-In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/scheduler.html), [queue workers](/1.0/sites/queues.html), [TLS/SSL certificates](/1.0/sites/ssl.html), and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
+In addition, Forge can assist you in managing [scheduled jobs](/resources/scheduler), [queue workers](/sites/queues), [TLS/SSL certificates](/sites/ssl), and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
 
 ## Video Tutorials
 

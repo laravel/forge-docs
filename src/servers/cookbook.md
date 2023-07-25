@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/cookbook.html'
----
 # Cookbook
 
 ## Restarting PHP FPM
@@ -82,7 +79,7 @@ This error is returned by [DigitalOcean](https://digitalocean.com) when you have
 
 ## AWS Provisioned Servers Are Disappearing
 
-To ensure Forge works correctly with AWS, please review [these requirements](/1.0/servers/providers.html#amazon-aws-api-access).
+To ensure Forge works correctly with AWS, please review [these requirements](/servers/providers#amazon-aws-api-access).
 
 ## Server Disconnected
 
@@ -91,7 +88,7 @@ There are several reasons why your server may have a "disconnected" status. We e
 - Verify that the server is powered on via your server provider's dashboard. If the server is powered off, you should restart it using your **provider's dashboard**.
 - Verify that the public IP address of the server is known to Forge (the public IP address may change between reboots of the actual VPS).
 - Verify that the Forge generated public key for the server is included in the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files. This key is available via the "Meta" tab of your server's Forge management panel.
-- If your server is behind a firewall, make sure you have [allowed Forge's IP addresses to access the server](/1.0/introduction.html#forge-ip-addresses).
+- If your server is behind a firewall, make sure you have [allowed Forge's IP addresses to access the server](/introduction#forge-ip-addresses).
 - If you removed Port 22 from the server's firewall rules, you will need to contact your server provider and ask them to restore the rule. Removing this rule prevents Forge from accessing your server via SSH.
 - Remove any private keys or other lines that do not contain a valid public key from the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files.
 

@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/cookbook.html'
----
 # Cookbook
 
 ## Forge Is Unable To Access Git Repository

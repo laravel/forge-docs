@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/your-account.html'
----
 # Your Account
 
 ## User Account
@@ -43,7 +40,7 @@ Deleting your account will cancel your subscription and delete all of your accou
 
 ### Sharing Your Account's Servers With Other Users
 
-If you need to allow other users to help manage the servers in your Forge account, you can create a [Circle](/1.0/accounts/circles.html).
+If you need to allow other users to help manage the servers in your Forge account, you can create a [Circle](/accounts/circles).
 
 ## Billing
 

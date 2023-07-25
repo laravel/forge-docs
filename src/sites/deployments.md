@@ -1,11 +1,8 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/deployments.html'
----
 # Deployments
 
 ## Overview
 
-A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, how long it took to be deployed, and also view the output of your [deploy script](/1.0/sites/deployments.html#deploy-script).
+A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when it was deployed, how long it took to be deployed, and also view the output of your [deploy script](/sites/deployments#deploy-script).
 
 ## Environments
 
@@ -36,7 +33,7 @@ Forge's "Quick Deploy" feature allows you to easily deploy your projects when yo
 
 You can enable Forge's quick deploy feature by clicking the "Enable Quick Deploy" button within the *Apps* tab of your site's management dashboard.
 
-For sites using a [custom source control provider](/1.0/accounts/source-control.html#using-a-custom-git-provider) you will need to manually set up a [Deployment Trigger](/1.0/sites/deployments.html#deploying-from-ci) to have your code deployed when you push to your source provider. Click the "Manage Quick Deploy" button within the *Apps* tab of your site's management dashboard for instructions.
+For sites using a [custom source control provider](/accounts/source-control#using-a-custom-git-provider) you will need to manually set up a [Deployment Trigger](/sites/deployments#deploying-from-ci) to have your code deployed when you push to your source provider. Click the "Manage Quick Deploy" button within the *Apps* tab of your site's management dashboard for instructions.
 
 ## Deploy Script
 
@@ -60,7 +57,7 @@ Deployments may make your site unavailable for a brief moment. If you need absol
 
 ### PHP Versions
 
-If you have installed [multiple versions of PHP](/1.0/servers/php.html) on your server, your deploy script may need to be updated to use the correct version of PHP.
+If you have installed [multiple versions of PHP](/servers/php) on your server, your deploy script may need to be updated to use the correct version of PHP.
 
 By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP, you must use `phpx.x` where `x.x` reflects on the version used (e.g. `php8.1`) when invoking PHP commands.
 
@@ -134,7 +131,7 @@ There are 4 reserved parameters you may use to pass Forge information when trigg
 
 ### Using Forge CLI
 
-If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](/1.0/cli.html).
+If you would like to have access to the deployment output or execute additional deployment actions such as restarting services, you may use [Forge CLI](/cli).
 
 Once you have installed Forge CLI, you may execute the `forge deploy` command in your CI platform's deployment pipeline.
 

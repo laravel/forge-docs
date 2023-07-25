@@ -1,11 +1,8 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/ssh.html'
----
 # SSH Keys / Git Access
 
 ## Account SSH Keys
 
-When provisioning a new server Forge will automatically add any of your [account's SSH keys](/1.0/accounts/ssh.html) to the server. This means that you can SSH onto your server without using a password:
+When provisioning a new server Forge will automatically add any of your [account's SSH keys](/accounts/ssh) to the server. This means that you can SSH onto your server without using a password:
 
 ```bash
 ssh forge@IP_ADDRESS

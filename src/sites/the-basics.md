@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/the-basics.html'
----
 # The Basics
 
 ## Creating Sites
@@ -12,9 +9,9 @@ When creating a new site on your Forge server, a variety of configuration option
 - **Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, Laravel Octane, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
 - **Web Directory:** The directory that should be publicly accessible via the Internet. For Laravel applications, this is typically the `/public` directory.
 - **PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
-- **Nginx Template**: If you have configured any [Nginx Templates](/1.0/servers/nginx-templates.html) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
+- **Nginx Template**: If you have configured any [Nginx Templates](/servers/nginx-templates) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
 - **Wildcard Sub-Domains:** This configuration setting will enable the site to respond to any subdomain under its configured root domain.
-- **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/1.0/sites/user-isolation.html).
+- **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/sites/user-isolation).
 - **Create Database:** This setting indicates if you would like a new database to be created for your site.
 
 ### Circle Permissions
@@ -23,13 +20,13 @@ You may grant a circle member authority to create and delete sites by granting t
 
 ## Apps / Projects
 
-Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a [Git repository](/1.0/sites/the-basics.html#git-repository), [WordPress](/1.0/sites/the-basics.html#wordpress), or [phpMyAdmin](/1.0/sites/the-basics.html#phpmyadmin). 
+Once the site has been created in Forge, you can then install an application or project. Projects contain the actual source code of your application. Forge can install three types of applications: an application that exists within a [Git repository](/sites/the-basics#git-repository), [WordPress](/sites/the-basics#wordpress), or [phpMyAdmin](/sites/the-basics#phpmyadmin). 
 
 ### Git Repository
 
 :::tip Source Control Providers
 
-Before you can install a Git repository, you must first ensure that you have [connected your source control provider](/1.0/accounts/source-control.html) to your Forge account.
+Before you can install a Git repository, you must first ensure that you have [connected your source control provider](/accounts/source-control) to your Forge account.
 :::
 
 Once you have connected your source control provider accounts, you may choose the provider from one of the available options. If you're self-hosting your own code or using a provider that Forge doesn't include first-party support for, you may select the **Custom** option. When using either the Bitbucket or Custom provider option, you will need to manually add the Forge SSH key to the provider.
@@ -48,7 +45,7 @@ When adding a new site to the server, you may choose to generate a Deploy Key fo
 
 Forge can also install [WordPress](https://wordpress.org) for you, so you can get right into writing your next blog post.
 
-If you haven't done so already, you should [create a new database](/1.0/resources/databases.html#creating-databases) and database user. This is used by WordPress to store all of your blog posts.
+If you haven't done so already, you should [create a new database](/resources/databases#creating-databases) and database user. This is used by WordPress to store all of your blog posts.
 
 Once WordPress has been installed, you can visit your site's domain name and continue the WordPress installation from your browser.
 
@@ -56,14 +53,14 @@ When installing WordPress for your site, Forge will also install the [WordPress 
 
 :::danger Securing WordPress
 
-You should continue installing WordPress as soon as Forge has installed it for you, so that it's made secure with your username and password. You could also choose to create a new [Security Rule](/1.0/sites/security-rules.html) before you install WordPress so that your installation is password protected.
+You should continue installing WordPress as soon as Forge has installed it for you, so that it's made secure with your username and password. You could also choose to create a new [Security Rule](/sites/security-rules) before you install WordPress so that your installation is password protected.
 :::
 
 ### phpMyAdmin
 
 Forge also supports installing [phpMyAdmin](https://phpmyadmin.net), so you can manage your databases from anywhere.
 
-If you haven't done so already, you should [create a new database](/1.0/resources/databases.html#creating-databases) and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
+If you haven't done so already, you should [create a new database](/resources/databases#creating-databases) and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
 
 Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
 
@@ -80,7 +77,7 @@ When you are ready to transition your application to an official domain name, yo
 
 ### Nginx Configuration
 
-Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/1.0/servers/nginx-templates.html) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard.
+Below is an example of the default Nginx site configuration that is used by Laravel Forge. [Additional Nginx templates](/servers/nginx-templates) may be created in Forge using the "Nginx Templates" panel within your server's management dashboard.
 
 ```nginx
 # FORGE CONFIG (DO NOT REMOVE!)
@@ -106,7 +103,7 @@ server {
     add_header X-XSS-Protection "1; mode=block";
     add_header X-Content-Type-Options "nosniff";
 
-    index index.html index.htm index.php;
+    index index index.htm index.php;
 
     charset utf-8;
 
@@ -145,13 +142,13 @@ Once your site has been created, you may edit the Nginx configuration on a site-
 
 ## PHP Version
 
-If your server has [multiple versions of PHP](/1.0/servers/php.html) installed, you can switch the version used by your site at any time by using the site's **Meta** tab in the Forge dashboard.
+If your server has [multiple versions of PHP](/servers/php) installed, you can switch the version used by your site at any time by using the site's **Meta** tab in the Forge dashboard.
 
 #### Changing A Site's Installed PHP Version
 
 When switching the version used by your site, you should ensure that your server has any additional PHP extensions / modules installed for that version. Failure to install additional modules may make your site unresponsive.
 
-You will also need to update your site's [deployment script](/1.0/sites/deployments.html#deploy-script) to reload the correct version of PHP-FPM and invoke the correct version of PHP when running any PHP commands.
+You will also need to update your site's [deployment script](/sites/deployments#deploy-script) to reload the correct version of PHP-FPM and invoke the correct version of PHP when running any PHP commands.
 
 ## Maintenance Mode
 
