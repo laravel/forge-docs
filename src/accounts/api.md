@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/api.html'
----
 # API
 
 [[toc]]

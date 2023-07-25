@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/ssh.html'
----
 # SSH Keys
 
 [[toc]]
@@ -27,7 +24,7 @@ If any of your sites are using User Isolation, you will be asked to select the u
 
 If you already have servers provisioned and want to add a new SSH key to several servers at once, then first add your key to your account via the [SSH Keys page](https://forge.laravel.com/user-profile/ssh-keys). Once it is listed in the "Active Keys", you may use the "Add To Servers" action and select which servers you would like the key added to.
 
-You can also [add SSH keys directly to a server](/1.0/servers/ssh.html) without adding them to your account.
+You can also [add SSH keys directly to a server](/servers/ssh) without adding them to your account.
 
 ## Server Public Key
 

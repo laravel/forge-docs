@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0;url=/docs/1.0/accounts/your-account" />
+<meta http-equiv="refresh" content="0;url=/docs/accounts/your-account" />

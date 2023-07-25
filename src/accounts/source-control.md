@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/accounts/source-control.html'
----
 # Source Control
 
 [[toc]]

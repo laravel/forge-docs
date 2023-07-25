@@ -1,13 +1,10 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/resources/databases.html'
----
 # Databases
 
 [[toc]]
 
 ## Overview
 
-When provisioning a new Forge server you may choose to install an [App Server](/1.0/servers/types.html#app-servers) or a [Database Server](/1.0/servers/types.html#database-servers). You can then use the Forge dashboard to manage databases, users, and permissions.
+When provisioning a new Forge server you may choose to install an [App Server](/servers/types#app-servers) or a [Database Server](/servers/types#database-servers). You can then use the Forge dashboard to manage databases, users, and permissions.
 
 ## Creating Servers With Databases
 

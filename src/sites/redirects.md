@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/redirects.html'
----
 # Redirects
 
 [[toc]]
@@ -11,7 +8,7 @@ Forge allows you to configure redirects that can be configured to automatically 
 
 ## Creating Redirects
 
-Redirects are wrappers around Nginx's [`rewrite` rules](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite) and can use the full redirect syntax supported by Nginx, including regular expressions. For example, you could use `^/$` to only match the root of the domain.
+Redirects are wrappers around Nginx's [`rewrite` rules](https://nginx.org/en/docs/http/ngx_http_rewrite_module#rewrite) and can use the full redirect syntax supported by Nginx, including regular expressions. For example, you could use `^/$` to only match the root of the domain.
 
 ## Temporary vs. Permanent Redirects
 

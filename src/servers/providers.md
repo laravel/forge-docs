@@ -1,6 +1,3 @@
----
-canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/providers.html'
----
 # Server Providers
 
 [[toc]]
@@ -19,7 +16,7 @@ Forge can create and manage servers on the following cloud server providers:
 
 If your preferred server provider is not supported by Forge, you may use Forge's "Custom VPS" option to create your server. Custom VPS servers receive all of the same functionality as first-party supported server providers.
 
-[Learn more](/1.0/servers/providers.html#bring-your-own-server)
+[Learn more](/servers/providers#bring-your-own-server)
 :::
 
 ### Linking Server Providers
@@ -57,7 +54,7 @@ In addition, you may wish to set the token to never expire.
 
 ### Vultr API Access
 
-The Vultr server provider requires you to add the [Forge IP addresses](/1.0/introduction.html#forge-ip-addresses) to an IP address allow list so that Forge can communicate with your servers. You should ensure that you do this before provisioning a Vultr server via Forge.
+The Vultr server provider requires you to add the [Forge IP addresses](/introduction#forge-ip-addresses) to an IP address allow list so that Forge can communicate with your servers. You should ensure that you do this before provisioning a Vultr server via Forge.
 
 ## Bring Your Own Server
 
@@ -71,6 +68,6 @@ In addition, you should review the following server requirements:
 - The server requirements **should meet** the following criteria or more: 1 CPU Core with 1GHz, 1GB RAM, and 10GB Disk space.
 - The server **must have** curl installed.
 
-Please refer to the [Forge IP address documentation](/1.0/introduction.html#forge-ip-addresses) if you restrict SSH access to your server by IP addresses.
+Please refer to the [Forge IP address documentation](/introduction#forge-ip-addresses) if you restrict SSH access to your server by IP addresses.
 
 If you are protecting your internal network through Network Address Translation and you are mapping public SSH ports to different internal SSH ports, you may let Forge know about this by checking the **This server is behind a NAT** checkbox. This will show an extra input field, **NAT SSH Port**, that you can use to tell Forge about the SSH port to which SSH traffic is mapped. Forge will use this port to allow traffic into the server via `ufw`. If the internal SSH port is the same as the public SSH port, you **may** leave the **NAT SSH Port** field empty.
