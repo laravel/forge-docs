@@ -1,7 +1,5 @@
 # CLI
 
-[[toc]]
-
 ## Overview
 
 Forge provides a command-line tool that you may use to manage your Forge servers, sites, and resources from the command-line.

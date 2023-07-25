@@ -1,7 +1,5 @@
 # Root Access / Security
 
-[[toc]]
-
 ## Provisioning
 
 During the initial provisioning of your server, Forge will connect as the `root` user over SSH. This is so that Forge is able to add repositories, install dependencies and configure new services, firewalls, and more.

@@ -1,7 +1,5 @@
 # Databases
 
-[[toc]]
-
 ## Overview
 
 When provisioning a new Forge server you may choose to install an [App Server](/servers/types#app-servers) or a [Database Server](/servers/types#database-servers). You can then use the Forge dashboard to manage databases, users, and permissions.

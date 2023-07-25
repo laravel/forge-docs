@@ -1,7 +1,5 @@
 # Network
 
-[[toc]]
-
 ## Overview
 
 Forge allows you to manage your server's firewall as well as configure which servers can connect to other servers via the **Network** management panel within your server's management dashboard.

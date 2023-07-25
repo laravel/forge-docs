@@ -1,7 +1,5 @@
 # SSH Keys / Git Access
 
-[[toc]]
-
 ## Account SSH Keys
 
 When provisioning a new server Forge will automatically add any of your [account's SSH keys](/accounts/ssh) to the server. This means that you can SSH onto your server without using a password:

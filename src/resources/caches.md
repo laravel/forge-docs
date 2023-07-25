@@ -1,7 +1,5 @@
 # Caches
 
-[[toc]]
-
 ## Overview
 
 When provisioning an [App Server](/servers/types#app-servers) or a [Cache Server](/servers/types#cache-servers), Forge will automatically install [Memcache](https://www.memcached.org/) and [Redis](https://redis.io/). By default, neither of these services are exposed to the public and may only be accessed from within your server.

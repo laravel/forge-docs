@@ -1,7 +1,5 @@
 # Cookbook
 
-[[toc]]
-
 ## Forge Is Unable To Access Git Repository
 
 There are several reasons Forge may not be able to access your GitHub, GitLab, or Bitbucket repository. First, you should try refreshing the source control API token that is linked to Forge via your account profile's "Source Control" tab.

@@ -1,7 +1,5 @@
 # Server Providers
 
-[[toc]]
-
 ## Supported Server Providers
 
 Forge can create and manage servers on the following cloud server providers:

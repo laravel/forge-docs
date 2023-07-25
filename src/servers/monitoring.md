@@ -1,7 +1,5 @@
 # Monitoring
 
-[[toc]]
-
 ## Overview
 
 Forge can be configured to monitor the following metrics on your server and email you when their state changes:

@@ -1,7 +1,5 @@
 # Tags
 
-[[toc]]
-
 ## Overview
 
 "Tagging" your servers and sites can make them easier to manage, especially if you have many servers / sites. Servers can be tagged via the server dashboard's **Meta** tab's **Server Metadata** section, while sites can be tagged via the site dashboard's **Meta** tab.

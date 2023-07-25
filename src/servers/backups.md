@@ -1,7 +1,5 @@
 # Database Backups
 
-[[toc]]
-
 ## Overview
 
 Forge supports automated database backups that can be scheduled directly from your server's Forge dashboard. You can choose to backup one or more databases at a specified frequency and also restore any of your recent backups. The backup script used by Forge is open source and can be [found on GitHub](https://github.com/laravel/forge-database-backups).

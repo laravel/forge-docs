@@ -1,7 +1,5 @@
 # Management
 
-[[toc]]
-
 ## Server Metadata
 
 The server dashboard's **Meta** tab can be used to update important details of a server including its name, SSH connection details, timezone, and tags.

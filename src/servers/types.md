@@ -1,7 +1,5 @@
 # Server Types
 
-[[toc]]
-
 ## Introduction
 
 Forge supports provisioning several different types of servers:

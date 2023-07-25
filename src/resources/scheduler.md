@@ -1,7 +1,5 @@
 # Scheduler
 
-[[toc]]
-
 ## Scheduled Jobs
 
 Scheduled jobs may be configured to run commands at a specified interval. Forge provides several common defaults, or you may enter a custom Cron schedule for a command.

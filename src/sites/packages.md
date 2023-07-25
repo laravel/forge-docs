@@ -1,7 +1,5 @@
 # Packages
 
-[[toc]]
-
 ## Overview
 
 Forge allows you to manage the "http-basic" portion of the selected site's user's `auth.json` Composer configuration file. The provided credentials are only stored on the server being managed by Forge - not within Forge itself.
