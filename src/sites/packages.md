@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/packages.html'
+---
 # Packages
 
 ## Overview
@@ -6,7 +9,7 @@ Forge allows you to manage the "http-basic" portion of the selected site's user'
 
 ### Site Composer Credentials
 
-The Composer Credentials that you can manage on the site level only apply to this site . For example, if you have two sites installed under the `forge` user, and you need both sites to use different credentials for the same Composer package, you should use the site's packages. If you want to store one set of credentials that applies to all sites with a user's home directory, please see [Packages](/servers/packages) for more details.
+The Composer Credentials that you can manage on the site level only apply to this site . For example, if you have two sites installed under the `forge` user, and you need both sites to use different credentials for the same Composer package, you should use the site's packages. If you want to store one set of credentials that applies to all sites with a user's home directory, please see [Packages](/1.0/servers/packages.html) for more details.
 
 ### Adding Credentials Before Installing a Repository
 

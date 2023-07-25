@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/ssl.html'
+---
 # SSL
 
 ## Overview
@@ -49,7 +52,7 @@ Cloudflare provides [free SSL certificates](https://developers.cloudflare.com/ss
 
 #### Route53 User Policy
 
-If you are using [Route53](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome) to manage your DNS, your IAM user must have the `route53:ChangeResourceRecordSets` permission on your domain's hosted zone. In addition, the user must have the `route53:GetChange` and `route53:ListHostedZones` permissions. 
+If you are using [Route53](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html) to manage your DNS, your IAM user must have the `route53:ChangeResourceRecordSets` permission on your domain's hosted zone. In addition, the user must have the `route53:GetChange` and `route53:ListHostedZones` permissions. 
 
 ## Circle Permissions
 

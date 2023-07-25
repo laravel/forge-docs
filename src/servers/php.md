@@ -1,8 +1,11 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/php.html'
+---
 # PHP
 
 ## Overview
 
-Forge makes it easy to install and configure multiple versions of PHP on your server. Each installed PHP version runs its own FPM process. In addition, you may [update the PHP version used by specific sites at any time](/sites/the-basics#php-version).
+Forge makes it easy to install and configure multiple versions of PHP on your server. Each installed PHP version runs its own FPM process. In addition, you may [update the PHP version used by specific sites at any time](/1.0/sites/the-basics.html#php-version).
 
 :::danger Manual PHP Installations
 
@@ -65,7 +68,7 @@ You may configure the maximum execution time through the **PHP** tab of the serv
 
 ### OPcache
 
-Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script [reloads the PHP-FPM service](/servers/cookbook#restarting-php-fpm) at the end of each deployment.
+Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script [reloads the PHP-FPM service](/1.0/servers/cookbook.html#restarting-php-fpm) at the end of each deployment.
 
 ## Circle Permissions
 

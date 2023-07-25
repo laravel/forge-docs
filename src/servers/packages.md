@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/packages.html'
+---
 # Packages
 
 ## Overview
@@ -6,7 +9,7 @@ Forge allows you to manage the "http-basic" portion of the selected server user'
 
 ### Global Composer Credentials
 
-The Composer credentials that you can manage on the server level will apply to all sites that are served by the same Ubuntu user account. For example, if you have two sites installed under the `forge` user, both these sites will benefit from the globally stored credentials. If you need fine-grained control, please see the [Packages](/sites/packages) documentation for sites.
+The Composer credentials that you can manage on the server level will apply to all sites that are served by the same Ubuntu user account. For example, if you have two sites installed under the `forge` user, both these sites will benefit from the globally stored credentials. If you need fine-grained control, please see the [Packages](/1.0/sites/packages.html) documentation for sites.
 
 ### User Selection
 

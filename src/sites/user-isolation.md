@@ -1,3 +1,6 @@
+---
+canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/user-isolation.html'
+---
 # User Isolation
 
 ## Overview
@@ -23,4 +26,4 @@ If you need further sudo access, you should login as the `forge` user and switch
 
 ## Connecting Via SFTP
 
-You can connect to your server via SFTP as the isolated user. We recommend using an SFTP client such as [Transmit](https://panic.com/transmit/) or [Filezilla](https://filezilla-project.org/). However, before getting started, you should first [upload your SSH key to the server](/accounts/ssh) for the isolated user.
+You can connect to your server via SFTP as the isolated user. We recommend using an SFTP client such as [Transmit](https://panic.com/transmit/) or [Filezilla](https://filezilla-project.org/). However, before getting started, you should first [upload your SSH key to the server](/1.0/accounts/ssh.html) for the isolated user.
