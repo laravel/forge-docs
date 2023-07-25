@@ -60,7 +60,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
                 text: "Sites",
                 items: [
-                    { text: 'The Basic', link: '/sites/the-basics' },
+                    { text: 'The Basics', link: '/sites/the-basics' },
                     { text: 'Deployments', link: '/sites/deployments' },
                     { text: 'Commands', link: '/sites/commands' },
                     { text: 'Packages', link: '/sites/packages' },
