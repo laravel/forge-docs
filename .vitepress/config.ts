@@ -17,6 +17,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
         nav: [
             { text: 'Home', link: 'https://forge.laravel.com' },
+            { text: 'Video Tutorials', link: 'https://laracasts.com/series/learn-laravel-forge-2022-edition' },
         ],
         sidebar: [
             {
