@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-import config from './node_modules/pilgrim-theme/tailwind.config.js'
+import config from '@hempworks/pilgrim/tailwind'
 
 const primary = {
 //   50: '#f2f9ff',
@@ -18,7 +18,7 @@ const primary = {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   presets: [
-    require('./node_modules/pilgrim-theme/tailwind.config.js')
+    require('@hempworks/pilgrim/tailwind')
   ],
   
   content: [
