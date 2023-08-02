@@ -23,6 +23,7 @@ module.exports = {
   content: [
     ...tailwindConfig.content,
     './.vitepress/theme/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/*.{md,svg}',
   ],
 
   theme: {

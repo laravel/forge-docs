@@ -7,7 +7,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     title: 'Laravel Forge',
     description: 'Deploy your Laravel PHP application painlessly',
     base: '/docs/',
-    cleanUrls: true,
+    cleanUrls: false,
     srcDir: 'src',
 
     head: [
@@ -43,10 +43,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         ['meta', {
             name: 'msapplication-TileImage',
             content: 'forge.laravel.com/mstile-144x144.png',
-        }],
-        ['meta', {
-            name: 'theme-color',
-            content: '#18b69b',
         }],
         ['meta', {
             property: 'og:image',
