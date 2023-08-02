@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0;url=/docs/servers/providers" />
+<meta http-equiv="refresh" content="0;url=/docs/servers/providers.html" />
