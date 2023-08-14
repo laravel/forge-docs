@@ -101,7 +101,7 @@ For reference, here is a breakdown of what is offered by each server type:
 
 ### App Servers
 
-Application servers are designed include everything you need to deploy a typical Laravel / PHP application within a single server. Therefore, they are provisioned with the following software:
+Application servers are designed to include everything you need to deploy a typical Laravel / PHP application within a single server. Therefore, they are provisioned with the following software:
 
 - PHP
 - Nginx
