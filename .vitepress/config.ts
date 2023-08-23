@@ -72,7 +72,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                 text: "Getting Started",
                 items: [
                     { text: 'Introduction', link: '/introduction.html' },
-                    { text: 'CLI', link: '/cl.htmli' }
+                    { text: 'CLI', link: '/cli.html' }
                 ],
             },
             {
