@@ -47,6 +47,12 @@ If you are restricting HTTP traffic, your server must also allow incoming and ou
 The Forge IP addresses may change from time to time; however, we will always email you several weeks prior to an IP address change.
 :::
 
+## Forge x Envoyer Integration
+
+[![Forge x Envoyer Integration](./img/forge-envoyer-integration-header.png)](https://blog.laravel.com/forge-zero-downtime-deployments)
+
+Forge now offers zero downtime deployments, thanks to a seamless first-party integration with [Envoyer](https://envoyer.io). [Read the blog post](https://blog.laravel.com/forge-zero-downtime-deployments).
+
 ## Forge API
 
 Forge provides a powerful API that allows you to manage your servers programatically, providing access to the vast majority of Forge features. You can find the Forge API documentation [here](https://forge.laravel.com/api-documentation).

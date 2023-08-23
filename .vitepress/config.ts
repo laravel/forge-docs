@@ -116,6 +116,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                     { text: 'Security Rules', link: '/sites/security-rules.html' },
                     { text: 'Redirects', link: '/sites/redirects.html' },
                     { text: 'SSL', link: '/sites/ssl.html' },
+                    { text: 'Envoyer', link: '/sites/envoyer.html' },
                     { text: 'User Isolation', link: '/sites/user-isolation.html' },
                     { text: 'Cookbook', link: '/sites/cookbook.html' },
                 ],
