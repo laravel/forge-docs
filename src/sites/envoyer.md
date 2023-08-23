@@ -17,16 +17,17 @@ servers:create
 ```
 
 :::tip Envoyer API Access
+
 To future-proof the integration, consider providing Forge with additional access permissions. You can update your Envoyer’s API token in Forge at any point.
 :::
 
-## Linking your Envoyer account to Forge
+## Linking Your Envoyer Account To Forge
 
 Next, it’s time to link Forge with your Envoyer API token. Navigate to your account settings in Forge and click on the [Envoyer navigation item](https://forge.laravel.com/user-profile/envoyer).
 
 ![Envoyer panel in Forge's Account settings](/img/forge-envoyer-panel.png)
 
-## Creating new Sites with Envoyer
+## Creating New Sites With Envoyer
 
 When creating a new site in Forge, you’ll notice a new option labeled “Configure with Envoyer”. Toggle this option to reveal a dropdown menu, where you can either select an existing Envoyer project or create a brand new one.
 
@@ -34,7 +35,7 @@ When creating a new site in Forge, you’ll notice a new option labeled “Confi
 
 ![Creating a new Envoyer project from Forge](/img/new-envoyer-project.png)
 
-## Envoyer Sites in Forge
+## Envoyer Sites In Forge
 
 To deploy your Envoyer project within Forge, simply click the “Deploy Now” button, just as you would with any other site in Forge. The “Deployment Trigger URL” is also available for use in a CI environment.
 
