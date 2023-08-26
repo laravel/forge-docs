@@ -64,8 +64,8 @@ export default defineConfigWithTheme<ThemeConfig>({
             dark: '/logo.svg',
         },
         nav: [
-            { text: 'Laravel Forge', link: 'https://laravel.com/forge.html' },
-            { text: 'Video Tutorials', link: 'https://laracasts.com/series/learn-laravel-forge-2022-edition.html' },
+            { text: 'Laravel Forge', link: 'https://laravel.com/forge' },
+            { text: 'Video Tutorials', link: 'https://laracasts.com/series/learn-laravel-forge-2022-edition' },
         ],
         sidebar: [
             {
