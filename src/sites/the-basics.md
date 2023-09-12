@@ -16,7 +16,7 @@ When creating a new site on your Forge server, a variety of configuration option
 - **Website Isolation:** This configuration setting indicates whether the PHP-FPM process should run under its own user account. You may learn more about website isolation by consulting the [full documentation regarding this feature](/sites/user-isolation).
 - **Create Database:** This setting indicates if you would like a new database to be created for your site.
 
-## Automatic Redirects
+### Automatic Redirects
 
 When creating your site, Forge will automatically create a redirect from the `www` subdomain to the root domain.
 For example, if you create a site with the root domain `example.com`, Forge will automatically create a redirect from `www.example.com` to `example.com`.
@@ -150,7 +150,7 @@ Once your site has been created, you may edit the Nginx configuration on a site-
 
 ### Protecting Against Unconfigured Domains
 
-When provisioning your server, Forge will automatically create a catch-all site for your server at `/etc/nginx/sites-available/000-catch-all`. This is a special site that is used to stop domains that are not configured on your server from being served by your server. This site will respond with a special Nginx `444` status code for any request that does not match a configured domain.
+When provisioning your server, Forge will automatically create a "catch-all" site for your server at `/etc/nginx/sites-available/000-catch-all`. This is a special site that is used to stop domains that are not configured on your server from being served. This site will respond with a special Nginx `444` status code for any request that does not match a configured domain.
 
 ## PHP Version
 
