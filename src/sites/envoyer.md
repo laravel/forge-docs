@@ -46,3 +46,33 @@ Additionally, Forge has been updated to align perfectly with Envoyer projects:
 - The site’s Packages panel is disabled to ensure the `auth.json` file remains intact through subsequent deployments.
 
 ![Application panel when a project is configured with Envoyer](/img/site-panel-with-envoyer.png)
+
+## Migrating An Existing Site To Envoyer
+
+Before migrating your Forge site to Envoyer, ensure your site directory does not contain a directory called `releases` or `current`. This is essential to allow Envoyer to create these directories during the project installation on your server.
+
+Next, access the Envoyer dashboard and navigate to the relevant project. Within the project settings, select "Import Forge Server," then choose the appropriate server and site before clicking "Import Server."
+
+![Import server from Forge](/img/import-server-from-forge.png)
+
+After adding the server details, it's crucial to test the connection to ensure that Envoyer can communicate with your server effectively. You can test the connection status from the server overview.
+
+![Server connection status](/img/server-connection-status.png)
+
+Click on the "Manage Environment" option, unlock your environment, and sync it to the new server. This action will replace the contents of the existing `.env` file in the site directory on the server.
+
+![Sync environment variables](/img/sync-environment.png)
+
+Now, you should initiate a deployment from Envoyer. Once the deployment is complete, Envoyer will copy the latest version of your application into the releases directory of your site and add a symlink to `/current`.
+
+Your site should still be accessible, but the old version is still being served. To address this, navigate to the "Meta" panel in Forge and prefix the web directory with `/current`. For example, if your site's web directory is currently `/public`, update it to `/current/public`. Doing so will instruct Nginx to serve your application from `/home/forge/example.com/current/public` – the location where Envoyer has installed the latest version of your application.
+
+![Update web directory](/img/update-web-directory.png)
+
+You should now tidy your site directory by ensuring it only contains the `releases`, `current`, and `storage` directories. After ensuring you have backed up anything you need, you may remove everything else, including any dotfiles and directories such as `.git`, `.gitattributes`, etc.
+
+Forge should now recognize your site as being managed by Envoyer in the "Envoyer" panel. You can now go ahead and link the two together by selecting the relevant project from the options provided.
+
+![Link Forge with Envoyer](/img/forge-envoyer-link.png)
+
+By following these steps, you can ensure a smooth migration of your Forge site to Envoyer and leverage Envoyer's zero downtime deployment capabilities.
