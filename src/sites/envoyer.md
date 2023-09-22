@@ -51,7 +51,7 @@ Additionally, Forge has been updated to align perfectly with Envoyer projects:
 
 Before migrating your Forge site to Envoyer, ensure your site directory does not contain a directory called `releases` or `current`. This is essential to allow Envoyer to create these directories during the project installation on your server.
 
-Next, access the Envoyer dashboard and navigate to the relevant project. Within the project settings, select "Import Forge Server," then choose the appropriate server and site before clicking "Import Server."
+Next, access the Envoyer dashboard and navigate to the relevant project. Within the project settings, select "Import Forge Server", then choose the appropriate server and site before clicking "Import Server."
 
 ![Import server from Forge](/img/import-server-from-forge.png)
 
@@ -69,10 +69,12 @@ Your site should still be accessible, but the old version is still being served.
 
 ![Update web directory](/img/update-web-directory.png)
 
-You should now tidy your site directory by ensuring it only contains the `releases`, `current`, and `storage` directories. After ensuring you have backed up anything you need, you may remove everything else, including any dotfiles and directories such as `.git`, `.gitattributes`, etc.
+You should now tidy your site directory by ensuring it only contains the `.env` file, along with the `releases`, `current`, and `storage` directories. After **ensuring you have backed up anything you need**, you may remove everything else, including any dotfiles and directories such as `.git`, `.gitattributes`, etc.
 
-Forge should now recognize your site as being managed by Envoyer in the "Envoyer" panel. You can now go ahead and link the two together by selecting the relevant project from the options provided.
+Now the the web directory includes `/current`, Forge will recognize your site as being managed by Envoyer in the "Envoyer" panel. You can now go ahead and link the two together by selecting the relevant project from the options provided.
 
 ![Link Forge with Envoyer](/img/forge-envoyer-link.png)
+
+Finally, now that your application runs from the `/current` directory, you should update your scheduler, queue workers and any daemons to ensure they are running from the correct path.
 
 By following these steps, you can ensure a smooth migration of your Forge site to Envoyer and leverage Envoyer's zero downtime deployment capabilities.
