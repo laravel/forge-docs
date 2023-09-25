@@ -15,6 +15,7 @@ When creating a new server, you can select to install a supported database serve
 - PostgreSQL (12)
 - PostgreSQL (13)
 - PostgreSQL (14)
+- PostgreSQL (15)
 
 As part of the provisioning process, Forge will automatically install the selected database server and create a default `forge` database, `forge` user, and a secure, randomly-generated password. The database password will be shown upon creating the server alongside the root password. These passwords will also be emailed to you.
 
