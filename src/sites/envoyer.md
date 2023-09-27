@@ -6,7 +6,7 @@
 
 Forge now offers zero downtime deployments, thanks to a seamless first-party integration with [Envoyer](https://envoyer.io). Envoyer's zero downtime deployments ensure you avoid even those brief milliseconds of downtime while the server updates your code.
 
-## Creating an Envoyer API Token
+## Creating An Envoyer API Token
 
 To kick things off, you'll need active subscriptions for both [Laravel Forge](https://forge.laravel.com/auth/register) and [Envoyer](https://envoyer.io/auth/register). Once you’re set up, navigate to your Envoyer dashboard and [create a new API token](https://envoyer.io/user/profile?name=Laravel%20Forge&scopes=projects:create,deployments:create,servers:create#/api). At a minimum, Forge requires the following scopes:
 
@@ -46,3 +46,33 @@ Additionally, Forge has been updated to align perfectly with Envoyer projects:
 - The site’s Packages panel is disabled to ensure the `auth.json` file remains intact through subsequent deployments.
 
 ![Application panel when a project is configured with Envoyer](/img/site-panel-with-envoyer.png)
+
+## Migrating An Existing Site To Envoyer
+
+Before migrating your Forge site to Envoyer, ensure your site directory does not contain a directory named `releases` or `current`. This is essential in allowing Envoyer to create these directories during the project's installation on your server.
+
+Next, access the Envoyer dashboard and navigate to the relevant project. Within the project settings, select "Import Forge Server", then choose the appropriate server and site before clicking "Import Server."
+
+![Import server from Forge](/img/import-server-from-forge.png)
+
+After adding the server details, it's crucial to test the connection to ensure that Envoyer can communicate with your server effectively. You can test the connection status from the server overview.
+
+![Server connection status](/img/server-connection-status.png)
+
+Next, click the "Manage Environment" button, unlock your environment, and sync it to the new server. This action will replace the contents of the existing `.env` file in the site directory on the server.
+
+![Sync environment variables](/img/sync-environment.png)
+
+Now, you should initiate a deployment from Envoyer. Once the deployment is complete, Envoyer will download the latest version of your application into the releases directory of your site and add a symlink to `/current`.
+
+Your site should still be accessible, but the old version is still being served. To address this, navigate to the "Meta" panel in Forge and prefix the web directory with `/current`. For example, if your site's web directory is currently `/public`, update it to `/current/public`. Doing so will instruct Nginx to serve your application from `/home/forge/example.com/current/public` – the location where Envoyer has installed the latest version of your application.
+
+![Update web directory](/img/update-web-directory.png)
+
+You should now tidy your site directory by ensuring it only contains the `.env` file, along with the `releases`, `current`, and `storage` directories. After **ensuring you have backed up anything you need**, you may remove everything else, including any dotfiles and directories such as `.git`, `.gitattributes`, etc.
+
+Now that the web directory includes `/current`, Forge will recognize your site as being managed by Envoyer in the "Envoyer" panel. You can now link Forge and Envoyer together by selecting the relevant project from the project list.
+
+![Link Forge with Envoyer](/img/forge-envoyer-link.png)
+
+Finally, now that your application is being served from the `/current` directory, you should update your scheduler, queue workers, and any daemons to ensure they are running from the correct path.
