@@ -59,3 +59,7 @@ When enabling the Inertia daemon, Forge will ask you to provide a few more detai
 ### Converting Existing Daemons
 
 If your server is already configured with a daemon that runs Inertia SSR, Forge will offer to convert the daemon for you. This process links the site's ID and the daemon's ID together, allowing Forge to manage the daemon for you.
+
+## Circle Permissions
+
+You may grant a circle member authority to run arbitrary commands in a site's directory by granting the `server:create-schedulers` and `server:create-daemons` permissions.
