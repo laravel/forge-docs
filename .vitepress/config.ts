@@ -109,6 +109,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                 text: "Sites",
                 items: [
                     { text: 'The Basics', link: '/sites/the-basics.html' },
+                    { text: 'Applications', link: '/sites/applications.html' },
                     { text: 'Deployments', link: '/sites/deployments.html' },
                     { text: 'Commands', link: '/sites/commands.html' },
                     { text: 'Packages', link: '/sites/packages.html' },
