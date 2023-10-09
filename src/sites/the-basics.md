@@ -81,7 +81,7 @@ Some very small server sizes, such as `t2.nano` on AWS, do not have enough resou
 
 When you initially provision a Forge server, Forge creates a single site on the server named `default`. This site may be accessed by visiting the IP address of your server in your web browser. This is convenient because sometimes you may not have a particular domain you want to associate with a given server immediately after provisioning.
 
-When you are ready to transition your application to an official domain name, you may rename the site in the **Meta** tab of the site's management panel. After renaming the site, you will no longer be able to access it using the server's IP address. After renaming the site, you should add a DNS `A` record for the domain that points to your server's IP address.
+When you are ready to transition your application to an official domain name, you may rename the site in the **Settings** tab of the site's management panel. After renaming the site, you will no longer be able to access it using the server's IP address. After renaming the site, you should add a DNS `A` record for the domain that points to your server's IP address.
 
 ### Nginx Configuration
 
@@ -154,7 +154,7 @@ When provisioning your server, Forge will automatically create a "catch-all" sit
 
 ## PHP Version
 
-If your server has [multiple versions of PHP](/servers/php) installed, you can switch the version used by your site at any time by using the site's **Meta** tab in the Forge dashboard.
+If your server has [multiple versions of PHP](/servers/php) installed, you can switch the version used by your site at any time by using the site's **Settings** tab in the Forge dashboard.
 
 #### Changing A Site's Installed PHP Version
 

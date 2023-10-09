@@ -89,7 +89,7 @@ There are several reasons why your server may have a "disconnected" status. We e
 
 - Verify that the server is powered on via your server provider's dashboard. If the server is powered off, you should restart it using your **provider's dashboard**.
 - Verify that the public IP address of the server is known to Forge (the public IP address may change between reboots of the actual VPS).
-- Verify that the Forge generated public key for the server is included in the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files. This key is available via the "Meta" tab of your server's Forge management panel.
+- Verify that the Forge generated public key for the server is included in the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files. This key is available via the "Settings" tab of your server's Forge management panel.
 - If your server is behind a firewall, make sure you have [allowed Forge's IP addresses to access the server](/introduction#forge-ip-addresses).
 - If you removed Port 22 from the server's firewall rules, you will need to contact your server provider and ask them to restore the rule. Removing this rule prevents Forge from accessing your server via SSH.
 - Remove any private keys or other lines that do not contain a valid public key from the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files.

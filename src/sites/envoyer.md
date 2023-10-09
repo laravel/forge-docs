@@ -65,7 +65,7 @@ Next, click the "Manage Environment" button, unlock your environment, and sync i
 
 Now, you should initiate a deployment from Envoyer. Once the deployment is complete, Envoyer will download the latest version of your application into the releases directory of your site and add a symlink to `/current`.
 
-Your site should still be accessible, but the old version is still being served. To address this, navigate to the "Meta" panel in Forge and prefix the web directory with `/current`. For example, if your site's web directory is currently `/public`, update it to `/current/public`. Doing so will instruct Nginx to serve your application from `/home/forge/example.com/current/public` – the location where Envoyer has installed the latest version of your application.
+Your site should still be accessible, but the old version is still being served. To address this, navigate to the "Settings" panel in Forge and prefix the web directory with `/current`. For example, if your site's web directory is currently `/public`, update it to `/current/public`. Doing so will instruct Nginx to serve your application from `/home/forge/example.com/current/public` – the location where Envoyer has installed the latest version of your application.
 
 ![Update web directory](/img/update-web-directory.png)
 

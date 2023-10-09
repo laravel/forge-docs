@@ -2,13 +2,13 @@
 
 [[toc]]
 
-## Server Metadata
+## Server Settings
 
-The server dashboard's **Meta** tab can be used to update important details of a server including its name, SSH connection details, timezone, and tags.
+The server dashboard's **Settings** tab can be used to update important details of a server including its name, SSH connection details, timezone, and tags.
 
 ### IP Addresses
 
-If your server's IP address changes, you should inform Forge so that it can remain connected and continue to manage your server. To update the IP address of a server, navigate to the **Meta** tab and update the **IP Address** field under the Server Metadata section.
+If your server's IP address changes, you should inform Forge so that it can remain connected and continue to manage your server. To update the IP address of a server, navigate to the **Settings** tab and update the **IP Address** field under the Server Settings section.
 
 :::tip Rebooting an AWS Server
 
@@ -31,7 +31,7 @@ You may grant a circle member authority to archive a server from your account by
 
 ## Transferring Servers To Other Users
 
-Servers may be transferred to other Forge accounts from the server's **Meta** tab by providing the email address of the Forge account you wish to transfer the server to.
+Servers may be transferred to other Forge accounts from the server's **Settings** tab by providing the email address of the Forge account you wish to transfer the server to.
 
 The Forge account that is receiving the server will be receive an email address asking them to confirm the request. They must also have set up the [server provider](/servers/providers) that the server exists in before the transfer request can be sent. For example, if the server is a DigitalOcean server, the recipient must have DigitalOcean set up as a server provider within their own account.
 
