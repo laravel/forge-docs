@@ -40,7 +40,7 @@ You may configure a new monitor from the **Monitoring** tab within a server's ma
 5. Enter an email address to notify when the monitor's state changes.
 6. Click **Install Monitor**.
 
-Once the monitor is installed, your server will begin collecting metric data data and notify you once the state changes.
+Once the monitor is installed, your server will begin collecting metric data and notify you once the state changes.
 
 :::tip Notifying Multiple People
 
