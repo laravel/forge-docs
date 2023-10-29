@@ -66,7 +66,7 @@ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-[Node.js version information](https://nodejs.org/en/about/releases/)
+[Node.js version information](https://nodejs.org/en/about/previous-releases/)
 
 ## Upgrading npm
 
