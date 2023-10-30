@@ -33,9 +33,12 @@ You may grant a circle member authority to archive a server from your account by
 
 Servers may be transferred to other Forge accounts from the server's **Settings** tab by providing the email address of the Forge account you wish to transfer the server to.
 
-The Forge account that is receiving the server will be receive an email address asking them to confirm the request. They must also have set up the [server provider](/servers/providers) that the server exists in before the transfer request can be sent. For example, if the server is a DigitalOcean server, the recipient must have DigitalOcean set up as a server provider within their own account.
+The Forge account that is receiving the server will receive an email asking them to confirm the request. They must also have set up the [server provider](/servers/providers) that the server exists in before the transfer request can be sent. For example, if the server is a DigitalOcean server, the recipient must have DigitalOcean set up as a server provider within their own account.
+
+:::tip Transfer Limitations
 
 You may only transfer servers to a Forge accounts with an active subscription that have not reached their server quota.
+:::
 
 ### Transfer Circle Permission
 
