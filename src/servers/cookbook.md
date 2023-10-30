@@ -41,6 +41,11 @@ This will instruct Composer to update itself and specifically select version 2. 
 composer self-update --1
 ```
 
+:::tip Update The Server's Cron Job
+
+Servers are provisioned with a Scheduled job that updates Composer. You should delete and recreate the existing job via the server's "Scheduled Jobs" tab after upgrading Composer.
+:::
+
 ## Upgrading Nginx
 
 The latest version of Nginx is installed by Forge when a new server is provisioned. However, as your server ages, you may wish to upgrade the installed version of Nginx. You may do so using the following commands:
