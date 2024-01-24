@@ -8,7 +8,7 @@ When creating a new site on your Forge server, a variety of configuration option
 
 - **Root Domain:** The domain name that the server should respond to.
 - **Aliases:** Additional domains that the site should respond to.
-- **Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, Laravel Octane, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
+- **Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel / Symfony project or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
 - **Web Directory:** The directory that should be publicly accessible via the Internet. For Laravel applications, this is typically the `/public` directory.
 - **PHP Version:** If you have multiple versions of PHP installed on your server, you can select which one should be used to serve the site.
 - **Nginx Template**: If you have configured any [Nginx Templates](/servers/nginx-templates) for you server, you will have the option to select one as the site's Nginx configuration, otherwise Forge will utilise its default Nginx configuration for you new site.
