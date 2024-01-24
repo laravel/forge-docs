@@ -38,13 +38,13 @@ If your server is already configured with a daemon that runs Laravel Horizon, Fo
 
 You may quickly enable or disable the Laravel Octane daemon via the "Laravel Octane" toggle. Forge will create the required Octane daemon and install Octane dependencies for you.
 
-When enabling the Octane daemon, Forge will ask you to provide the port number you'd like to use for the Octane server as well as your Octane server of choice.
+When enabling the Octane daemon, Forge will ask you to provide the port number you would like to use for the Octane server as well as your Octane server of choice.
 
 ![Enabling Laravel Octane](/img/laravel-octane-application.png)
 
 If the site's deploy script does not contain the `octane:reload` command, Forge will automatically append it for you.
 
-:::tip Before enabling Octane
+:::tip Before Enabling Octane
 
 Before enabling Laravel Octane, you must set the `OCTANE_SERVER` environment variable to the Octane server you choose.
 :::
