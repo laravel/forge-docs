@@ -84,6 +84,12 @@ The latest version of npm is installed by Forge when provisioning new servers. H
 sudo npm install npm@latest -g
 ```
 
+## Upgrading Meilisearch
+
+If you would like to install the latest Meilisearch binaries on your server, please follow [the official Meilisearch upgrade guide](https://www.meilisearch.com/docs/learn/update_and_migration/updating).
+
+On most Forge servers, the Meilisearch binary is installed at `/usr/local/bin/meilisearch` and the database is stored at `/var/lib/meilisearch`.
+
 ## DigitalOcean Droplet Limit Exceeded
 
 This error is returned by [DigitalOcean](https://digitalocean.com) when you have reached a limit on how many droplets you can create. You can ask DigitalOcean to increase your droplet limit by contacting their support. Once they have increased your limit, you may create servers in Forge.
