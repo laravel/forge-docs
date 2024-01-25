@@ -84,14 +84,11 @@ The latest version of npm is installed by Forge when provisioning new servers. H
 sudo npm install npm@latest -g
 ```
 
-## Upgrading meilisearch
+## Upgrading Meilisearch
 
-If you want to install the latest meilisearch binaries on your server, please follow [the guide](https://www.meilisearch.com/docs/learn/update_and_migration/updating) as published by meilisearch.
-Keep in mind that the binary is installed in `/usr/local/bin/meilisearch`, and that the database is stored in `/var/lib/meilisearch`.
+If you would like to install the latest Meilisearch binaries on your server, please follow [the official Meilisearch upgrade guide](https://www.meilisearch.com/docs/learn/update_and_migration/updating).
 
-We strongly recommend you to follow the steps, as opposed to using the migration script.
-
-If you're unsure how to proceed, please contact Forge Support.
+On most Forge servers, the Meilisearch binary is installed at `/usr/local/bin/meilisearch` and the database is stored at `/var/lib/meilisearch`.
 
 ## DigitalOcean Droplet Limit Exceeded
 
