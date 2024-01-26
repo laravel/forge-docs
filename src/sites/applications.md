@@ -9,6 +9,7 @@ Forge provides first-class support for applications running [Laravel](https://la
 - Laravel's Task Scheduler
 - Laravel Horizon Daemon
 - Laravel Octane Daemon
+- Laravel Reverb Daemon
 - Inertia.js Server Side Rendering (SSR) Daemon
 
 ![Laravel Panel](/img/laravel-panel.png)
@@ -52,6 +53,29 @@ Before enabling Laravel Octane, you must set the `OCTANE_SERVER` environment var
 ### Converting Existing Daemons
 
 If your server is already configured with a daemon that runs Laravel Octane, Forge will offer to convert the daemon for you. This process links the site's ID and the daemon's ID together, allowing Forge to manage the daemon for you.
+
+## Laravel Reverb
+
+You may quickly enable or disable the Laravel Reverb daemon via the "Laravel Reverb" toggle. Forge will create the required Reverb daemon and install Reverb dependencies for you.
+
+When enabling the Reverb daemon, Forge will ask you to provide some configuration options used to configure the server and the daemon for optimum performance.
+
+![Enabling Laravel Reverb](/img/laravel-reverb-application.png)
+
+- **Public Hostname:** Used to update the Nginx confuguraton of the site, allowing Reverb connections to be accepted by the server on the given hostname. Forge will default to using a subdomain of the site's current hostname but you are free to set this as per your requirements. For example, if the site's hostname is `example.com`, Forge will default Reverb's hostname to `ws.example.com`.
+- **Port:** Used to instruct the Reverb daemon which server port it should run on. Forge will proxy requests for the given public hostname to this port.
+- **Maximum Concurrent Connections:** The number of connections your Reverb server can handle will depend on a combination of the resources available on the server and the amount of connections and messages being processed. You should enter the number of connections the server can manage before preventing new connections. This option will update the server's allowed open file limit, Nginx's allowed open file and connection limt and install the `ev` event loop if required.
+
+If the site's deploy script does not contain the `reverb:restart` command, Forge will automatically append it for you.
+
+### Converting Existing Daemons
+
+If your server is already configured with a daemon that runs Laravel Reverb, Forge will convert the daemon for you. This process links the site's ID and the daemon's ID together, allowing Forge to manage the daemon on your behalf.
+
+:::warning Disabling Reverb
+
+When disabling Reverb, Forge will remove the daemon and ensure the public hostname is no longer accessible. However, any settings Forge updated when enabling Reverb such as open file and connection limits will not be reset and any PHP extensions installed will not be removed.
+:::
 
 ## Inertia Server Side Rendering
 
