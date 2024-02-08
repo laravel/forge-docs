@@ -70,7 +70,7 @@ Forge also supports installing [phpMyAdmin](https://phpmyadmin.net), so you can 
 
 If you haven't done so already, you should [create a new database](/resources/databases#creating-databases) and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
 
-Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
+Once Forge has installed phpMyAdmin, you can then log in to your installation using any of your database username and password combinations.
 
 :::danger Server Sizes
 
