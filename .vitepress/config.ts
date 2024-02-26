@@ -10,6 +10,18 @@ export default defineConfigWithTheme<ThemeConfig>({
     cleanUrls: false,
     srcDir: 'src',
 
+    sitemap: {
+        hostname: 'https://forge.laravel.com/docs',
+        transformItems: (items) => {
+            // Update the url of each item to include the docs base
+            items.map((item) => {
+                item.url = `/docs/${item.url}`
+            })
+
+            return items
+        },
+    },
+
     head: [
         ['link', {
             rel: 'apple-touch-icon',
