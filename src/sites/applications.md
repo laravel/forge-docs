@@ -56,7 +56,7 @@ If your server is already configured with a daemon that runs Laravel Octane, For
 
 ## Laravel Reverb
 
-Determining the correct server type for hosting Laravel Reverb depends on your conifguration requirements. You may use the table below to help inform your decision.
+Determining the correct server type for hosting Laravel Reverb depends on your configuration requirements. You may use the table below to help inform your decision:
 
 | Configuration                                                           | App Server | Web Server |
 |-------------------------------------------------------------------------|:----------:|:----------:|
@@ -67,25 +67,25 @@ Determining the correct server type for hosting Laravel Reverb depends on your c
 
 Once your preferred server has been provisioned, you should [add a new site](/sites/the-basics.html#creating-sites) and [install your Reverb-enabled Laravel application](/sites/the-basics.html#apps-projects) from your version control provider of choice.
 
-Now, you may quickly enable or disable Laravel Reverb via the "Laravel Reverb" toggle. Forge will create the Reverb daemon, install the required dependencies and configure the server for optimum performance.
+Now, you may quickly enable or disable Laravel Reverb via the "Laravel Reverb" toggle within Forge's application panel. When enabling Reverb, Forge will create the Reverb daemon, install the required dependencies, and configure the server for optimum performance.
 
-When enabling Reverb, Forge will prompt for some additional information required to setup the server as per your requirements.
+Additionally, Forge will prompt for additional information required to setup the server per your requirements.
 
 ![Enabling Laravel Reverb](/img/laravel-reverb-application.png)
 
-- **Public Hostname:** Used to update the Nginx confuguration of the site, allowing Reverb connections to be accepted by the server on the given hostname. Forge will default to a subdomain of the site's current hostname but you are free to set this as per your requirements. For example, if the site's hostname is `example.com`, Forge will default Reverb's hostname to `ws.example.com`.
+- **Public Hostname:** Used to update the Nginx confuguration of the site, allowing Reverb connections to be accepted by the server on the given hostname. Forge will default to a subdomain of the site's current hostname, but you are free to customize this value. For example, if the site's hostname is `example.com`, Forge will default Reverb's hostname to `ws.example.com`.
 - **Port:** Used to instruct the Reverb daemon which server port it should run on. Forge will proxy requests for the given public hostname to this port.
-- **Maximum Concurrent Connections:** The number of connections your Reverb server can handle will depend on a combination of the resources available on the server and the amount of connections and messages being processed. You should enter the number of connections the server can manage before it should prevent new connections. This option will update the server's allowed open file limit, Nginx's allowed open file and connection limt and install the `ev` event loop if required.
+- **Maximum Concurrent Connections:** The number of connections your Reverb server can handle will depend on a combination of the resources available on the server and the amount of connections and messages being processed. You should enter the number of connections the server can manage before it should prevent new connections. This option will update the server's allowed open file limit, Nginx's allowed open file and connection limit, and install the `ev` event loop if required.
 
 If the site's deploy script does not contain the `reverb:restart` command, Forge will automatically append it for you.
 
 ### Converting Existing Daemons
 
-If your server is already configured with a daemon that runs Laravel Reverb, Forge will convert the daemon for you. This process links the site's ID and the daemon's ID together, allowing Forge to manage the daemon on your behalf.
+If your server is already configured with a daemon that runs Laravel Reverb, Forge will manage the daemon for you. This process links the site's ID and the daemon's ID together, allowing Forge to manage the daemon on your behalf.
 
 :::warning Disabling Reverb
 
-When disabling Reverb, Forge will remove the daemon and ensure the public hostname is no longer accessible. However, any settings Forge updated when enabling Reverb such as open file and connection limits will not be reset and any PHP extensions installed will not be removed.
+When disabling Reverb, Forge will remove the daemon and ensure the public hostname is no longer accessible. However, any settings Forge updated when enabling Reverb, such as open file and connection limits, will not be reset and any PHP extensions installed will not be removed.
 :::
 
 ## Inertia Server Side Rendering
