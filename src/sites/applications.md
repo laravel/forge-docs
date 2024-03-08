@@ -81,7 +81,7 @@ If the site's deploy script does not contain the `reverb:restart` command, Forge
 
 ### SSL
 
-If an SSL certificate exists for your site which protects Reverb's configured hostname, Forge will automatically install it when enabling Reverb, ensuring your Reverb server is accessible via secure WebSockets (wss).
+If an SSL certificate exists for your site which protects Reverb's configured hostname, Forge will automatically install it when enabling Reverb, ensuring your Reverb server is accessible via secure WebSockets (`wss`).
 
 If Reverb is installed before a valid certificate is available, you may request a new certificate for Reverb's configured hostname from your site's "SSL" tab. Forge will automatically configure secure WebSockets for Reverb as soon as the certificate is activated. Forge will also pre-populate the "Domains" SSL form input with Reverb's hostname when requesting a certificate.
 
