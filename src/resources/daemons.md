@@ -26,7 +26,9 @@ When creating a new daemon you need to provide Forge with the following informat
 
 ### Manually Restarting Daemons
 
-You may manually restart a daemon using `sudo -S supervisorctl restart daemon-ID:*`. This may also be done within your application's deployment script to reload the daemon after a deployment.
+You may manually restart a daemon using `sudo -S supervisorctl restart daemon-{id}:*`, where `{id}` is the daemon's ID. For example, if the daemon's ID is `65654` you may restart it by running `sudo -S supervisorctl restart daemon-65654:*`.
+
+You may also run this command within your application's deployment script to restart the daemon during a deployment.
 
 ## Log Files
 
